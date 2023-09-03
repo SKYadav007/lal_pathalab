@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./about.css">
 
     <link href="./dist/output.css" rel="stylesheet">
 </head>
+
 <body>
-    <header>
+    <header class="">
         <nav class="navbar-top">
             <div class="nav-content">
                 <div class="navList">
@@ -41,7 +43,7 @@
             </div>
         </nav>
 
-        <nav class="navbar-bottom">
+        <nav class="navbar-bottom ">
 
             <div class="navbar-bottom-content">
                 <img src="https://uat-cdn.drlallab.com/2023-06/logo-header-2.webp" alt="">
@@ -75,69 +77,272 @@
         </nav>
     </header>
 
-    <main class="bg-gray-100 " style="font-family: 'PT Sans', sans-serif;">
-       <div class="py-5 max-md:py-1">
-        <div class=" flex w-full h-auto my-1 bg-cover bg-banner-mbl lg:bg-banner-desk" >
-       <span class="text-2xl text-white font-bold p-12 font-ptsans lg:text-4xl">About Us</span>
+    <main class="bg-gray-100 mt-16 flex flex-col items-center" style="font-family: 'PT Sans', sans-serif; ">
+        <!-- about us banner -->
+        <section class="w-full">
+            <div class="py-5 max-md:py-1 w-full">
+                <div class=" flex w-full h-auto my-1 bg-cover bg-banner-mbl lg:bg-banner-desk">
+                    <span class="text-2xl text-white font-bold p-12 font-ptsans lg:text-4xl">About Us</span>
 
-         </div>
-        
-       </div>
-       <section id="vision" class="p-5 ">
-        <div class="p-8 grid lg:grid-cols-2 gap-4 m-10 grid-cols-1 max-lg:m-4 max-w-7xl">
-            <div id="vission" class="text-center bg-white border-4 border-solid border-yellow-600 rounded-md w-full h-full p-3 max-lg:border-2">
-                <h1 class="uppercase  text-blue-900 lg:text-3xl font-medium p-3 max-lg:text-2xl">Our Vision</h1>
-                <p class="text-base ">Be the most trusted healthcare partner, enabling healthier lives.</p>
-            </div>
-            <div id="mission" class="text-center bg-white border-4 border-solid border-yellow-600 rounded-md w-full h-full p-3 max-lg:border-2 ">
-                <h1 class="uppercase text-blue-900 text-3xl font-medium p-3 max-lg:text-2xl">OUR MISSION</h1>
-                <p class="text-base">To be the undisputed market leader by providing accessible, affordable, timely and quality healthcare diagnostics, applying insights and cutting edge technology to create value for all stakeholders.</p>
-            </div>
-        </div>
-
-       </section>
-       <section id="journey">
-        <div id="our_journey" class="max-w-7xl m-10 p-10 bg-white rounded-md">
-            <div id="journey-header">
-                <h1 class="text-2xl font-medium mb-3">Our Journey</h1>
-                <p class="text-slate-900 text-lg">Late Dr. Major S.K. Lal, commenced the business of providing pathology services and maintaining a blood bank in the year 1949 through sole proprietorship M/s Central Clinical Laboratory and M/s Blood Bank Transfusion Centre. The business of diagnostic and related healthcare tests and services now continues to be provided by our Company.</p>
-            </div>
-            <div id="journey-body" class="grid grid-cols-3 mx-12 p-5">
-                <div class="col-span-2"><img src="https://uat-cdn.drlallab.com/2021-08/Foundation.png" alt="" class="w-full h-auto"></div>
-                <div class="flex flex-col items-start justify-center gap-2 ">
-                    <h1 class="text-5xl font-bold text-blue-800">1949 – 2005</h1>
-                    <ul class="list-disc pl-5 max-w-md text-justify text-lg">
-                        <li>1949: Founded by Dr. Major S. K. Lal</li>
-                        <li>1995: Company incorporated as Dr. Lal PathLabs Private Ltd.</li>
-                        <li>2000: Dr Lal Path Labs at Hanuman Road, Delhi received NABL Accreditation</li>
-                        <li>2001: Dr Lal Path Labs at Hanuman Road, Delhi received ISO 9001:2000 certification</li>
-                        <li>2002: Dr Lal Path Labs at Hanuman Road, Delhi received International Accreditation from CAP</li>
-                    </ul>
                 </div>
+
             </div>
-            <div id="journey-footer" class="border-b-2 border-solid border-gray-900 w-full">
-                <div id="footer" class="flex justify-between w-full">
-                    <div class="year1 pb-10" >
-                      <span>1949-2005</span>
-                    </div>
-                    <div class="year1">
-                      <span>1949-2005</span>
-                    </div>
-                    <div class="year1">
-                      <span>1949-2005</span>
-                    </div>
-                    <div class="year1">
-                      <span>1949-2005</span>
-                    </div>
+        </section>
+        <!-- vision mission section -->
+        <section id="vision" class="p-5 ">
+            <div class="p-8 grid lg:grid-cols-2 gap-4 m-10 grid-cols-1 max-lg:m-4 max-w-7xl">
+                <div id="vission"
+                    class="text-center bg-white border-4 border-solid border-yellow-600 rounded-md w-full h-full p-3 max-lg:border-2">
+                    <h1 class="uppercase  text-blue-900 lg:text-3xl font-medium p-3 max-lg:text-2xl">Our Vision</h1>
+                    <p class="text-base ">Be the most trusted healthcare partner, enabling healthier lives.</p>
+                </div>
+                <div id="mission"
+                    class="text-center bg-white border-4 border-solid border-yellow-600 rounded-md w-full h-full p-3 max-lg:border-2 ">
+                    <h1 class="uppercase text-blue-900 text-3xl font-medium p-3 max-lg:text-2xl">OUR MISSION</h1>
+                    <p class="text-base">To be the undisputed market leader by providing accessible, affordable, timely
+                        and quality healthcare diagnostics, applying insights and cutting edge technology to create
+                        value for all stakeholders.</p>
                 </div>
             </div>
 
-        </div>
+        </section>
+        <!-- our journey section -->
+        <section id="journey">
+            <div id="our_journey" class="max-w-7xl m-10 p-10 bg-white rounded-md">
+                <!-- journey head  -->
+                <div id="journey-header">
+                    <h1 class=" text-3xl font-semibold mb-3">Our Journey</h1>
+                    <p class="text-slate-900 text-lg">Late Dr. Major S.K. Lal, commenced the business of providing
+                        pathology services and maintaining a blood bank in the year 1949 through sole proprietorship M/s
+                        Central Clinical Laboratory and M/s Blood Bank Transfusion Centre. The business of diagnostic
+                        and related healthcare tests and services now continues to be provided by our Company.</p>
+                </div>
+                <div id="journey-body" class="grid grid-cols-3 mx-12 p-5">
+                    <div class="col-span-2"><img src="https://uat-cdn.drlallab.com/2021-08/Foundation.png" alt=""
+                            class="w-full h-auto"></div>
+                    <div class="flex flex-col items-start justify-center gap-2 ">
+                        <h1 class="text-5xl font-bold text-blue-800">1949 – 2005</h1>
+                        <ul class="list-disc pl-5 max-w-md text-justify text-lg">
+                            <li>1949: Founded by Dr. Major S. K. Lal</li>
+                            <li>1995: Company incorporated as Dr. Lal PathLabs Private Ltd.</li>
+                            <li>2000: Dr Lal Path Labs at Hanuman Road, Delhi received NABL Accreditation</li>
+                            <li>2001: Dr Lal Path Labs at Hanuman Road, Delhi received ISO 9001:2000 certification</li>
+                            <li>2002: Dr Lal Path Labs at Hanuman Road, Delhi received International Accreditation from
+                                CAP</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- milestone indicator -->
+                <div id="journey-footer" class="border-b-2 border-solid border-gray-900 w-full">
+                    <div id="footer" class="flex justify-between w-full">
+                        <div class="year1 pb-10">
+                            <span class="text-sm text-blue-800 font-semibold">1949-2005</span>
+                        </div>
+                        <div class="year1 ">
+                            <span class="text-sm text-blue-800 font-semibold">2005-2010</span>
+                        </div>
+                        <div class="year1">
+                            <span class="text-sm text-blue-800 font-semibold">2010-2015</span>
+                        </div>
+                        <div class="year1">
+                            <span class="text-sm text-blue-800 font-semibold">2015 onward</span>
+                        </div>
+                    </div>
+                </div>
 
-       </section>
+            </div>
+
+        </section>
+
+        <!-- our value -->
+        <section>
+            <div class="max-w-7xl p-8 bg-values-bg-img rounded-lg">
+                <div class="my-4">
+                    <span class="text-3xl font-semibold mb-5">Our Values</span>
+                </div>
+                <!-- values img -->
+                <div class="grid grid-cols-3 gap-4">
+                    <div class=""><img src="https://uat-cdn.drlallab.com/2022-03/high%20quality.png" alt="">
+                        <div class=" relative">
+                            <div class="w-full h-12 bg-div-yellow"></div>
+                            <div><span
+                                    class="values text-3xl py-3 px-8 bg-blue-800 border-b-8 border-b-red-600 border-b-solid text-white font-bold absolute bottom-2 right-0">Quality</span>
+                            </div>
+                        </div>
+
+                    </div>
+                     <!-- values img -->
+                    <div><img src="https://uat-cdn.drlallab.com/2022-05/customer-first.png" alt="">
+                        <div class=" relative">
+                            <div class="w-full h-12 bg-div-yellow"></div>
+                            <div><span
+                                    class="values text-3xl py-3 px-8 bg-blue-800 border-b-8 border-b-red-600 border-b-solid text-white font-bold absolute bottom-2 right-0">Customer
+                                    First</span></div>
+                        </div>
+                    </div>
+                     <!-- values img -->
+                    <div><img src="https://uat-cdn.drlallab.com/2022-03/accountability.png" alt="">
+                        <div class=" relative">
+                            <div class="w-full h-12 bg-div-yellow"></div>
+                            <div><span
+                                    class="values text-3xl py-3 px-8 bg-blue-800 border-b-8 border-b-red-600 border-b-solid text-white font-bold absolute bottom-2 right-0">Accountability</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- our network section  -->
+        <section class="w-full flex justify-center m-10">
+            <div class="max-w-7xl p-8 bg-white rounded-lg w-full ">
+                <span class="text-3xl font-semibold mb-5 m-4 ">Our Network</span>
+                <!-- Domestic network -->
+                <div class="m-4">
+                    <span class="text-xl font-semibold my-5">Domestic Network</span>
+                    <div class="flex justify-between p-4">
+                        <div class="flex gap-4 items-center">
+                            <div><img src="https://uat-cdn.drlallab.com/2021-07/our-network-icon-1.png" alt="" class="hover:scale-125"></div>
+                            <div class="flex flex-col">
+                                <span class="text-4xl font-bold text-blue-800">250+</span>
+                                <span>Clinical Laboratories</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <div><img src="https://uat-cdn.drlallab.com/2021-07/our-network-icon-2.png" alt="" class="hover:scale-125"></div>
+                            <div class="flex flex-col">
+                                <span class="text-4xl font-bold text-blue-800">3705</span>
+                                <span>No. of PSCs</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <div><img src="https://uat-cdn.drlallab.com/2021-07/our-network-icon-3.png" alt="" class="hover:scale-125"></div>
+                            <div class="flex flex-col">
+                                <span class="text-4xl font-bold text-blue-800">10,000+</span>
+                                <span>No. of PUPs</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- International Bussinesses -->
+                <div class="m-4">
+                    <span class="text-xl font-semibold my-5">International Bussinesses</span>
+                    <div class="flex justify-between p-4 py-8">
+                        <div class="flex gap-4 items-center">
+                            <div><img src="https://uat-cdn.drlallab.com/2021-07/our-network-icon-4.png" alt="" class="hover:scale-125"></div>
+                            <div class="flex flex-col">
+                                <span class="text-4xl font-bold text-blue-800">23</span>
+                                <span> Countries we operate</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <div><img src="https://uat-cdn.drlallab.com/2021-07/our-network-icon-5.png" alt="" class="hover:scale-125"></div>
+                            <div class="flex flex-col">
+                                <span class="text-4xl font-bold text-blue-800">700+</span>
+                                <span>Test Per Day</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <div><img src="https://uat-cdn.drlallab.com/2021-07/our-network-icon-6.png" alt="" class="hover:scale-125"></div>
+                            <div class="flex flex-col w-32">
+                                <span class="text-4xl font-bold text-blue-800">150+</span>
+                                <span>Partners Including Hospitals & Lab</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Logistics Strength -->
+        <section class="w-full flex items-center justify-center">
+            <div class="w-full bg-white rounded-lg max-w-7xl p-8">
+                <div class="m-4 w-full max-w-7xl">
+                    <span class="text-3xl font-semibold my-5">Logistics Strength</span>
+                    <div class="flex justify-between p-4 py-8">
+                        <div class="flex gap-4 items-center">
+                            <div><img src="https://uat-cdn.drlallab.com/2022-04/floor-state_0.png" alt="" class="hover:scale-125"></div>
+                            <div class="flex flex-col">
+                                <span class="text-4xl font-bold text-blue-800">231</span>
+                                <span> Satellite labs</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <div><img src="https://uat-cdn.drlallab.com/2022-04/logistics-strength-icon-1.png" alt="" class="hover:scale-125"></div>
+                            <div class="flex flex-col">
+                                <span class="text-4xl font-bold text-blue-800">1800+</span>
+                                <span>Staffs</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <div><img src="https://uat-cdn.drlallab.com/2022-04/Team-of-Doctors.png" alt="" class="hover:scale-125"></div>
+                            <div class="flex flex-col w-32">
+                                <span class="text-4xl font-bold text-blue-800">250+</span>
+                                <span>Doctors</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <div><img src="https://uat-cdn.drlallab.com/2022-04/Laboratory-Operations.png" alt="" class="hover:scale-125"></div>
+                            <div class="flex flex-col w-32">
+                                <span class="text-4xl font-bold text-blue-800">24</span>
+                                <span>NABL Labs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- our Team  -->
+        <section class="w-full flex justify-center">
+            <div class="w-full max-w-7xl bg-white rounded-lg m-10 p-8">
+                <span class="text-3xl font-semibold my-5">Our Team</span>
+                <div>
+                    <form action="">
+                        <button class="py-1 px-8 rounded-full bg-div-yellow font-bold m-2 text-lg">Board of Directors</button>
+                        <button class="py-1 px-8 rounded-full bg-gray-400 font-bold text-white m-2 text-lg">Senior Management</button>
+                    </form>
+                </div>
+                <div class="grid overflow-x-scroll grid-flow-col gap-4">
+                    <div class="flex flex-col ">
+                        <img src="https://uat-cdn.drlallab.com/2022-12/bod/dr-arvind-lal.jpg" alt="">
+                        <span><a href="#" class="font-bold text-lg text-blue-800">(Hony) Brig. Dr. Arvind Lal - Executive Chairman</a></span>
+                        <span>Executive Chairman</span>
+                    </div>
+                    <div class="flex flex-col ">
+                        <img src="https://uat-cdn.drlallab.com/2022-12/bod/Dr-Om-Manchanda.jpg" alt="">
+                        <span><a href="#" class="font-bold text-lg text-blue-800">Dr. Om Manchanda</a></span>
+                        <span>Managing Director</span>
+                    </div>
+                    <div class="flex flex-col ">
+                        <img src="https://uat-cdn.drlallab.com/2022-12/bod/Dr-Vandana.jpg" alt="">
+                        <span><a href="#" class="font-bold text-lg text-blue-800">Dr. Vandana Lal</a></span>
+                        <span>Executive Director</span>
+                    </div>
+                    <div class="flex flex-col ">
+                        <img src="https://uat-cdn.drlallab.com/2022-12/bod/rahul-sharma.jpg" alt="">
+                        <span><a href="#" class="font-bold text-lg text-blue-800">
+                            Mr. Rahul Sharma</a></span>
+                        <span>Non-Executive Director</span>
+                    </div>
+                    <div class="flex flex-col ">
+                        <img src="https://uat-cdn.drlallab.com/2022-12/bod/Somya_Satsangi.jpg" alt="">
+                        <span><a href="#" class="font-bold text-lg text-blue-800">Ms. Somya Satsangi</a></span>
+                        <span>Independent Director</span>
+                    </div>
+                   
+                     
+                      
+                </div>
+            </div>
+        </section>
 
     </main>
-    
+
     <script src="https://kit.fontawesome.com/7c5861f7d9.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

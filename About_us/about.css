@@ -1,3 +1,7 @@
+.year1{
+    display: block;
+    position: relative;
+}
 .year1::after{
     max-width: 4px;
     height: 20px;
@@ -8,8 +12,8 @@
     bottom: 0;
     width: 100%;
     margin: 0 auto;
-    left: -2px;
-    right: 0;
+   
+   
 
 }
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -340,7 +344,7 @@ header {
         margin-top: -10px;
     }
 
-    .menu {}
+    
 }
 
 @media screen and (max-width:420px) {
