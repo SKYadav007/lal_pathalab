@@ -1,7 +1,7 @@
  {import('tailwindcss').Config} 
 const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
-  content: ["about.html"],
+  content: ["*.html"],
   theme: {
     extend: {
       
@@ -19,7 +19,16 @@ module.exports = {
       },
       color:{
         'red-bd':"rgb(255,0,0)"
-      }
+      },
+      height: {
+        '128': '32rem',
+      },
+      borderColor: theme=>({
+        ...theme('colors'),
+        'yellow-bd':"rgb(254,204,78)",
+        'red-bd':"rgb(255,0,0)",
+      }),
+      
 
     },
   },
