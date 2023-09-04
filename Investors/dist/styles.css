@@ -97,7 +97,7 @@
      border: none;
  }
 
- .patient a,
+ .investor a,
  .user-content a {
      font-weight: bold;
      color: var(--color-background-blue);
@@ -124,7 +124,7 @@
     color: var(--color-background-blue);
     font-weight: bold;
  }
- .patient a {
+ .investor a {
      text-decoration: underline;
  }
  .navbar-bottom {
