@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="doctors.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="flickity.css">
+    <title>Doctors Information | Pathology Tests Recommended by Doctors | Dr Lal PathLabs</title>
 </head>
 <body>
+    <!-- Navbar -->
     <header>
         <nav class="navbar-top">
             <div class="nav-content">
                 <div class="navList">
-                    <div class="navList-items patient"><a href="">PATIENTS</a></div>
-                    <div class="navList-items"><a href="">DOCTORS</a></div>
-                    <div class="navList-items"><a href="">BUSINESS PARTNERSHIP</a></div>
-                    <div class="navList-items"><a href="">ABOUT US</a></div>
-                    <div class="navList-items"><a href="">INVESTORS</a></div>
-                    <div class="navList-items"><a href="">CONTACT US</a></div>
+                    <div class="navList-items"><a href="../Patients/index.html">PATIENTS</a></div>
+                    <div class="navList-items doctors"><a href="doctors.html">DOCTORS</a></div>
+                    <div class="navList-items"><a href="../Bussiness/business.html">BUSINESS PARTNERSHIP</a></div>
+                    <div class="navList-items"><a href="../About_us/about.html">ABOUT US</a></div>
+                    <div class="navList-items"><a href="../Investors/dist/investors.html">INVESTORS</a></div>
+                    <div class="navList-items"><a href="../Contact_us/contact.html">CONTACT US</a></div>
                 </div>
                 <div class="blogHyperLink">
                     <div class="blog"><a href="">BLOGS</a></div>
@@ -36,16 +38,19 @@
             </div>
         </nav>
 
+        <!-- Secondary Navbar -->
+
         <nav class="navbar-bottom">
 
             <div class="navbar-bottom-content">
                 <img src="https://uat-cdn.drlallab.com/2023-06/logo-header-2.webp" alt="">
                 <div class="left">
-                    <div class="bottom-navList"><a href="">Book a <br>Test</a></div>
-                    <div class="bottom-navList"><a href="">Nearest <br>Center</a></div>
-                    <div class="bottom-navList"><a href="">Download <br> Report</a></div>
-                    <div class="bottom-navList"><a href="">Special <br>Programs</a></div>
-                    <div class="bottom-navList"><a href="">Promotions & <br> Discounts</a></div>
+                    <div class="bottom-navList"><a href="../Book_a_test/book_a_test.html">Test Menu</a></div>
+                    <div class="bottom-navList"><a href="">Our Labs</a></div>
+                    <div class="bottom-navList"><a href="">Events</a></div>
+                    <div class="bottom-navList"><a href="">Quality</a></div>
+                    <div class="bottom-navList"><a href="">Resource Centre</a></div>
+                    <div class="bottom-navList"><a href="">Our Department</a></div>
                 </div>
                 <div class="right">
                     <div class="location">
@@ -70,6 +75,380 @@
         </nav>
     </header>
 
-    <script src="https://kit.fontawesome.com/7c5861f7d9.js" crossorigin="anonymous"></script>
+    <main>
+        <!-- Slider section -->
+
+        <section class="slider-section">
+            <div class="path">
+                <a href="">Home &emsp;></a>
+                <p>&ensp;Doctors</p>
+            </div>
+            <div class="main-carousel slider" data-flickity='{ "cellAlign": "left", "contain": true, "prevNextButtons": false, "draggable": false}'>
+            <div class="carousel-cell slide-item">
+                    <img src="./Assets/Slider/The Cardiology Division.png" alt="">
+            </div>
+                <div class="carousel-cell slide-item">
+                    <img src="./Assets/Slider/Post Doctoral Fellowship.webp" alt="">
+                </div>
+                <div class="carousel-cell slide-item">
+                    <img src="./Assets/Slider/Allergy.webp" alt="">
+                </div>
+                <div class="carousel-cell slide-item">
+                    <img src="./Assets/Slider/Steroid Panel.webp" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Test Menu -->
+
+        <section class="test-menu-container" id="test-menu">
+            <h3>Test Menu</h3>
+            <div class="test-button-container">
+                <ul class="button-container">
+                    <li><button class="test-button condition">Condition</button></li>
+                    <li><button class="test-button specialty">Specialty</button></li>
+                    <li><button class="test-button all-test">All Test</button></li>
+                    <li><button class="test-button alphabet">Alphabet</button></li>
+                </ul>
+
+                <div class="search-item flex items-center w-[60%]">
+                    <input type="search" placeholder="Search Test">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="main-carousel menu-items" data-flickity='{ "cellAlign": "left", "contain": true, "draggable": false, "pageDots": false, "wrapAround": true}'>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Abortions.png" alt="">
+                    <p>Abortions</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Acid-Base_0.png" alt="">
+                    <p>Acid Base Imbalance</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Allergy.png" alt="">
+                    <p>Allergy</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Diabetes.png" alt="">
+                    <p>Diabetes</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/AIDS_0.png" alt="">
+                    <p>AIDS</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Arthritis_0.png" alt="">
+                    <p>Arthritis</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Athletic_0.png" alt="">
+                    <p>Athletic Performance</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Blood-Disorders_0.png" alt="">
+                    <p>Blood Disorders</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Bone-&-Mineral_0.png" alt="">
+                    <p>Bone Marroe Transplantation</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Disease-Association_0.png" alt="">
+                    <p>Disease Association</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Diseases-of-Liver_0.png" alt="">
+                    <p>Diseases of Liver</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Disorders-of-Reproductive-system_0.png" alt="">
+                    <p>Diseases of Reproductive System</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Disorders-of-Pancreas_1.png" alt="">
+                    <p>Disorder of Pancreas</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Disorders-of-adrenal-gland.png" alt="">
+                    <p>Disorders of Adrenal Gland</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Disorders-of-Hemopoiesis_0.png" alt="">
+                    <p>Disorders of Haemopoiesis</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Disorders-of-Kidney_0.png" alt="">
+                    <p>Disorders of Kidney</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Diseases-of-Liver_0.png" alt="">
+                    <p>Disorder of Liver</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Disorders-of--liver-and-kidney_0.png" alt="">
+                    <p>Disorders of Liver and Kidney</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Disorders-of-muscle_0.png" alt="">
+                    <p>Disorders of Muscle</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Disorders-of-Pancreas_1.png" alt="">
+                    <p>Disorders of Pancreas</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Disorders-of-Respiratory-System_0.png" alt="">
+                    <p>Disorders of Respiratory System</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Disorders-of-skin_0.png" alt="">
+                    <p>Disorders of Skin</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Drugs-of-Abuse_0.png" alt="">
+                    <p>Drugs of Abuse</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Electrolyte_0.png" alt="">
+                    <p>Electrolyte Imbalance</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Establishing_0.png" alt="">
+                    <p>Establishing Paternity</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Establishing-Relationship_0.png" alt="">
+                    <p>Establishing Relationship</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Fever_0.png" alt="">
+                    <p>Fever</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Genetic-Di.png" alt="">
+                    <p>Genetic Disorders</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Genetics_0.png" alt="">
+                    <p>Genetics</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Head-Injury_0.png" alt="">
+                    <p>Head Injury</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Health-Check-Up_0.png" alt="">
+                    <p>Health Check-up</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Heart-Diseases_0.png" alt="">
+                    <p>Heart Diseases</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Hirsutism_0.png" alt="">
+                    <p>Hirsutism
+
+                    </p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/HIV_0.png" alt="">
+                    <p>HIV</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Hypertension_0.png" alt="">
+                    <p>Hypertension</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Identification_0.png" alt="">
+                    <p>Identification of Crystals</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Inborn-Errors_0.png" alt="">
+                    <p>Inborn Errors of Metabolism</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Infection_0.png" alt="">
+                    <p>Infections</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Kidney-disease_1.png" alt="">
+                    <p>Kidney Disease</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Kidney-disease_1.png" alt="">
+                    <p>Kidney Stones</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Malabsorption_0.png" alt="">
+                    <p>Malabsorption Syndrome</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Male-Infertility_0.png" alt="">
+                    <p>Male Infertility</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Multiple_0.png" alt="">
+                    <p>Multiple Myeloma</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Multiple-Sclerosis_0.png" alt="">
+                    <p>Multiple Sclerosis</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Muscular_0.png" alt="">
+                    <p>Muscular Disorder</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Myasthenia_0.png" alt="">
+                    <p>Myasthenia Gravis</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Nephrologist_0.png" alt="">
+                    <p>Nephrologist</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Neurologic_0.png" alt="">
+                    <p>Neurologic</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Osteoporosis_0.png" alt="">
+                    <p>Osteoporosis</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Ovarian-Cancer_0.png" alt="">
+                    <p>Ovarian Cancer</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Paraneoplastic_0.png" alt="">
+                    <p>Paraneoplastic Syndromes</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Parasitic_0.png" alt="">
+                    <p>Parasitic Infections</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Pharmacogenomics_0.png" alt="">
+                    <p>Pharmacogenomics</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Poisoning_0.png" alt="">
+                    <p>Poisoning</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Pre-eclampsia_0.png" alt="">
+                    <p>Pre-eclampsia</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Prenatal-D.png" alt="">
+                    <p>Prenatal Diagnosis</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Psychiatric_0.png" alt="">
+                    <p>Psychiatric Disorders</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Respiratory_0.png" alt="">
+                    <p>Respiratory Disorders</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Sarcoidosis_0.png" alt="">
+                    <p>Sarcoidosis</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/SIADH_0.png" alt="">
+                    <p>SIADH</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Surgical_0.png" alt="">
+                    <p>Surgical Pathology</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Therapeutic-Drug_0.png" alt="">
+                    <p>Therapeutic Drug Monitoring</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Thromboembolic_0.png" alt="">
+                    <p>Thromboembolic Disorders</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Transplantation_0.png" alt="">
+                    <p>Transplantation</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Transplantation-1_0.png" alt="">
+                    <p>Transplantation Pathology</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Tuberculosis_0.png" alt="">
+                    <p>Tuberculosis</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Viral-Infections_0.png" alt="">
+                    <p>Viral Infections</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Water-Imbalance_0.png" alt="">
+                    <p>Water Imbalance</p>
+                </div>
+                <div class="carousel-cell test-item">
+                    <img src="./Assets/Test menu/Condition/Water-Purity_0.png" alt="">
+                    <p>Water Purity</p>
+                </div>
+            </div>
+
+            <a href="">View All</a>
+        </section>
+
+        <!-- Our Labs -->
+
+        <section class="labs-container">
+            <h3>Our Labs</h3>
+            <div class="labs-list main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "draggable": false, "pageDots": false, "wrapAround": true}'>
+                <div class="carousel-cell lab-item">
+                    <img src="./Assets/Our labs/National Reference Laboratory.jpg" alt="">
+                    <p>National Reference Laboratory</p>
+                </div>
+                <div class="carousel-cell lab-item">
+                    <img src="./Assets/Our labs/Kolkata.png" alt="">
+                    <p>Kolkata Reference Laboratory</p>
+                </div>
+                <div class="carousel-cell lab-item">
+                    <img src="./Assets/Our labs/Satellite.png" alt="">
+                    <p>Satellite Laboratory</p>
+                </div>
+                <div class="carousel-cell lab-item">
+                    <img src="./Assets/Our labs/Kolkata.png" alt="">
+                    <p>Kolkata Reference Laboratory</p>
+                </div>
+            </div>
+
+            <a href="">View Details</a>
+        </section>
+
+        <!-- Whats New -->
+
+        <section class="whats-new-container">
+            <h3>What's New</h3>
+            <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "draggable": false, "pageDots": false, "wrapAround": true, "autoplay": true, "prevNextButtons": false}'>
+                <div class="carousel-cell whats-new-item">
+                    <img src="./Assets/What's New/new-EM-post.jpg" alt="">
+                </div>
+                <div class="carousel-cell whats-new-item">
+                    <img src="./Assets/What's New/MBFD.jpg" alt="">
+                </div>
+                <div class="carousel-cell whats-new-item">
+                    <img src="./Assets/What's New/Genexpert-New-Creative-1.jpg" alt="">
+                </div>
+                <div class="carousel-cell whats-new-item">
+                    <img src="./Assets/What's New/GAD-65.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/d191351939.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>

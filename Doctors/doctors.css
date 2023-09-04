@@ -18,6 +18,7 @@
     --color-cardHeading: #181818;
     --color-body-text: #212529;
     --color-background: #F1F1F1;
+    --color-border: #F3F3F3;
 
     --font-family: 'PT Sans', sans-serif;
 
@@ -37,16 +38,24 @@
     --size-30px: 1.875rem;
 }
 
+/* html {
+  scroll-behavior: smooth;
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+
 body {
     overflow-x: hidden;
+    background-color: var(--color-background);
 }
 
 header {
     max-width: 100%;
-    height: 5rem;
 }
 
 .navbar-top {
+    max-height: 2.75rem;
     max-width: 100%;
     background-color: var(--color-yellow);
 }
@@ -62,6 +71,7 @@ header {
 
 .navList {
     display: flex;
+    align-items: center;
     justify-content: space-around;
     width: 52%;
     margin-left: 15%;
@@ -97,7 +107,7 @@ header {
     border: none;
 }
 
-.patient a,
+.doctors a,
 .user-content a {
     font-weight: bold;
     color: var(--color-background-blue);
@@ -124,7 +134,7 @@ header {
    color: var(--color-background-blue);
    font-weight: bold;
 }
-.patient a {
+.doctors a {
     text-decoration: underline;
 }
 .navbar-bottom {
@@ -148,7 +158,7 @@ header {
 .left {
     display: flex;
     width: 45%;
-    gap: 10%;
+    gap: 6.5%;
     align-items: center;
 }
 
@@ -344,4 +354,285 @@ header {
 }
 
 
+/* <-- Slider Section --> */
 
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.75rem;
+}
+
+.slider-section{
+    width: 100%;
+}
+
+.slider-section .path{
+    display: flex;
+    align-items: center;
+    padding-left: 8rem;
+    width: 100%;
+    font-size: var(--size-paragraph);
+    background-color: var(--color-yellow);
+    height: 2.75rem;
+}
+
+.path a{
+    text-decoration: none;
+    color: black;
+}
+
+.slider .slide-item, .slide-item img{
+    width: 100%;
+    height: 20rem;
+}
+
+/* <-- Test Menu --> */
+
+.test-menu-container{
+    max-width: 86.5%;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0.75rem;
+    height: 21rem;
+}
+
+.test-menu-container h3{
+    font-size: var(--size-cardHeading2);
+    font-weight: 600;
+}
+
+
+.test-button-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button-container{
+    display: flex;
+    gap: 1rem;
+    width: 60%;
+    list-style: none;
+}
+
+.test-button{
+    padding: 0.5rem 3rem;
+    border-radius: 1.5rem;
+    font-weight: 700;
+    color: white;
+    background-color: var(--color-grey-button);
+    border: none;
+    cursor: pointer;
+}
+
+.condition{
+    padding: 0.5rem 3rem;
+    border-radius: 1.5rem;
+    font-weight: 700;
+    color: black;
+    background-color: var(--color-yellow); 
+    border: none;
+}
+
+.test-button:hover{
+    color: black;
+    background-color: var(--color-yellow);
+}
+
+.button-container .test-button:focus{
+    color: black;
+    background-color: var(--color-yellow);
+}
+
+/* .button-container button:not(:focus){
+    color: white;
+    background-color: var(--color-grey-button);
+} */
+/* 
+.specialty:focus .test-button{
+    color: white;
+    background-color: var(--color-grey-button);
+}
+
+.all-test:focus .test-button{
+    color: white;
+    background-color: var(--color-grey-button);
+}
+
+.alphabet:focus .test-button{
+    color: white;
+    background-color: var(--color-grey-button);
+} */
+
+
+.search-item{
+    display: flex;
+    align-items: center;
+    width: 35%;
+    justify-content: flex-end;
+}
+
+.search-item input{
+    width: 60%;
+    height: 2.1875rem;
+    border: 1px solid var(--color-border);
+    border-right: none;
+    outline: none;
+    font-size: var(--size-paragraph);
+    padding-left: 0.5rem;
+}
+
+/* .search-item input::placeholder{
+    padding-left: 0.5rem;
+} */
+
+.search-item i{
+    display: flex;
+    align-items: center;
+    height: 2.1875rem;
+    border: 1px solid var(--color-border);
+    border-left: none;
+    color: var(--color-text-blue);
+    padding-right: 1rem;
+}
+
+.test-menu-container a{
+    align-self: flex-end;
+    justify-self: flex-end;
+    padding-top: 1rem;
+    color: var(--color-text-blue);
+    text-decoration: underline;
+    font-size: 1.25rem;
+}
+
+.menu-items{
+    padding-top: 2rem;
+    min-height: 7.75rem;
+}
+
+.test-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 4rem;
+    border-right: 1px solid var(--color-border);
+    cursor: pointer;
+    min-height: 7.75rem;
+}
+
+/* <-- Our Labs Section --> */
+
+.labs-container{
+    max-width: 86.5%;
+    display: flex;
+    flex-direction: column;
+    min-height: 30.3125rem;
+    background-color: var(--color-white);
+    width: 100%;
+    border-radius: 1rem;
+    gap: 1rem;
+    padding: 1rem 0.75rem;
+}
+
+.labs-list{
+    padding: 0 0.5rem;
+}
+
+.lab-item{
+    cursor: pointer;
+    height: 21rem;
+    width: 25.9rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 4px -2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+
+.lab-item img{
+    width: 90%;
+    height: 80%;
+    border-radius: 1rem;
+}
+
+.lab-item p{
+    align-self: flex-start;
+    padding-left: 1.5rem;
+}
+
+.labs-container h3{
+    font-size: var(--size-cardHeading2);
+    font-weight: 600;
+}
+
+.labs-container a{
+    align-self: flex-end;
+    justify-self: flex-end;
+    padding-top: 1rem;
+    color: var(--color-text-blue);
+    text-decoration: underline;
+    font-size: 1.25rem;
+}
+
+/* <-- What's New Section --> */
+
+.whats-new-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 86.5%;
+    min-height: 31.25rem;
+    overflow: hidden;
+    background-color: var(--color-white);
+    width: 100%;
+    border-radius: 1rem;
+    gap: 1rem;
+    padding: 1rem 0.75rem;
+}
+
+.whats-new-container h3{
+    font-size: var(--size-cardHeading2);
+    font-size: 500;
+
+}
+
+.whats-new-item, .whats-new-item img{
+    width: 19.8rem;
+    height: 25rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+/* <-- Events Section --> */
+
+.events-container{
+    max-width: 86.5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.select-menu{
+    display: flex;
+}
+
+.select-items{
+    display: flex;
+    border: 1px solid;
+    border-radius: 1rem;
+}
+
+.select-button:hover .select-items{
+    display: flex;
+}

@@ -767,7 +767,7 @@
 }
 
 
-
+/*-------------------- Promotions & Discounts-------------------- */
 
 .promotion-container{
     background-color: var(--color-white);
@@ -791,8 +791,6 @@
     position: relative;
     margin-bottom:20px ;
     animation: 20s promotion infinite;
-
-
 }
 .promotion-content div{
     height: 17.5rem;
@@ -819,7 +817,6 @@
     text-align: center;
     background-color: var(--color-white);
     border: 1px solid var(--color-grey-button);
-
 }
 @keyframes promotion {
 
@@ -852,6 +849,77 @@
     
     
 }
+
+/* -----------------Explore-more---------------------- */
+.explore-more{
+    width: 100%;
+    overflow: hidden;
+}
+.explore-more-container{
+    background-color: var(--color-white);
+    border-radius: 15px;
+    margin-top: 35px;
+    padding: 15px 25px;
+    overflow: hidden;
+}
+.explore-carausel{
+    overflow: hidden;
+    /* position: relative; */
+    /* margin-left: 15px; */
+}
+.explore-content{
+    display: flex;
+    width: 500%;
+    gap: 20px;
+    position: relative;
+    margin-bottom:20px ;
+    /* left: 0px; */
+    align-items: center;
+    animation: 20s explore-more infinite;
+}
+.explore-item img{
+    float: left;
+    /* width: 20%; */
+}
+@keyframes explore-more {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+
 
  @media screen and (max-width:1260px) {
      .navbar-bottom-content {
