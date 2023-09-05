@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./Assets/LALPATHLAB.NS-767b71be.png"
+    />
     <link rel="stylesheet" href="doctors.css">
     <link rel="stylesheet" href="flickity.css">
     <title>Doctors Information | Pathology Tests Recommended by Doctors | Dr Lal PathLabs</title>
@@ -17,7 +22,7 @@
                     <div class="navList-items doctors"><a href="doctors.html">DOCTORS</a></div>
                     <div class="navList-items"><a href="../Bussiness/business.html">BUSINESS PARTNERSHIP</a></div>
                     <div class="navList-items"><a href="../About_us/about.html">ABOUT US</a></div>
-                    <div class="navList-items"><a href="../Investors/dist/investors.html">INVESTORS</a></div>
+                    <div class="navList-items"><a href="../Investors/investors.html">INVESTORS</a></div>
                     <div class="navList-items"><a href="../Contact_us/contact.html">CONTACT US</a></div>
                 </div>
                 <div class="blogHyperLink">
@@ -45,12 +50,12 @@
             <div class="navbar-bottom-content">
                 <img src="https://uat-cdn.drlallab.com/2023-06/logo-header-2.webp" alt="">
                 <div class="left">
-                    <div class="bottom-navList"><a href="../Book_a_test/book_a_test.html">Test Menu</a></div>
-                    <div class="bottom-navList"><a href="">Our Labs</a></div>
-                    <div class="bottom-navList"><a href="">Events</a></div>
-                    <div class="bottom-navList"><a href="">Quality</a></div>
-                    <div class="bottom-navList"><a href="">Resource Centre</a></div>
-                    <div class="bottom-navList"><a href="">Our Department</a></div>
+                    <div class="bottom-navList"><a href="#test-menu">Test Menu</a></div>
+                    <div class="bottom-navList"><a href="#our-labs">Our Labs</a></div>
+                    <div class="bottom-navList"><a href="#events">Events</a></div>
+                    <div class="bottom-navList"><a href="#quality">Quality</a></div>
+                    <div class="bottom-navList"><a href="#resource-center">Resource Centre</a></div>
+                    <div class="bottom-navList"><a href="#our-departments">Our Department</a></div>
                 </div>
                 <div class="right">
                     <div class="location">
@@ -398,12 +403,12 @@
                 </div>
             </div>
 
-            <a href="">View All</a>
+            <a class="view-all" href="">View All</a>
         </section>
 
         <!-- Our Labs -->
 
-        <section class="labs-container">
+        <section class="labs-container" id="our-labs">
             <h3>Our Labs</h3>
             <div class="labs-list main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "draggable": false, "pageDots": false, "wrapAround": true}'>
                 <div class="carousel-cell lab-item">
@@ -424,14 +429,26 @@
                 </div>
             </div>
 
-            <a href="">View Details</a>
+            <a class="view-all" href="">View Details</a>
         </section>
 
         <!-- Whats New -->
 
-        <section class="whats-new-container">
+        <section class="whats-new-container" id="whats-new">
             <h3>What's New</h3>
-            <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "draggable": false, "pageDots": false, "wrapAround": true, "autoplay": true, "prevNextButtons": false}'>
+            <div class="main-carousel" data-flickity='{ "cellAlign": "left", "draggable": true, "pageDots": false, "wrapAround": true, "autoPlay": true, "autoPlay": 3000, "prevNextButtons": false}'>
+                <div class="carousel-cell whats-new-item">
+                    <img src="./Assets/What's New/new-EM-post.jpg" alt="">
+                </div>
+                <div class="carousel-cell whats-new-item">
+                    <img src="./Assets/What's New/MBFD.jpg" alt="">
+                </div>
+                <div class="carousel-cell whats-new-item">
+                    <img src="./Assets/What's New/Genexpert-New-Creative-1.jpg" alt="">
+                </div>
+                <div class="carousel-cell whats-new-item">
+                    <img src="./Assets/What's New/GAD-65.jpg" alt="">
+                </div>
                 <div class="carousel-cell whats-new-item">
                     <img src="./Assets/What's New/new-EM-post.jpg" alt="">
                 </div>
@@ -445,6 +462,649 @@
                     <img src="./Assets/What's New/GAD-65.jpg" alt="">
                 </div>
             </div>
+        </section>
+
+        <!-- Events -->
+
+        <section class="events-container" id="events">
+            <h3>Events</h3>
+            <div class="select-menu">
+                <button class="select-button">All&emsp;&emsp;&emsp;<span>></span></button>
+                <div class="select-items">
+                    <p>All |</p>
+                    <p>Workshop |</p>
+                    <p>Seminar |</p>
+                    <p>Webinar</p>
+                </div>
+            </div>
+            <div class="event-buttons">
+                <button class="condition">Upcoming (12)</button>
+                <button class="test-button">Recorded</button>
+            </div>
+
+            <div class="event-list main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "draggable": false, "pageDots": false, "autoPlay": true, "autoPlay": 3000}'>
+                <div class="carousel-cell event-item">
+                    <img src="./Assets/Events/1st India Autoimmune Seminar.png" alt="">
+                    <p>Seminar</p>
+                    <p class="event-title">1<span>st</span> India Autoimmune Seminar</p>
+                </div>
+                <div class="carousel-cell event-item">
+                    <img src="./Assets/Events/2nd India Autoimmune Seminar.png" alt="">
+                    <p>Seminar</p>
+                    <p class="event-title">2<span>nd</span> India Autoimmune Seminar</p>
+                </div>
+                <div class="carousel-cell event-item">
+                    <img src="./Assets/Events/3rd India Autoimmune Seminar.png" alt="">
+                    <p>Seminar</p>
+                    <p class="event-title">3<span>rd</span> India Autoimmune Seminar</p>
+                </div>
+                <div class="carousel-cell event-item">
+                    <img src="./Assets/Events/1st India Autoimmune Seminar.png" alt="">
+                    <p>Workshop</p>
+                    <p class="event-title">1<span>st</span> India Autoimmune Workshop</p>
+                </div>
+                <div class="carousel-cell event-item">
+                    <img src="./Assets/Events/2nd India Autoimmune Seminar.png" alt="">
+                    <p>Workshop</p>
+                    <p class="event-title">2<span>nd</span> India Autoimmune Workshop</p>
+                </div>
+                <div class="carousel-cell event-item">
+                    <img src="./Assets/Events/3rd India Autoimmune Seminar.png" alt="">
+                    <p>Workshop</p>
+                    <p class="event-title">3<span>rd</span> India Autoimmune Workshop</p>
+                </div>
+                <div class="carousel-cell event-item">
+                    <img src="./Assets/Events/1st India Autoimmune Seminar.png" alt="">
+                    <p>Webinar</p>
+                    <p class="event-title">1<span>st</span> India Autoimmune Webinar</p>
+                </div>
+                <div class="carousel-cell event-item">
+                    <img src="./Assets/Events/2nd India Autoimmune Seminar.png" alt="">
+                    <p>Webinar</p>
+                    <p class="event-title">2<span>nd</span> India Autoimmune Webinar</p>
+                </div>
+                <div class="carousel-cell event-item">
+                    <img src="./Assets/Events/3rd India Autoimmune Seminar.png" alt="">
+                    <p>Webinar</p>
+                    <p class="event-title">3<span>rd</span> India Autoimmune Webinar</p>
+                </div>
+                <div class="carousel-cell event-item">
+                    <img src="./Assets/Events/1st India Autoimmune Seminar.png" alt="">
+                    <p>eCME</p>
+                    <p class="event-title">1<span>st</span> India Autoimmune eCME</p>
+                </div>
+                <div class="carousel-cell event-item">
+                    <img src="./Assets/Events/2nd India Autoimmune Seminar.png" alt="">
+                    <p>eCME</p>
+                    <p class="event-title">2<span>nd</span> India Autoimmune eCME</p>
+                </div>
+                <div class="carousel-cell event-item">
+                    <img src="./Assets/Events/3rd India Autoimmune Seminar.png" alt="">
+                    <p>eCME</p>
+                    <p class="event-title">3<span>rd</span> India Autoimmune eCME</p>
+                </div>
+            </div>
+
+            <a class="view-all" href="">View All</a>
+        </section>
+
+        <!-- Quality -->
+
+        <section class="quality-container" id="quality">
+            <h3>Quality</h3>
+            <div class="quality-items-container">
+                <div class="quality-item">
+                    <img src="./Assets/Quality/q7.png" alt="">
+                    <div class="quality-points">
+                        <span>600+</span>
+                        <p>Instruments used for real time QC monitoring</p>
+                    </div>
+                </div>
+                <div class="quality-item">
+                    <img src="./Assets/Quality/q8.png" alt="">
+                    <div class="quality-points">
+                        <span>50+</span>
+                        <p>Quality Checks & Processes on Every Sample</p>
+                    </div>
+                </div>
+                <div class="quality-item">
+                    <img src="./Assets/Quality/q9.png" alt="">
+                    <div class="quality-points">
+                        <span>15+</span>
+                        <p>Quality indicator monitored on daily basis</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="view-all" href="">Know More</a>
+        </section>
+
+        <!-- Accreditation & Certification --> 
+
+        <section class="achievements-container" id="achievements">
+            <div class="accreditation-container">
+                <h3>Accreditation (National Reference Laboratory at Rohini)</h3>
+                <div class="accreditation-items">
+                    <img src="./Assets/Accreditation and Certifications/Accreditation/LPLPTPsymbol.png" alt="">
+                    <img src="./Assets/Accreditation and Certifications/Accreditation/accreditation1[1].png" alt="">
+                    <img src="./Assets/Accreditation and Certifications/Accreditation/accreditation2[1].png" alt="">
+                </div>
+            </div>
+            <div class="certification-container">
+                <h3>Certifications</h3>
+                <div class="certification-items">
+                    <div class="certification-details">
+                        <img src="./Assets/Accreditation and Certifications/Certifications/accre_iso_new.png" alt="">
+                        <p class="certification-title">National Reference Laboratory at Rohini, Kolkata Reference Laboratory at Kolkata</p>
+                    </div>
+                    <div class="certification-details">
+                        <img src="./Assets/Accreditation and Certifications/Certifications/accre_bsi.svg" alt="">
+                        <p>National Reference Laboratory at Rohini</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resource Centre -->
+
+        <section class="resources-container" id="resource-center">
+            <h3>Resource Centre</h3>
+            <div class="resources">
+                <div class="resource-items">
+                    <img src="./Assets/Resource Center/Articles.png" alt="">
+                    <p>Newsletter</p>
+                </div>
+                <div class="resource-items">
+                    <img src="./Assets/Resource Center/lable-for-brouchure.png" alt="">
+                    <p>Brochure</p>
+                </div>
+                <div class="resource-items">
+                    <img src="./Assets/Resource Center/Publications.png" alt="">
+                    <p>Publications</p>
+                </div>
+                <div class="resource-items">
+                    <img src="./Assets/Resource Center/video.png" alt="">
+                    <p>Video</p>
+                </div>
+            </div>
+
+            <a class="view-all" href="">View All</a>
+        </section>
+
+        <!-- Our Department -->
+
+        <section class="department-container" id="our-departments">
+            <h3>Our Departments</h3>
+            <div class="main-carousel departments" data-flickity='{ "cellAlign": "left", "draggable": true, "pageDots": false, "wrapAround": true, "prevNextButtons": false}'>
+                <div class="carousel-cell department-items">
+                    <img src="./Assets/Our Departments/Our-Departments-1[1].png" alt="">
+                    <p>Histopathology & <br>Cytopathology</p>
+                </div>
+                <div class="carousel-cell department-items">
+                    <img src="./Assets/Our Departments/Our-Departments-2[1].png" alt="">
+                    <p>Clinical Cytogenetic</p>
+                </div>
+                <div class="carousel-cell department-items">
+                    <img src="./Assets/Our Departments/Our-Departments-3[1].png" alt="">
+                    <p>Flow Cytometry</p>
+                </div>
+                <div class="carousel-cell department-items">
+                    <img src="./Assets/Our Departments/Our-Departments-4[1].png" alt="">
+                    <p>Molecular Diagnostics</p>
+                </div>
+                <div class="carousel-cell department-items">
+                    <img src="./Assets/Our Departments/Our-Departments-5[1].png" alt="">
+                    <p>Haematology & Immunology</p>
+                </div>
+                <div class="carousel-cell department-items">
+                    <img src="./Assets/Our Departments/Our-Departments-6[1].png" alt="">
+                    <p>Renal Pathology & Electron <br> Microscopy</p>
+                </div>
+                <div class="carousel-cell department-items">
+                    <img src="./Assets/Our Departments/Our-Departments-1[1].png" alt="">
+                    <p>Histopathology & <br>Cytopathology</p>
+                </div>
+                <div class="carousel-cell department-items">
+                    <img src="./Assets/Our Departments/Our-Departments-2[1].png" alt="">
+                    <p>Clinical Cytogenetic</p>
+                </div>
+                <div class="carousel-cell department-items">
+                    <img src="./Assets/Our Departments/Our-Departments-3[1].png" alt="">
+                    <p>Flow Cytometry</p>
+                </div>
+                <div class="carousel-cell department-items">
+                    <img src="./Assets/Our Departments/Our-Departments-4[1].png" alt="">
+                    <p>Molecular Diagnostics</p>
+                </div>
+                <div class="carousel-cell department-items">
+                    <img src="./Assets/Our Departments/Our-Departments-5[1].png" alt="">
+                    <p>Haematology & Immunology</p>
+                </div>
+                <div class="carousel-cell department-items">
+                    <img src="./Assets/Our Departments/Our-Departments-6[1].png" alt="">
+                    <p>Renal Pathology & Electron <br> Microscopy</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- App Section-->
+
+        <section class="app-container">
+            <div class="links-container">
+                <h3>Download Health Connect App:</h3>
+                <div class="app-links">
+                    <img class="android" src="./Assets/Download-app/Android.png" alt="">
+                    <img class="ios" src="./Assets/Download-app/IOS.png" alt="">
+                </div>    
+            </div>
+        </section>
+
+        <!-- Subscribe to our Latest Blogs -->
+
+        <section class="blog-subscription-container">
+            <h3>Subscribe to our Latest Blogs</h3>
+            <input class="email-box" type="email" name="email" id="email" placeholder="Your Email id" required>
+            <button type="submit">Submit</button>
+        </section>
+        <!-- Frequently Asked Questions-->
+
+        <section class="faq-container">
+            <h3>Frequently Asked Questions</h3>
+            <ul class="faq-buttons-container">
+            <li><button class="faq-button labs">Labs and Centers</button></li>
+            <li><button class="faq-button reports">Reports</button></li>
+            <li><button class="faq-button booking">Test Booking</button></li>
+            <li>
+                <button class="faq-button wellness">Wellness Packages</button>
+            </li>
+            </ul>
+
+            <div class="faq-question">
+            <i class="fa-sharp fa-solid fa-chevron-down"></i>
+            <p class="question">
+                Q.How many labs and centres does LPL have at present?
+            </p>
+            </div>
+            <div class="faq-question">
+            <i class="fa-sharp fa-solid fa-chevron-down"></i>
+            <p class="question">
+                Q.How can I find out information regarding a particular lab/center?
+            </p>
+            </div>
+
+            <a href="" class="view-all">View All</a>
+        </section>
+
+        <!-- Reach out to Us-->
+
+        <section class="reach-out">
+            <button>Reach out to us</button>
+        </section>
+
+        <!-- Lab Test At Home-->
+
+        <section class="lab-testAtHome">
+            <div class="lab-test-container">
+            <div class="lab-test-content">
+                <h1>Lab Test At Home</h1>
+                <div class="location-list">
+                <div><a href="#">Agra</a></div>
+                <div>|</div>
+                <div><a href="#">Ahmedabad</a></div>
+                <div>|</div>
+                <div><a href="#">Ajmer</a></div>
+                <div>|</div>
+                <div><a href="#">Akola</a></div>
+                <div>|</div>
+                <div><a href="#">Allahabad</a></div>
+                <div>|</div>
+                <div><a href="#">Amravati</a></div>
+                <div>|</div>
+                <div><a href="#">Amritsar</a></div>
+                <div>|</div>
+                <div><a href="#">Aurangabad</a></div>
+                <div>|</div>
+                <div><a href="#">Bangalore</a></div>
+                <div>|</div>
+                <div><a href="#">Bhilai</a></div>
+                <div>|</div>
+                <div><a href="#">Bhopal</a></div>
+                <div>|</div>
+                <div><a href="#">Bhubaneswar</a></div>
+                <div>|</div>
+                <div><a href="#">Bhavnagar</a></div>
+                <div>|</div>
+                <div><a href="#">Bhiwandi</a></div>
+                <div>|</div>
+                <div><a href="#">Bikaner</a></div>
+                <div>|</div>
+                <div><a href="#">Bilaspur</a></div>
+                <div>|</div>
+                <div><a href="#">Bokaro</a></div>
+                <div>|</div>
+                <div><a href="#">Chandrapur</a></div>
+                <div>|</div>
+                <div><a href="#">Chennai</a></div>
+                <div>|</div>
+                <div><a href="#">Coimbatore</a></div>
+                <div>|</div>
+                <div><a href="#">Cuttack</a></div>
+                <div>|</div>
+                <div><a href="#">Dhanbad</a></div>
+                <div>|</div>
+                <div><a href="#">Dehradun</a></div>
+                <div>|</div>
+                <div><a href="#">Delhi</a></div>
+                <div>|</div>
+                <div><a href="#">Erode</a></div>
+                <div>|</div>
+                <div><a href="#">Faridabad</a></div>
+                <div>|</div>
+                <div><a href="#">Gandhinagar</a></div>
+                <div>|</div>
+                <div><a href="#">Ghaziabad</a></div>
+                <div>|</div>
+                <div><a href="#">Gorakhpur</a></div>
+                <div>|</div>
+                <div><a href="#">Guntur</a></div>
+                <div>|</div>
+                <div><a href="#">Gurgaon</a></div>
+                <div>|</div>
+                <div><a href="#">Guwahati</a></div>
+                <div>|</div>
+                <div><a href="#">Hisar</a></div>
+                <div>|</div>
+                <div><a href="#">Hubli-Dharwad</a></div>
+                <div>|</div>
+                <div><a href="#">Hyderabad</a></div>
+                <div>|</div>
+                <div><a href="#">Imphal</a></div>
+                <div>|</div>
+                <div><a href="#">Indore</a></div>
+                <div>|</div>
+                <div><a href="#">Jabalpur</a></div>
+                <div>|</div>
+                <div><a href="#">Jamnagar</a></div>
+                <div>|</div>
+                <div><a href="#">Kochi</a></div>
+                <div>|</div>
+                <div><a href="#">Kolhapur</a></div>
+                <div>|</div>
+                <div><a href="#">Kolkata</a></div>
+                <div>|</div>
+                <div><a href="#">Kota</a></div>
+                <div>|</div>
+                <div><a href="#">Kottayam</a></div>
+                <div>|</div>
+                <div><a href="#">Kozhikode</a></div>
+                <div>|</div>
+                <div><a href="#">Kurnool</a></div>
+                <div>|</div>
+                <div><a href="#">Latur</a></div>
+                <div>|</div>
+                <div><a href="#">Lucknow</a></div>
+                <div>|</div>
+                <div><a href="#">Ludhiana</a></div>
+                <div>|</div>
+                <div><a href="#">Madurai</a></div>
+                <div>|</div>
+                <div><a href="#">Malegaon</a></div>
+                <div>|</div>
+                <div><a href="#">Mumbai</a></div>
+                <div>|</div>
+                <div><a href="#">Mysore</a></div>
+                <div>|</div>
+                <div><a href="#">Nadiad</a></div>
+                <div>|</div>
+                <div><a href="#">Nagpur</a></div>
+                <div>|</div>
+                <div><a href="#">Nanded</a></div>
+                <div>|</div>
+                <div><a href="#">Nashik</a></div>
+                <div>|</div>
+                <div><a href="#">Nellore</a></div>
+                <div>|</div>
+                <div><a href="#">Noida</a></div>
+                <div>|</div>
+                <div><a href="#">Orai</a></div>
+                <div>|</div>
+                <div><a href="#">Patiala</a></div>
+                <div>|</div>
+                <div><a href="#">Patna</a></div>
+                <div>|</div>
+                <div><a href="#">Pimpri-Chinchwad</a></div>
+                <div>|</div>
+                <div><a href="#">Pune</a></div>
+                <div>|</div>
+                <div><a href="#">Purnia</a></div>
+                <div>|</div>
+                <div><a href="#">Raipur</a></div>
+                <div>|</div>
+                <div><a href="#">Rajahmundry</a></div>
+                <div>|</div>
+                <div><a href="#">Rajkot</a></div>
+                <div>|</div>
+                <div><a href="#">Ramagundam</a></div>
+                <div>|</div>
+                <div><a href="#">Ranchi</a></div>
+                <div>|</div>
+                <div><a href="#">Ratlam</a></div>
+                <div>|</div>
+                <div><a href="#">Rohtak</a></div>
+                <div>|</div>
+                <div><a href="#">Saharanpur</a></div>
+                <div>|</div>
+                <div><a href="#">Salem</a></div>
+                <div>|</div>
+                <div><a href="#">Shimla</a></div>
+                <div>|</div>
+                <div><a href="#">Sikar</a></div>
+                <div>|</div>
+                <div><a href="#">Sirsa</a></div>
+                <div>|</div>
+                <div><a href="#">Solapur</a></div>
+                <div>|</div>
+                <div><a href="#">Sonipat</a></div>
+                <div>|</div>
+                <div><a href="#">Srinagar</a></div>
+                <div>|</div>
+                <div><a href="#">Surat</a></div>
+                <div>|</div>
+                <div><a href="#">Thane</a></div>
+                <div>|</div>
+                <div><a href="#">Thiruvananthapuram</a></div>
+                <div>|</div>
+                <div><a href="#">Thrissur</a></div>
+                <div>|</div>
+                <div><a href="#">Tirunelveli</a></div>
+                <div>|</div>
+                <div><a href="#">Udaipur</a></div>
+                <div>|</div>
+                <div><a href="#">Ulhasnagar</a></div>
+                <div>|</div>
+                <div><a href="#">Ujjain</a></div>
+                <div>|</div>
+                <div><a href="#">Vadodara</a></div>
+                <div>|</div>
+                <div><a href="#">Varanasi</a></div>
+                <div>|</div>
+                <div><a href="#">Vasai-Virar</a></div>
+                <div>|</div>
+                <div><a href="#">Vellore</a></div>
+                <div>|</div>
+                <div><a href="#">Vijayawada</a></div>
+                <div>|</div>
+                <div><a href="#">Visakhapatnam</a></div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Popular Test -->
+
+        <section class="popular-test">
+            <div class="popular-test-container">
+            <div class="popular-test-content">
+                <h6>Popular Tests</h6>
+                <div class="popular-test-list">
+                <div><a href="#">Pregnancy Test</a></div>
+                <div>|</div>
+                <div><a href="#">Full Body Checkups</a></div>
+                <div>|</div>
+                <div><a href="#">Covid 19 Test</a></div>
+                <div>|</div>
+                <div><a href="#">Heart Test</a></div>
+                <div>|</div>
+                <div><a href="#">Kidney Test</a></div>
+                <div>|</div>
+                <div><a href="#">Liver Test</a></div>
+                <div>|</div>
+                <div><a href="#">CBC Test</a></div>
+                <div>|</div>
+                <div><a href="#">Cholesterol Test</a></div>
+                <div>|</div>
+                <div><a href="#">HbA1c Test</a></div>
+                <div>|</div>
+                <div><a href="#">Hepatitis B Test</a></div>
+                <div>|</div>
+                <div><a href="#">Kidney Function Test</a></div>
+                <div>|</div>
+                <div><a href="#">Liver Function Test</a></div>
+                <div>|</div>
+                <div><a href="#">Sugar Test</a></div>
+                <div>|</div>
+                <div><a href="#">Thyroid Test</a></div>
+                <div>|</div>
+                <div><a href="#">Typhoid Test</a></div>
+                <div>|</div>
+                <div><a href="#">Uric Acid Test</a></div>
+                <div>|</div>
+                <div><a href="#">Vitamin B12 Test</a></div>
+                <div>|</div>
+                <div><a href="#">Vitamin D Test</a></div>
+                <div>|</div>
+                <div><a href="#">Allergy Test</a></div>
+                <div>|</div>
+                <div><a href="#">Arthritis Test</a></div>
+                <div>|</div>
+                <div><a href="#">Cancer Test</a></div>
+                <div>|</div>
+                <div><a href="#">Bone And Joint</a></div>
+                <div>|</div>
+                <div><a href="#">Dengue Test</a></div>
+                <div>|</div>
+                <div><a href="#">Diabetes Test</a></div>
+                <div>|</div>
+                <div><a href="#">Rheumatoid Test</a></div>
+                <div>|</div>
+                <div><a href="#">Tuberculosis Test</a></div>
+                <div>|</div>
+                <div><a href="#">Infertility Test</a></div>
+                <div>|</div>
+                <div><a href="#">Diabetes Care</a></div>
+                <div>|</div>
+                <div><a href="#">Anemia Test</a></div>
+                <div>|</div>
+                <div><a href="#">GastroIntestinal</a></div>
+                <div>|</div>
+                <div><a href="#">Autoimmune Disorders</a></div>
+                <div>|</div>
+                <div><a href="#">Fever Test</a></div>
+                </div>
+            </div>
+            </div>
+        </section>
+        </main>
+
+        <!-- Footer -->
+
+        <section class="footer-section">
+        <footer class="footer-top">
+            <div class="footer-links">
+            <div class="link_col">
+                <h2>patients</h2>
+                <div class="links">
+                <a href="">book a test</a>
+                <a href="">nearest center</a>
+                <a href="">download report</a>
+                <a href="">download app</a>
+                <a href="">promotion & discount</a>
+                <a href="">special programs</a>
+                </div>
+            </div>
+            <div class="link_col">
+                <h2>doctors</h2>
+                <div class="links">
+                <a href="">Test menu</a>
+                <a href="">our labs</a>
+                <a href="">events</a>
+                <a href="">quality</a>
+                <a href="">resource center</a>
+                <a href="">our departments</a>
+                </div>
+            </div>
+            <div class="link_col">
+                <h2>Bussiness partners</h2>
+                <div class="links">
+                <a href="">partner with us</a>
+                <a href="">become a vendor</a>
+                <a href="">corporate tie up</a>
+                <a href="">international partneship</a>
+                <a href="">corporate covid testing</a>
+                </div>
+            </div>
+            <div class="link_col">
+                <h2>About us</h2>
+                <div class="links">
+                <a href="">our journey</a>
+                <a href="">vision mission & values</a>
+                <a href="">our team</a>
+                <a href="">our network</a>
+                <a href="">logistics strength</a>
+                <a href="">CSR</a>
+                <a href="">career</a>
+                </div>
+            </div>
+            <div class="link_col">
+                <h2>INVESTORS</h2>
+                <div class="links">
+                <a href="">financials</a>
+                <a href="">investors information</a>
+                <a href="">corpotate governance</a>
+                </div>
+            </div>
+            </div>
+        </footer>
+        <footer class="footer-bottom">
+            <div class="copyright">
+            <div class="footer-info">
+                <h4>2023 © LalPathLabs.com. All rights reserved. ---v1.23.08.1</h4>
+                <div>
+                <a href="">blogs |</a>
+                <a href=""> csr |</a>
+                <a href="">terms of use |</a>
+                <a href="">privacy policy |</a>
+                <a href="">cookie policy |</a>
+                <a href="">site map </a>
+                </div>
+                <p>
+                Only Pathology reports available online. For X-Ray, Ultrasound,
+                ECG, TMT, Echo, PFT, Uroflowmetry reports, please visit the
+                concerned center where test has been conducted.
+                </p>
+            </div>
+            <div class="follow_us">
+                <span>follow us on:</span>
+                <div class="social_icons">
+                <i class="fa-brands fa-facebook-f footer_icons"></i>
+                <i class="fa-brands fa-youtube footer_icons"></i>
+                <i class="fa-brands fa-linkedin-in footer_icons"></i>
+                <i class="fa-brands fa-twitter footer_icons"></i>
+                <i class="fa-brands fa-instagram footer_icons"></i>
+                </div>
+            </div>
+            </div>
+        </footer>
         </section>
     </main>
 
