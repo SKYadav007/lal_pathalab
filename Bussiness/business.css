@@ -36,6 +36,27 @@
     /*25px*/
     --size-30px: 1.875rem;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-text-blue); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-background-blue); 
+  }
 
 body {
     overflow-x: hidden;
@@ -281,12 +302,13 @@ header {
         position: relative;
         height: 160px;
         padding: 0 30px;
+       
     }
 
     .navbar-bottom-content img {
         transform: scale(1.1);
         flex-grow: 1;
-
+       
     }
 
     .navbar-bottom-content {
@@ -594,4 +616,207 @@ header {
     background-color: var(--color-white);
     cursor: pointer;
     transition: 0.3s ease-in-out;
+}
+.lab-testAtHome{
+    width: 100%;
+    background-color: var(--color-background);
+    padding: 20px 0;
+}
+
+.lab-test-container {
+    max-width: 1500px;
+    margin: auto;
+    width: 85%;
+    background-color: var(--color-white);
+    border-radius: 15px;
+    margin-left: 8.7rem;
+    margin-top: -8rem;
+}
+
+.location-list {
+    display: flex;
+    gap: 7px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    line-height: 25px;
+}
+
+.lab-test-content {
+    padding: 15px 15px 100px;
+
+}
+
+.lab-test-content h1{
+    font-size: var(--size-cardHeading2);
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    color: var(--color-cardHeading);
+}
+
+.location-list a {
+
+    color: var(--color-black);
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+.location-list a:hover{
+    color: var(--color-background-blue);
+    text-decoration: underline;
+}
+.popular-test{
+    width: 100%;
+    background-color: var(--color-background);
+    padding: 20px 0;
+}
+.popular-test-container{
+    max-width: 1500px;
+    margin: auto;
+    width: 85%;
+    background-color: var(--color-white);
+    border-radius: 15px;
+    margin-left: 8.7rem;
+}
+.popular-test-list{
+    display: flex;
+    gap: 7px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    line-height: 25px;
+}
+.popular-test-content{
+    padding: 15px 15px 100px;
+
+}
+.popular-test-content h6 {
+    font-size: var(--size-cardHeading2);
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    color: var(--color-cardHeading);
+}
+.popular-test-list a{
+    color: var(--color-black);
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+.popular-test-list a:hover {
+    color: var(--color-background-blue);
+    text-decoration: underline;
+}
+
+.footer-section{
+    width: 100%;
+    position: relative;
+}
+
+.footer-top{
+    width: 100%;
+    background-color: rgb(254,204,78);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'PT sans';
+    padding: 50px;
+}
+.footer-links{
+    display: flex;
+    width:100%;
+    max-width:1280px;
+    justify-content: space-around;
+}
+.link_col{
+    display: flex;
+    flex-direction: column;
+}
+.link_col h2{
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 20px;
+    font-weight: 600;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+
+}
+.links a{
+    text-decoration: none;
+    color:black;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+.footer-bottom{
+    width: 100%;
+    background-color: #0047Af;
+    display: flex;
+    justify-content: center;
+    padding:50px;
+    font-family: 'PT sans';
+   
+}
+.footer-bottom .copyright{
+ max-width: 1280px;
+ color:white;
+ display: flex;
+ gap:8px;
+ align-items: center;
+
+
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.follow_us{
+    color:white;
+    display: flex;
+    flex-direction:column;
+    gap:10px;
+    margin:10px;
+    text-transform: capitalize;
+}
+.social_icons{
+    display: flex;
+    gap:4px;
+
+}
+.copyright h2{
+    font-weight: 700;
+}
+
+.footer_icons{
+    height:2rem;
+    width: 2rem;
+    background-color: #fecc4e;
+    color:#0b51b3;
+    border-radius: 50%;
+    padding:10px;
+   
+}
+
+@media screen and (max-width:980px) {
+    .footer-bottom .copyright{
+        flex-direction: column;
+    }
+    .footer-links{
+        visibility:hidden;
+        height:50px;
+        overflow: hidden;
+    }
+    .footer-top{
+        padding: 0%;
+    }
+
+    
+}
+
+@media screen and (max-width:700px){
+    .footer-top{
+        visibility: hidden;
+        overflow:hidden;
+        height:80px;
+        position: absolute;
+    }
 }

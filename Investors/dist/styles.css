@@ -385,3 +385,21 @@
     justify-content: center;
     margin-bottom: 3%;
 }
+
+.navList>.investor>a{
+ 
+    color: var(--color-text-blue);
+    text-decoration: underline;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-background-blue); 
+    border-radius: 10px;
+  }
+
+  
