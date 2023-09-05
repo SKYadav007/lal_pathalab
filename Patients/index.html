@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    
-    <header>
-         <!-- Top-NAVBAR -->
+
+    <header id="top">
+        <!-- Top-NAVBAR -->
         <nav class="navbar-top">
             <div class="nav-content">
                 <div class="navList">
@@ -78,6 +78,7 @@
     </header>
 
     <main>
+
         <!--Hero Image carausel -->
         <section class="carausel">
             <figure>
@@ -126,6 +127,26 @@
                 </div>
             </div>
         </section>
+
+        <!-- FIXED SIDE-ELEMENT -->
+        <div class="side-element">
+            <a href="">
+                <img src="https://uat-cdn.drlallab.com/2022-12/side-img3.png" alt="">
+                <p>Nearest Center</p>
+            </a>
+            <a href="../Book_a_test/dist/book_a_test.html"><img src="https://uat-cdn.drlallab.com/2022-12/side-img2.png"
+                    alt="">
+                <p>Book a Test
+
+                </p>
+            </a>
+            <a href=""><img src="https://uat-cdn.drlallab.com/2022-12/footer-upload.png" alt="">
+                <p>Upload Prescription</p>
+            </a>
+            <a href=""> <img src="https://uat-cdn.drlallab.com/2022-12/side-img4.png" alt="">
+                <p>Download Report</p>
+            </a>
+        </div>
 
         <!-- SPECIAL PROGRAM SECTION  -->
         <section class="special-program">
@@ -182,8 +203,6 @@
                     </div>
                 </div>
             </div>
-
-
         </section>
 
         <!-- POPULAR TEST/ PACKAGES SECTION -->
@@ -551,18 +570,20 @@
         <section class="covid-package">
             <div class="centerr">
                 <div class="covid-package-container">
-                    <div class="covid-heading">
-                        <h1>Corporate Covid Package</h1>
-                        <h1>Corporate Tie-Ups</h1>
-                    </div>
                     <div class="covid-card">
-                        <div class="covid-items">
-                            <img src="https://uat-cdn.drlallab.com/2022-03/Thumbnail-Image--504x225-px.jpg" alt="">
-                            <a href="">Corporate Covid Package</a>
+                        <div>
+                            <h1>Corporate Covid Package</h1>
+                            <div class="covid-items">
+                                <img src="https://uat-cdn.drlallab.com/2022-03/Thumbnail-Image--504x225-px.jpg" alt="">
+                                <a href="">Corporate Covid Package</a>
+                            </div>
                         </div>
-                        <div class="covid-items">
-                            <img src="https://uat-cdn.drlallab.com/2022-03/Thumbnail-Image--503X225.jpg" alt="">
-                            <a href="">Corporate Tie-Ups</a>
+                        <div>
+                            <h1>Corporate Tie-Ups</h1>
+                            <div class="covid-items">
+                                <img src="https://uat-cdn.drlallab.com/2022-03/Thumbnail-Image--503X225.jpg" alt="">
+                                <a href="">Corporate Tie-Ups</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -596,8 +617,9 @@
                         </div>
                     </div>
                 </div>
-
-                <a class="know-more" href="">Know More</a>
+                <div class="view-all">
+                    <a href="">Know More</a>
+                </div>
             </section>
         </div>
 
@@ -625,7 +647,7 @@
                             <p class="certification-title">National Reference Laboratory at Rohini, Kolkata
                                 Reference Laboratory at Kolkata</p>
                         </div>
-                        <div class="certification-details">
+                        <div class="certification-details certificate-2">
                             <img src="../Doctors/Assets/Accreditation and Certifications/Certifications/accre_bsi.svg"
                                 alt="">
                             <p>National Reference Laboratory at Rohini</p>
@@ -699,10 +721,78 @@
                             </div>
                         </div>
                         <div class="view-all"><a href="">View All</a></div>
+                        <i class="fa-solid fa-angle-left left-arrow"></i>
+                        <i class="fa-solid fa-chevron-right right-arrow"></i>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Experties -->
+        <section class="experties">
+            <div class="centerr">
+                <div class="experties-container">
+                    <div class="experties-content">
+                        <h1>Dr Lal PathLabs – Your Most Trusted Healthcare Partner! </h1>
+                        <p>We are one of the oldest players who focused on bringing quality diagnosis services by
+                            providing accurate and timely test results to our valued customers. With a commitment to
+                            excellence and a wide range of comprehensive test panels, Dr Lal PathLabs is your trusted
+                            partner in promoting good health and overall well-being. </p>
+                        <h2>Our Expertise </h2>
+                        <p>With 70+ years of experience, we bring medical expertise and proficiency in the field of
+                            diagnostics. Our team of highly skilled professionals, including experienced doctors and
+                            technicians, ensures the highest standard of quality and precision in every test we conduct.
+                        </p>
+                        <h2>Comprehensive Test Menu </h2>
+                        <p>At Dr Lal PathLabs, we offer an extensive range of diagnostic tests covering various medical
+                            specialties. From routine blood tests to advanced molecular diagnostics, we have the
+                            capabilities to cater to all your diagnostic needs. Our state-of-the-art laboratories are
+                            equipped with cutting-edge technology, allowing us to deliver accurate results on time. </p>
+                        <h2>Convenience and Accessibility </h2>
+                        <p>We strive to provide high quality services near you while assuring affordability. We have
+                            established a vast network of 15000+ touch points including collection centres, hospitals,
+                            making it easier for you to access our services. With our physical locations, user friendly
+                            website and on the go app, scheduling your tests and accessing reports is just a click away.
+                        </p>
+                    </div>
+                    <div class="view-all">
+                        <a href="">Know More</a>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Frequently Asked Question -->
+        <div class="centerr">
+            <section class="faq-container">
+                <h3>Frequently Asked Questions</h3>
+                <ul class="faq-buttons-container">
+                    <li><button class="faq-button labs">Labs and Centers</button></li>
+                    <li><button class="faq-button reports">Reports</button></li>
+                    <li><button class="faq-button booking">Test Booking</button></li>
+                    <li>
+                        <button class="faq-button wellness">Wellness Packages</button>
+                    </li>
+                </ul>
+
+                <div class="faq-question">
+                    <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                    <p class="question">
+                        Q.How many labs and centres does LPL have at present?
+                    </p>
+                </div>
+                <div class="faq-question">
+                    <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                    <p class="question">
+                        Q.How can I find out information regarding a particular lab/center?
+                    </p>
+                </div>
+                <div class="view-all">
+                    <a href="">View All</a>
+                </div>
+            </section>
+        </div>
 
         <!-- Lab Test At Home -->
         <div class="centerr">
@@ -980,168 +1070,118 @@
             </section>
         </div>
 
-        <!-- Experties -->
-        <section class="experties">
-            <div class="centerr">
-                <div class="experties-container">
-                    <div class="experties-content">
-                        <h1>Dr Lal PathLabs – Your Most Trusted Healthcare Partner! </h1>
-                        <p>We are one of the oldest players who focused on bringing quality diagnosis services by
-                            providing accurate and timely test results to our valued customers. With a commitment to
-                            excellence and a wide range of comprehensive test panels, Dr Lal PathLabs is your trusted
-                            partner in promoting good health and overall well-being. </p>
-                        <h2>Our Expertise </h2>
-                        <p>With 70+ years of experience, we bring medical expertise and proficiency in the field of
-                            diagnostics. Our team of highly skilled professionals, including experienced doctors and
-                            technicians, ensures the highest standard of quality and precision in every test we conduct.
-                        </p>
-                        <h2>Comprehensive Test Menu </h2>
-                        <p>At Dr Lal PathLabs, we offer an extensive range of diagnostic tests covering various medical
-                            specialties. From routine blood tests to advanced molecular diagnostics, we have the
-                            capabilities to cater to all your diagnostic needs. Our state-of-the-art laboratories are
-                            equipped with cutting-edge technology, allowing us to deliver accurate results on time. </p>
-                        <h2>Convenience and Accessibility </h2>
-                        <p>We strive to provide high quality services near you while assuring affordability. We have
-                            established a vast network of 15000+ touch points including collection centres, hospitals,
-                            making it easier for you to access our services. With our physical locations, user friendly
-                            website and on the go app, scheduling your tests and accessing reports is just a click away.
-                        </p>
+        <div class="back-to-top">
+            <a href="#top"> <img src="https://uat-cdn.drlallab.com/images/down-link-top.png" alt=""></a>
+        </div>
+
+        <!-- Lets chat container -->
+        <div class="lets-chat">
+            <i class="fa-solid fa-message"></i>
+            <p>Let's Chat!</p>
+        </div>
+
+
+
+    </main>
+
+    <section class="footer-section">
+        <footer class="footer-top">
+            <div class="footer-links">
+                <div class="link_col">
+                    <h2>patients</h2>
+                    <div class="links">
+                        <a href="">book a test</a>
+                        <a href="">nearest center</a>
+                        <a href="">download report</a>
+                        <a href="">download app</a>
+                        <a href="">promotion & discount</a>
+                        <a href="">special programs</a>
+
+                    </div>
+                </div>
+                <div class="link_col">
+                    <h2>doctors</h2>
+                    <div class="links">
+                        <a href="">Test menu</a>
+                        <a href="">our labs</a>
+                        <a href="">events</a>
+                        <a href="">quality</a>
+                        <a href="">resource center</a>
+                        <a href="">our departments</a>
+
+                    </div>
+                </div>
+                <div class="link_col">
+                    <h2>Bussiness partners</h2>
+                    <div class="links">
+                        <a href="">partner with us</a>
+                        <a href="">become a vendor</a>
+                        <a href="">corporate tie up</a>
+                        <a href="">international partneship</a>
+                        <a href="">corporate covid testing</a>
+
+
+                    </div>
+                </div>
+                <div class="link_col">
+                    <h2>About us</h2>
+                    <div class="links">
+                        <a href="">our journey</a>
+                        <a href="">vision mission & values</a>
+                        <a href="">our team</a>
+                        <a href="">our network</a>
+                        <a href="">logistics strength</a>
+                        <a href="">CSR</a>
+                        <a href="">career</a>
+
+                    </div>
+                </div>
+                <div class="link_col">
+                    <h2>INVESTORS</h2>
+                    <div class="links">
+                        <a href="">financials</a>
+                        <a href="">investors information</a>
+                        <a href="">corpotate governance</a>
+
+
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Frequently Asked Question -->
-        <div class="centerr">
-            <section class="faq-container">
-                <h3>Frequently Asked Questions</h3>
-                <ul class="faq-buttons-container">
-                    <li><button class="faq-button labs">Labs and Centers</button></li>
-                    <li><button class="faq-button reports">Reports</button></li>
-                    <li><button class="faq-button booking">Test Booking</button></li>
-                    <li>
-                        <button class="faq-button wellness">Wellness Packages</button>
-                    </li>
-                </ul>
-
-                <div class="faq-question">
-                    <i class="fa-sharp fa-solid fa-chevron-down"></i>
-                    <p class="question">
-                        Q.How many labs and centres does LPL have at present?
-                    </p>
+        </footer>
+        <footer class="footer-bottom">
+            <div class="copyright">
+                <div class="footer-info">
+                    <h4>2023 © LalPathLabs.com. All rights reserved. ---v1.23.08.1</h4>
+                    <div>
+                        <a href="">blogs |</a>
+                        <a href=""> CSR |</a>
+                        <a href="">terms of use |</a>
+                        <a href="">privacy policy |</a>
+                        <a href="">cookie policy |</a>
+                        <a href="">site map </a>
+                    </div>
+                    <p>Only Pathology reports available online. For X-Ray, Ultrasound, ECG, TMT, Echo, PFT,
+                        Uroflowmetry reports, please visit the concerned center where test has been conducted.</p>
                 </div>
-                <div class="faq-question">
-                    <i class="fa-sharp fa-solid fa-chevron-down"></i>
-                    <p class="question">
-                        Q.How can I find out information regarding a particular lab/center?
-                    </p>
-                </div>
-
-                <a href="" class="view-all">View All</a>
-            </section>
-        </div>
-    </main>
-
-    <footer>
-        <section class="footer-section">
-            <footer class="footer-top">
-                <div class="footer-links">
-                    <div class="link_col">
-                        <h2>patients</h2>
-                        <div class="links">
-                            <a href="">book a test</a>
-                            <a href="">nearest center</a>
-                            <a href="">download report</a>
-                            <a href="">download app</a>
-                            <a href="">promotion & discount</a>
-                            <a href="">special programs</a>
-
-                        </div>
+                <div class="follow_us">
+                    <span>follow us on:</span>
+                    <div class="social_icons">
+                        <i class="fa-brands fa-facebook-f footer_icons"></i>
+                        <i class="fa-brands fa-youtube footer_icons"></i>
+                        <i class="fa-brands fa-linkedin-in footer_icons"></i>
+                        <i class="fa-brands fa-twitter footer_icons"></i>
+                        <i class="fa-brands fa-instagram footer_icons"></i>
                     </div>
-                    <div class="link_col">
-                        <h2>doctors</h2>
-                        <div class="links">
-                            <a href="">Test menu</a>
-                            <a href="">our labs</a>
-                            <a href="">events</a>
-                            <a href="">quality</a>
-                            <a href="">resource center</a>
-                            <a href="">our departments</a>
-
-                        </div>
-                    </div>
-                    <div class="link_col">
-                        <h2>Bussiness partners</h2>
-                        <div class="links">
-                            <a href="">partner with us</a>
-                            <a href="">become a vendor</a>
-                            <a href="">corporate tie up</a>
-                            <a href="">international partneship</a>
-                            <a href="">corporate covid testing</a>
 
 
-                        </div>
-                    </div>
-                    <div class="link_col">
-                        <h2>About us</h2>
-                        <div class="links">
-                            <a href="">our journey</a>
-                            <a href="">vision mission & values</a>
-                            <a href="">our team</a>
-                            <a href="">our network</a>
-                            <a href="">logistics strength</a>
-                            <a href="">CSR</a>
-                            <a href="">career</a>
-
-                        </div>
-                    </div>
-                    <div class="link_col">
-                        <h2>INVESTORS</h2>
-                        <div class="links">
-                            <a href="">financials</a>
-                            <a href="">investors information</a>
-                            <a href="">corpotate governance</a>
-
-
-                        </div>
-                    </div>
                 </div>
 
-            </footer>
-            <footer class="footer-bottom">
-                <div class="copyright">
-                    <div class="footer-info">
-                        <h4>2023 © LalPathLabs.com. All rights reserved. ---v1.23.08.1</h4>
-                        <div>
-                            <a href="">blogs |</a>
-                            <a href=""> csr |</a>
-                            <a href="">terms of use |</a>
-                            <a href="">privacy policy |</a>
-                            <a href="">cookie policy |</a>
-                            <a href="">site map </a>
-                        </div>
-                        <p>Only Pathology reports available online. For X-Ray, Ultrasound, ECG, TMT, Echo, PFT,
-                            Uroflowmetry reports, please visit the concerned center where test has been conducted.</p>
-                    </div>
-                    <div class="follow_us">
-                        <span>follow us on:</span>
-                        <div class="social_icons">
-                            <i class="fa-brands fa-facebook-f footer_icons"></i>
-                            <i class="fa-brands fa-youtube footer_icons"></i>
-                            <i class="fa-brands fa-linkedin-in footer_icons"></i>
-                            <i class="fa-brands fa-twitter footer_icons"></i>
-                            <i class="fa-brands fa-instagram footer_icons"></i>
-                        </div>
-
-
-                    </div>
-
-                </div>
-            </footer>
-        </section>
-    </footer>
+            </div>
+        </footer>
+    </section>
 
     <script src="https://kit.fontawesome.com/7c5861f7d9.js" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
