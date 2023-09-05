@@ -1360,6 +1360,22 @@ video {
   .max-sm\:w-\[100\%\] {
     width: 100%;
   }
+
+  .max-sm\:w-screen {
+    width: 100vw;
+  }
+
+  .max-sm\:w-24 {
+    width: 6rem;
+  }
+
+  .max-sm\:w-full {
+    width: 100%;
+  }
+
+  .max-sm\:flex-col {
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 768px) {
