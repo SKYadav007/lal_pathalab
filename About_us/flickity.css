@@ -79,8 +79,8 @@ https://flickity.metafizzy.co
   
   .flickity-prev-next-button {
     top: 50%;
-    width: 2rem;
-    height: 2rem;
+    width: 1.6rem;
+    height: 1.6rem;
     background-color: #fecc4e;
     border-radius: 50%;
     /* vertically center */
@@ -134,4 +134,18 @@ https://flickity.metafizzy.co
   
   .flickity-page-dots .dot.is-selected {
     background-color: #869690;
+  }
+  @media screen and (max-width:980px) {
+    .flickity-prev-next-button {
+      /* position: relative; */
+      /* top: 50%; */
+      /* bottom:-50%; */
+      width: 1.2rem;
+      height: 1.2rem;
+      background-color: #fecc4e;
+      
+      border-radius: 50%;
+      /* vertically center */
+      /* transform: translateY(0); */
+    }
   }
