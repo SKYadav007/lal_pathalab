@@ -14,7 +14,7 @@
     <header class="max-w-full">
         <nav class=" bg-yellow-300 w-screen h-14">
             <div class="max-w-7xl flex flex-col py-4 px-2">
-                <div class="text-sm  text-slate-700 flex flex-row flex-wrap items-stretch w-full ml-80 space-x-6">
+                <div class="text-base  text-slate-700 flex flex-row flex-wrap items-stretch w-full ml-80 space-x-6">
                     <div class="">
                         <a href="../../Patients/index.html">PATIENTS</a>
                     </div>
@@ -42,61 +42,12 @@
                 </div>
             </div>
         </nav>
-
-        <!-- <nav class="">
-            <div class="navbar-bottom-content max-w-7xl mx-auto flex justify-between items-center py-4">
-                <img src="https://uat-cdn.drlallab.com/2023-06/logo-header-2.webp" alt="" class="w-32">
-                <div class="left flex space-x-10 items-center">
-                    <div class="bottom-navList">
-                        <a href="book_a_test.html" class="text-black font-medium">Book a Test</a>
-                    </div>
-                    <div class="bottom-navList">
-                        <a href="" class="text-black font-medium">Nearest Center</a>
-                    </div>
-                    <div class="bottom-navList">
-                        <a href="" class="text-black font-medium">Download Report</a>
-                    </div>
-                    <div class="bottom-navList">
-                        <a href="" class="text-black font-medium">Special Programs</a>
-                    </div>
-                    <div class="bottom-navList">
-                        <a href="" class="text-black font-medium">Promotions & Discounts</a>
-                    </div>
-                </div>
-                <div class="right flex items-end space-x-4">
-                    <div class="location flex items-center space-x-2">
-                        <div class="icon text-background-blue text-2xl">
-                            <i class="fas fa-location-dot"></i>
-                        </div>
-                        <div class="search-location">
-                            <p class="city-name text-xs">Bhilai</p>
-                            <input type="text" placeholder="Search Location..." class="border-b-2 border-blue-500 bg-gray-100 p-1 rounded">
-                        </div>
-                    </div>
-                    <div class="search-test flex items-center space-x-4">
-                        <div class="menu text-2xl">
-                            <i class="fas fa-bars"></i>
-                        </div>
-                        <form action="" class="flex items-center space-x-2">
-                            <input type="text" placeholder="Search Test & Packages" class="border-b-2 border-blue-500 bg-transparent outline-none">
-                            <i class="fas fa-magnifying-glass text-blue-500"></i>
-                        </form>
-                        <div class="call text-2xl">
-                            <i class="fas fa-phone-volume"></i>
-                        </div>
-                    </div>
-                    <div class="cart">
-                        <img src="https://uat-cdn.drlallab.com/2022-12/cart-plus.png" alt="" class="h-8">
-                    </div>
-                </div>
-            </div>
-        </nav> -->
         <div class="w-full flex flex-row flex-wrap">   
             <div class="flex flex-col flex-wrap w-48 ml-32 mt-4 mb-4">
-                <img src="https://uat-cdn.drlallab.com/2023-06/logo-header-2.webp" alt="logo-image" class="w-36">
+              <img src="https://uat-cdn.drlallab.com/2023-06/logo-header-2.webp" alt="logo-image" class="w-36 opacity-95">
             </div>
             <div class="w-3/4 flex-col flex-wrap px-2">
-                <div class="flex flex-row flex-wrap text-sm gap-4 mt-4 mb-4">
+                <div class="flex flex-row flex-wrap text-base gap-4 mt-4 mb-4">
                     <div>
                         <a href="book_a_test.html">Book a Test</a>
                     </div>
@@ -116,10 +67,31 @@
                         <a href="">Not Sure About Test</a>
                     </div>
                 </div>
-                <div class="w-4/5 h-12 border border-black">
-
+                <div class="w-4/5 h-12 flex flex-row flex-wrap gap-7">
+          
+                <div class="flex flex-row items-center justify-center gap-2 w-52 h-10 rounded-lg bg-[#F2F4F6]">
+                    <i class="fas fa-location-dot text-blue-600 text-lg"></i>
+                    <p class="text-base text-black">Bhilai</p>
                 </div>
-            </div>
+                <div class="flex flex-row items-center w-7/12 h-10 rounded-r-lg bg-[#F2F4F6]">
+                  <select name="" id="" class="w-36 h-full rounded-l-lg bg-[#E5ECF0]">
+                      <option value>All</option>
+                      <option value="0">Tests</option>
+                      <option value="1">Packages</option>
+                  </select>
+                  <form action="" class="flex h-full">
+                      <input type="text" placeholder="Search Here..." class="text-sm pl-2 bg-[#F2F4F6]">
+                      <i class="fas fa-search text-blue-600 text-lg items-end ml-72 mt-2 pl-4"></i>
+                  </form>
+                </div>
+                <div class="ml-3 h-8 flex flex-row items-center gap-2">
+                  <img src="add-cart.png" alt=""  class="relative h-7">
+                  <p class="ml-1">Cart</p>
+                  <img src="profile.png" alt=""  class="relative h-6">
+                  <p class="ml-1">Sign In</p>
+                </div>
+                </div>
+          </div>
         </div>
     </header>
 
@@ -2168,8 +2140,8 @@
                   <!-- End of card code block -->      
                 </div>
               </div>
-            </div>            
-        </div> 
-    </div>
+        </div>            
+    </div> 
+    
 </body>
 </html>
