@@ -12,6 +12,7 @@
     bottom: 0;
     width: 100%;
     margin: 0 auto;
+    left:12px;
    
    
 
@@ -416,6 +417,164 @@ header {
         padding: 0 10px;
     }
 }
+
+.year1 span a::before{
+    position: absolute;
+  display: block;
+  content: "";
+  background: url(https://uat-cdn.drlallab.com/images/our-journey-icon1.png) 50%/contain;
+  width: 35px;
+  height: 46px;
+  bottom: 25px;
+  /* left: 32px; */
+  visibility: collapse;
+}
+/* footer part  */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+:root{
+    --color-background-blue: #0047Af;
+  --color-text-blue: #0b51b3;
+  --color-grey-nav2-text: #010101;
+  --color-black: black;
+  --color-white: #ffff;
+  --color-grey-button: #bcbcbc;
+  --color-yellow: #fecc4e;
+  --color-cardHeading: #181818;
+  --color-body-text: #212529;
+  --color-background: #F1F1F1;
+  --font-family: 'PT Sans', sans-serif;
+  --size-12px: 0.75rem;
+  --size-13px: 0.8125rem;
+  --size-14px: 0.875rem;
+  --size-15px: 0.9375rem;
+  --size-paragraph: 1rem;
+  --size-sub-heading: 1.125rem;
+  --size-20px: 1.25rem;
+  --size-cardHeading1: 1.5rem;
+  --size-cardHeading2: 1.5625rem;
+  --size-30px: 1.875rem;
+}
+.footer-section{
+    width: 100%;
+    
+}
+
+.footer-top{
+    width: 100%;
+    background-color: rgb(254,204,78);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'PT sans';
+    padding: 50px;
+}
+.footer-links{
+    display: flex;
+    width:100%;
+    max-width:1280px;
+    justify-content: space-around;
+}
+.link_col{
+    display: flex;
+    flex-direction: column;
+}
+.link_col h2{
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 20px;
+    font-weight: 600;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+
+}
+.links a{
+    text-decoration: none;
+    color:black;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+.footer-bottom{
+    width: 100%;
+    background-color: #0047Af;
+    display: flex;
+    justify-content: center;
+    padding:50px;
+    font-family: 'PT sans';
+   
+}
+.footer-bottom .copyright{
+ max-width: 1280px;
+ color:white;
+ display: flex;
+ gap:8px;
+ align-items: center;
+
+
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.follow_us{
+    color:white;
+    display: flex;
+    flex-direction:column;
+    gap:10px;
+    margin:10px;
+    text-transform: capitalize;
+}
+.social_icons{
+    display: flex;
+    gap:4px;
+
+}
+
+.footer_icons{
+    height:2rem;
+    width: 2rem;
+    background-color: #fecc4e;
+    color:#0b51b3;
+    border-radius: 50%;
+    padding:10px;
+   
+}
+
+@media screen and (max-width:980px) {
+    .footer-bottom .copyright{
+        flex-direction: column;
+    }
+    .footer-links{
+        visibility:hidden;
+        height:50px;
+        overflow: hidden;
+    }
+    .footer-top{
+        padding: 0%;
+    }
+
+    
+}
+
+@media screen and (max-width:700px){
+    .footer-top{
+        visibility: hidden;
+        overflow:hidden;
+        height:80px;
+        position: absolute;
+    }
+}
+
+
+
+
 
 
 
