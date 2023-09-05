@@ -385,7 +385,8 @@
     justify-content: center;
     margin-bottom: 3%;
 }
-.investor>a{
+
+.navList>.investor>a{
  
     color: var(--color-text-blue);
     text-decoration: underline;
