@@ -12,6 +12,8 @@
 <h2>Abhay 👨‍💻</h2><p>ABOUT US</p><br>
 <h2>Shweta Sharma 👩‍💻</h2><p>CONTACT US</p>
 <hr>
+![image](https://github.com/jaitensahu/Project-Dr.PathLab/assets/87600216/e648de2a-150c-4150-99c6-dd20b9ec985d)
+<hr>
 <h1>Hosted Link</h1>
 https://jaitensahu.github.io/Project-Dr.PathLab/Patients
 <hr>
