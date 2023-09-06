@@ -243,7 +243,7 @@ header {
 }
 
 .container-mid-abhi{
-    padding: 10px 60px 20px;
+    padding: 10px 60px 0px 60px;
     /* background-color: gray; */
 }
 .mid-header-abhi{
@@ -279,11 +279,7 @@ header {
     font-weight: bold;
     box-sizing: border-box;
 }
-.mid-main-cards{
-    width : calc(100vw - 410px);
-    height: 500px;
-    box-sizing: border-box;
-}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -340,6 +336,186 @@ header {
     opacity: 1;
   }
   
+
+  /* <!-- App Section--> */
+
+.app-container-abhi{
+    max-width:100%;
+    height: 22.75rem;
+    background-color: var(--color-white);
+    border-color: #F5F5F5;
+    border-width: 0.6rem;
+    width: 100%;
+    /* border-radius: 1rem; */
+    /* padding: 1.25rem 1rem; */
+}
+
+.links-container-abhi{
+    background-image: url(../Assets/Download-app/Background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding-left: 5rem;
+}
+
+.links-container-abhi h3{
+    font-size: var(--size-cardHeading2);
+}
+
+.app-links-abhi{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.app-links-abhi .android-abhi{
+    width: 11.625rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+.app-links-abhi .ios-abhi{
+    width: 13.625rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+
+.labtest >li{
+    display: inline;
+    line-height: 35px;
+}
+
+.labtest>li>span{
+    color: black;
+    padding: 0px 4px;
+}
+.labtest>li>a:hover{
+   text-decoration:underline;
+}
+.labtest>li>a{
+    font-family: sans-serif;
+}
+
+/*------------------------ Footer---------------------- */
+
+.footer-section {
+    width: 100%;
+    position: relative;
+}
+
+.footer-top {
+    width: 100%;
+    background-color: rgb(254, 204, 78);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'PT sans';
+    padding: 50px;
+}
+
+.footer-links {
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    justify-content: space-around;
+}
+
+.link_col {
+    display: flex;
+    flex-direction: column;
+}
+
+.link_col h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.footer-bottom {
+    width: 100%;
+    background-color: #0047Af;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-family: 'PT sans';
+
+}
+
+.footer-bottom .copyright {
+    max-width: 1280px;
+    color: white;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    /* color: white; */
+}
+.footer-info div a{
+   color: white;
+}
+
+.follow_us {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+    text-transform: capitalize;
+}
+
+.social_icons {
+    display: flex;
+    gap: 4px;
+
+}
+
+.copyright h2 {
+    font-weight: 700;
+}
+
+.footer_icons {
+    background-color: #fecc4e;
+    color: #0b51b3;
+    border-radius: 50%;
+    padding: 8px;
+   
+}
+.footer_icon i{
+   font-size: 1.5rem;
+}
+.certificate-2 p{
+   padding: 0 0 15px 0;
+}
+
 @media screen and (max-width:1260px) {
     .navbar-bottom-content {
         gap: 10px;
