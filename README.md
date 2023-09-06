@@ -2,6 +2,7 @@
 
  
 ![Untitled (2)](https://github.com/jaitensahu/Project-Dr.PathLab/assets/127736781/4af56c6e-f2fd-4a69-b2fd-32322486ede8)
+👩‍💻👨‍🔬🔍🧑‍💼
 <br>
 <h1> Jaiten Sahu(C) </h1> <p>PATIENTS</p> <br>
 <h2>Shakshi Thakare</h2> <p>BUSINESS PARTNERSHIP</p> <br>
