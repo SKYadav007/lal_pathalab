@@ -43,15 +43,14 @@
 
         <!-- Bottom-NAVBAR -->
         <nav class="navbar-bottom">
-
             <div class="navbar-bottom-content">
                 <img src="https://uat-cdn.drlallab.com/2023-06/logo-header-2.webp" alt="">
                 <div class="left">
                     <div class="bottom-navList"><a href="../Book_a_test/dist/book_a_test.html">Book a <br>Test</a></div>
                     <div class="bottom-navList"><a href="">Nearest <br>Center</a></div>
                     <div class="bottom-navList"><a href="">Download <br> Report</a></div>
-                    <div class="bottom-navList"><a href="">Special <br>Programs</a></div>
-                    <div class="bottom-navList"><a href="">Promotions & <br> Discounts</a></div>
+                    <div class="bottom-navList"><a href="#special-program">Special <br>Programs</a></div>
+                    <div class="bottom-navList"><a href="#promotion">Promotions & <br> Discounts</a></div>
                 </div>
                 <div class="right">
                     <div class="location">
@@ -63,8 +62,138 @@
                     </div>
 
                     <div class="search-test">
-                        <div class="menu"><i class="fa-solid fa-bars"></i></div>
-                        <form action="">
+                        <!-- On click Side Menu For Small screen -->
+                        <div class="menu">
+                            <input type="checkbox" id="checkbox">
+                            <label for="checkbox" class="click-me-icon"><i class="fa-solid fa-bars"></i></label>
+                            <div class="menu-container">
+                                
+                                <div class="user menu-content">
+                                    <div >
+                                        <a href=""><img src="https://uat-cdn.drlallab.com/images/Profile-16.png"
+                                                alt=""><span>Welcome Guest User</span><i
+                                                class="fa-solid fa-angle-down"></i></a>
+                                    </div>
+                                    <div class="close">
+                                        <a href=""><i class="fa-solid fa-xmark"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="menu-content patient-arrow">
+                                    <div class= "patient-container">
+                                        <a href="./index.html">
+                                            <img src="https://uat-cdn.drlallab.com/images/mbl-menu1.png"
+                                                alt=""><span>PATIENTS</span>
+                                                <div class="down-arrow">
+                                                    <img src="https://uat-cdn.drlallab.com/2022-12/mbl-arrow1.png" alt="">
+                                                </div>
+                                        </a>
+                                        <div class="patient-list">
+                                            <ul>
+                                                <li>Book a Test</li>
+                                                <li>Nearest Center</li>
+                                                <li>Download Report</li>
+                                                <li>Special Programs</li>
+                                                <li>Promotion & Discounts</li>
+                                            </ul>
+                                        </div>  
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="menu-content">
+                                    <div>
+                                        <a href="../Doctors/doctors.html">
+                                            <img src="https://uat-cdn.drlallab.com/images/mbl-menu2.png"
+                                                alt=""><span>DOCTORS</span>
+                                        </a>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <img src="https://uat-cdn.drlallab.com/2022-12/mbl-arrow1.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="menu-content">
+                                    <div>
+                                        <a href="../Bussiness/business.html">
+                                            <img src="https://uat-cdn.drlallab.com/images/mbl-menu3.png"
+                                                alt=""><span>BUSINESS PARTNERSHIP</span>
+                                        </a>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <img src="https://uat-cdn.drlallab.com/2022-12/mbl-arrow1.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="menu-content">
+                                    <div>
+                                        <a href="../About_us/about.html">
+                                            <img src="https://uat-cdn.drlallab.com/images/mbl-menu4.png"
+                                                alt=""><span>ABOUT</span>
+                                        </a>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <img src="https://uat-cdn.drlallab.com/2022-12/mbl-arrow1.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="menu-content">
+                                    <div>
+                                        <a href="../Investors/dist/investors.html">
+                                            <img src="https://uat-cdn.drlallab.com/images/mbl-menu5.png"
+                                                alt=""><span>INVESTORS</span>
+                                        </a>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <img src="https://uat-cdn.drlallab.com/2022-12/mbl-arrow1.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="menu-content">
+                                    <div>
+                                        <a href="../Contact_us/contact.html">
+                                            <img src="https://uat-cdn.drlallab.com/images/mbl-menu6.png"
+                                                alt=""><span>CONTACT
+                                                US</span>
+                                        </a>
+                                    </div>
+                                    <div class="down-arrow">
+                                        <img src="https://uat-cdn.drlallab.com/2022-12/mbl-arrow1.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="menu-content download-app">
+                                    <div>
+                                        <a href="../Contact_us/contact.html">
+                                            <span>BLOG | FAQS</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="menu-content download-app">
+                                    <div>
+                                        <a href="../Contact_us/contact.html">
+                                            <span>Download App</span><span><img src="https://uat-cdn.drlallab.com/2022-12/mbl-app1.png" alt=""> | <img src="https://uat-cdn.drlallab.com/2022-12/mbl-app2.png" alt=""></span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="menu-content download-app">
+                                    <div>
+                                        <a href="../Contact_us/contact.html">
+                                            <span>Download App</span><span>
+                                                <img src="https://uat-cdn.drlallab.com/2022-12/mbl-social1.png" alt=""> 
+                                                <img src="https://uat-cdn.drlallab.com/2022-12/mbl-social2.png" alt="">
+                                                <img src="https://uat-cdn.drlallab.com/2022-12/mbl-social3.png" alt="">
+                                                <img src="https://uat-cdn.drlallab.com/2022-12/mbl-youtube.png" alt="">
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                      <form action="">
                             <input type="text" placeholder="Search Test & Packages">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </form>
@@ -149,7 +278,7 @@
         </div>
 
         <!-- SPECIAL PROGRAM SECTION  -->
-        <section class="special-program">
+        <section class="special-program" id="special-program">
             <div class="centerr">
                 <div class="program-container">
                     <p>Special Programs</p>
@@ -498,7 +627,7 @@
         </section>
 
         <!-- PROMOTIONS AND DISCOUNT SECTION -->
-        <section class="promotion">
+        <section class="promotion" id="promotion">
             <div class="centerr">
                 <div class="promotion-container">
                     <p>Promotions & Discounts</p>

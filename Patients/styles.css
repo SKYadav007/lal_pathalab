@@ -256,6 +256,110 @@ html{
      display: none;
  }
 
+ /* <!-- On click Side Menu For Small screen --> */
+ .menu-container{
+    display: flex;
+    flex-direction: column;
+    background-color:var(--color-white);
+    width: 80%;
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    left: -160%;
+    top: 0px;
+    box-shadow: 220px 0 0px rgba(0, 0, 0, .8);
+    /* visibility: hidden; */
+    transition: 0.1s ease-in;
+    z-index: 200;
+    height: 100vh;
+    
+  
+}
+#checkbox{
+    /* visibility: hidden; */
+    display: none;
+}
+ input{
+    &:checked + label + .menu-container {
+        left: 0;
+    } 
+
+    &:checked + label {
+        left: 150px;
+        top: 20px;
+        z-index: 100;
+    }
+}
+.menu-content a{
+    text-decoration: none;
+    color: var(--color-black);
+    margin: 20px 0;
+}
+.menu-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.menu-content div :nth-child(1){
+    display: flex;
+    gap: 20px;
+}
+.down-arrow img, .close{
+    margin-right: 20px;
+}
+.user div:nth-child(1) span{
+ color: var(--color-text-blue);
+ font-weight: bold;
+}
+.menu-container>div:not(:nth-child(1)){
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+.menu-content div a img{
+    width: 20px;
+}
+.close i{
+    background-color: var(--color-body-text);
+    padding: 5px;
+    border-radius: 50%;
+    color: var(--color-white);
+}
+.download-app a span>img{
+    margin: 0;
+}
+.download-app a span:nth-child(2){
+    display: flex;
+}
+.download-app div a{
+    margin-left: 20px;
+}
+.download-app span:nth-child(2) img{
+    margin: 0 5px;
+}
+.patient-list ul{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 30px 60px;
+    list-style: none;
+    width: 200px;
+    line-height: 25px;
+}
+.patient-container{
+    width: 100%;
+}
+.patient-arrow div .down-arrow{
+    flex-grow: 1;
+}
+.patient-arrow div .down-arrow img{
+    height: 15px;
+    width: 10px;
+    margin-left: 95%;
+}
+.menu a:hover{
+    text-decoration: underline;
+}
+
+
  /* -------------------------MAIN SECTION--------------- */
 
  main {
@@ -1621,7 +1725,7 @@ margin-top: -40px;
          padding: 0 30px;
      }
 
-     .navbar-bottom-content img {
+     .navbar-bottom-content>img {
          transform: scale(1.1);
          flex-grow: 1;
 
@@ -1988,7 +2092,7 @@ margin-top: -40px;
          gap: 10px;
      }
 
-     .navbar-bottom-content img {
+     .navbar-bottom-content>img {
          margin-left: -10px;
      }
 
