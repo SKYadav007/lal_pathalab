@@ -140,6 +140,45 @@ header {
   justify-content: center;
   gap: 4px;
 }
+.Account-user{
+  display: flex;
+  flex-direction: column;
+  padding:8px;
+  color:black;
+  font-size: 1rem;
+  border: 1px solid #fcc740;
+}
+.account-image{
+  background-color: #0047Af;
+  color:white;
+  border-radius: 50%;
+  padding:5px;
+}
+
+.drop-down{
+  background-color: white;
+  color:black;
+  position: absolute;
+  z-index:30;
+  visibility: collapse;
+
+}
+.acc-head{
+  margin-bottom: 10px;
+}
+
+.welcome-guest{
+  font-weight: 400;
+}
+.my-order a, .my-permission a, .wallet-balance a{
+  display: flex;
+  justify-content:flex-start;
+  padding:8px;
+  border:1px solid white;
+  color:black;
+  font-size: 1rem;
+  font-weight: 400;
+}
 .navList a:hover {
   text-decoration: underline;
   color: var(--color-background-blue);
@@ -167,15 +206,15 @@ header {
 
 .left {
   display: flex;
-  width: 55%;
-  gap: 8%;
+  width: 45%;
+  gap: 6%;
   align-items: center;
 }
 
 .right {
   display: flex;
   align-items: end;
-  width: 45%;
+  width: 55%;
   margin: -12px;
   gap: 10px;
 }
@@ -402,7 +441,7 @@ header {
 }
 
 .ab-overview {
-  height: 70vh;
+  height: 77vh;
   background-color: var(--color-white);
   margin: 20vh;
   margin-top: 15vh;
@@ -475,6 +514,8 @@ header {
 .ab-partnership-options img {
   /* border: 2px solid red ; */
   margin: 30px 20px 20px 20px;
+  height: 25vh;
+  width: 23vw;
 }
 
 .ab-partnership-options p {
@@ -629,8 +670,8 @@ header {
   width: 85%;
   background-color: var(--color-white);
   border-radius: 15px;
-  margin-left: 8.7rem;
-  margin-top: -8rem;
+  margin-left: 7.8rem;
+  margin-top: -7rem;
 }
 
 .location-list {
@@ -643,6 +684,7 @@ header {
 
 .lab-test-content {
   padding: 15px 15px 100px;
+  
 }
 
 .lab-test-content h1 {
@@ -673,7 +715,7 @@ header {
   width: 85%;
   background-color: var(--color-white);
   border-radius: 15px;
-  margin-left: 8.7rem;
+  margin-left: 7.8rem;
 }
 .popular-test-list {
   display: flex;
@@ -786,8 +828,35 @@ a {
   border-radius: 50%;
   padding: 10px;
 }
+@media screen and (max-width:768px){
+  .side-element{
+      display: flex;
+      width:100%;
+      position:fixed;
+      top:auto;
+      bottom: 0%;
+      
+      justify-content: space-between;
+      align-items: center;
+      height: min-content;
+
+  }
+  .side-element a p{
+      border-bottom: none;
+     
+  }
+.side-element a{
+  border-right:1px solid rgba(0, 0, 0, .1);
+}
+
+}
 @media screen and (max-width: 1024px) {
-    .ab-partnership-banner{
+  .navbar-bottom-content {
+    gap: 4px;
+    width: 85%;
+    margin-left: -1rem;
+}
+  .ab-partnership-banner{
         height: 30vh;
         
     }
@@ -830,7 +899,7 @@ a {
         margin-top: -15vh;
         width: 70%;
         border-radius: 20px;
-        margin-left: 10rem;
+        margin-left: 9rem;
     }
     .ab-partner h1 {
         font-size: 1.3rem;
@@ -838,6 +907,7 @@ a {
     .ab-partnership-options img {
         margin: 30px 20px 20px 20px;
         height: 10vh;
+        width: 15vw;
     }
     .ab-partnership-options p {
         font-size: 0.9rem;
@@ -902,6 +972,7 @@ a {
 }
 .popular-test-container {
     width: 70%;
+    margin-left: 8.4rem;
 }
 }
 
@@ -1046,6 +1117,9 @@ a {
         height: 65vh;
         width: 90%;
         margin-left: 1.5rem;
+    }
+    .ab-overview-lists{
+      flex-grow: 1;
     }
     .ab-overview-content h1 {
         font-size: 1rem;
@@ -1202,8 +1276,11 @@ a {
     .ab-overview {
         height: 65vh;
         width: 90%;
-        margin-left: 0.3rem;
+        margin-left: 1.2999999999999972rem;
         padding: 10px;
+    }
+    .ab-overview-lists{
+      flex-grow: 1;
     }
     .ab-overview-content h1 {
         font-size: 1rem;
@@ -1231,12 +1308,12 @@ a {
        font-size: 0.6rem;
     }
     .ab-partner {
-        height: 50vh;
+        height: 60vh;
         margin: 10vh;
         margin-top: -15vh;
         width: 90%;
         border-radius: 20px;
-        margin-left: 0.3rem;
+        margin-left: 1.2999999999999972rem;
         overflow: hidden;
     }
     .ab-partner h1 {
@@ -1244,8 +1321,8 @@ a {
     }
     .ab-partnership-options img {
         margin: 30px 20px 20px 20px;
-        height: 25vh;
-        
+        height: 28.5vh;
+        width: 73.5vw;
     }
     .ab-partnership-options p {
         font-size: 0.9rem;
@@ -1254,7 +1331,7 @@ a {
         height: 40vh;
         margin: 20vh;
         margin-top: -4vh;
-        margin-left: 0.3rem;
+        margin-left: 1.2999999999999972rem;
         width: 90%;
     }
     .ab-vendors-img {
@@ -1283,7 +1360,7 @@ a {
 
     .ab-options{
         width: 90%;
-        margin-left:  0.3rem;
+        margin-left: 1.2999999999999972rem;
         
         height: 170vh;
     }
@@ -1302,7 +1379,7 @@ a {
 
 .ab-courses{
     width: 90%;
-    margin-left:  0.3rem;
+    margin-left:  1.2999999999999972rem;
 }
    .ab-course-img > h5 {
     font-size: 1.2rem;
@@ -1326,16 +1403,19 @@ a {
     width: 90%;
     background-color: var(--color-white);
     border-radius: 15px;
-    margin-left:  0.3rem;
+    margin-left:  1.2999999999999972rem;
     margin-top: -5rem;
 }
 .popular-test-container {
     width: 90%;
-    margin-left:  0.3rem;
+    margin-left:  1.2999999999999972rem;
 }
 }
 @media screen and (max-width: 320px) {
-    .ab-navbar {
+  .navbar-bottom-content {
+    margin-left: -1.2rem;
+  } 
+  .ab-navbar {
         margin-top: 20px;
         height: 10vh;
         background-color: var(--color-yellow);
