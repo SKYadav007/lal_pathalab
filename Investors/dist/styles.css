@@ -554,3 +554,11 @@
         position: absolute;
     }
 }
+
+/* Lets Chat */
+.lets_chat{
+    border-radius: 0.3rem;
+    box-shadow: 0 6px 10px 0 #2DACF0;
+    transition: all 0.3s ease-out;
+
+}
