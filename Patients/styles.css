@@ -359,6 +359,46 @@ html{
     text-decoration: underline;
 }
 
+/* On click DropDown menu  */
+/* .Account-user{
+    display: flex;
+    flex-direction: column;
+    padding:8px;
+    color:black;
+    font-size: 1rem;
+    border: 1px solid #fcc740;
+}
+.account-image{
+    background-color: #0047Af;
+    color:white;
+    border-radius: 50%;
+    padding:5px;
+}
+
+.drop-down{
+    background-color: white;
+    color:black;
+    position: absolute;
+    z-index:30;
+    /* visibility: collapse; 
+
+}
+.acc-head{
+    margin-bottom: 10px;
+}
+
+.welcome-guest{
+    font-weight: 400;
+}
+.my-order a, .my-permission a, .wallet-balance a{
+    display: flex;
+    justify-content:flex-start;
+    padding:8px;
+    border:1px solid white;
+    color:black;
+    font-size: 1rem;
+    font-weight: 400;
+} */
 
  /* -------------------------MAIN SECTION--------------- */
 
