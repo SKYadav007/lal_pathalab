@@ -1,5 +1,5 @@
-# Lal Pathology Pro: Redefining Diagnostic Excellence
-<br><hr>
+../fevicon.png # Lal Pathology Pro: Redefining Diagnostic Excellence🧬👨‍🔬🩺
+<hr>
 ![Untitled (2)](https://github.com/jaitensahu/Project-Dr.PathLab/assets/127736781/4af56c6e-f2fd-4a69-b2fd-32322486ede8)
 
 <h1>Hosted Link</h1>
