@@ -53,6 +53,7 @@ html{
      z-index: 100;
  }
 
+ /* -- Top-NAVBAR -- */
  .navbar-top {
      max-width: 100%;
      background-color: var(--color-yellow);
@@ -104,30 +105,19 @@ html{
      height: 14px;
      border: none;
  }
-
+.user-content{
+    color: var(--color-text-blue);
+}
  .patient a,
  .user-content a {
      font-weight: bold;
      color: var(--color-background-blue);
  }
 
- .user-content .profile {
-     font-weight: bold;
-     font-size: 1rem;
+ .user-content span{
+    font-size: 12px;
+    font-weight: bold;
  }
-
- .user-content .arrow {
-     font-weight: bold;
-     font-size: 0.8rem;
- }
-
- .user-content a {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     gap: 4px;
- }
-
  .navList a:hover {
      text-decoration: underline;
      color: var(--color-background-blue);
@@ -137,6 +127,61 @@ html{
  .patient a {
      text-decoration: underline;
  }
+.Account-user{
+    display: flex;
+    flex-direction: column;
+    padding:8px;
+    color:black;
+    font-size: 1rem;
+    border: 1px solid #fcc740;
+}
+#account-image{
+    background-color: #0047Af;
+    color:white;
+    border-radius: 50%;
+    padding:5px;
+}
+
+.drop-down{
+    background-color: white;
+    color:black;
+    position: absolute;
+    z-index:30; 
+    visibility: collapse;
+
+}
+.acc-head{
+    margin-bottom: 10px;
+}
+.user input{
+    display: none;
+}
+.welcome-guest{
+    font-weight: 400;
+}
+.my-order a, .my-permission a, .wallet-balance a{
+    display: flex;
+    justify-content:flex-start;
+    padding:8px;
+    border:1px solid white;
+    color:black;
+    font-size: 1rem;
+    font-weight: 400;
+    gap: 12px;
+}
+
+.user input{
+    &:checked + label + .drop-down{
+        visibility: visible;
+    } 
+}
+.welcome-guest span{
+    font-size: 14px;
+}
+.drop-down div a span{
+    font-size: 12px;
+    margin-right: 10px;
+}
 
  /* ------------Bottom-NAVBAR----------- */
 
@@ -246,12 +291,15 @@ html{
      height: 28px;
      margin: 0 50px 0 10px;
  }
+ .cart img:hover{
+    cursor: pointer;
+ }
 
  .search-test ::placeholder {
      font-size: var(--size-12px);
  }
 
- .menu,
+ .j-menu,
  .call {
      display: none;
  }
@@ -308,7 +356,7 @@ html{
 .down-arrow img, .close{
     margin-right: 20px;
 }
-.user div:nth-child(1) span{
+.user>div:nth-child(1) span{
  color: var(--color-text-blue);
  font-weight: bold;
 }
@@ -358,6 +406,7 @@ html{
 .menu a:hover{
     text-decoration: underline;
 }
+
 
 
  /* -------------------------MAIN SECTION--------------- */
@@ -570,8 +619,12 @@ html{
 
  .program-items img {
      margin-bottom: 15px;
+     transition: 0.2s ease-in-out;
+     cursor: pointer;
  }
-
+ .program-items img:hover {
+    transform: scale(1.2);
+ }
  .program-items p {
      font-size: var(--size-15px);
      color: var(--color-body-text);
@@ -719,7 +772,10 @@ html{
      padding: 7px;
      border-radius: 5px;
  }
-
+#rupee-icon i {
+    padding: 0;
+    border-radius: 0;
+ }
  .price p:nth-child(2) {
      color: white;
      font-weight: normal;
@@ -915,7 +971,9 @@ html{
      gap: 25px;
      flex-grow: 1;
  }
-
+ .pathlab-items img {
+    transition: 0.3s ease-in-out;
+ }
  .pathlab-container>p {
      color: var(--color-cardHeading);
      font-size: var(--size-cardHeading1);
@@ -932,13 +990,12 @@ html{
  .pathlab-text p {
      font-size: var(--size-paragraph);
  }
-
- .pathlab-items:hover img {
-     transition: 0.3s ease-in-out;
- }
-
+.pathlab-items:hover{
+    cursor: pointer;
+}
  .pathlab-items:hover img {
      transform: scale(1.2);
+     
  }
 
 
@@ -985,7 +1042,7 @@ html{
      border-radius: 20px;
      box-shadow: 0 0 10px rgba(0, 0, 0, .2);
  }
-
+ 
  .promotion-item {
      position: relative;
  }
@@ -999,6 +1056,11 @@ html{
      background-color: var(--color-white);
      border: 1px solid var(--color-grey-button);
  }
+ .promotion-item p:hover {
+    cursor: pointer;  
+    background-color: var(--color-background);
+   }
+  
 
  @keyframes promotion {
 
@@ -1144,7 +1206,10 @@ html{
      gap: 25px;
      margin: 0px 0 30px;
  }
-
+ .covid-card>div{
+    width: 50%   ;
+ }
+ 
  .covid-items {
      width: 100%;
      box-shadow: 0 0 10px rgba(0, 0, 0, .3);
@@ -1516,7 +1581,7 @@ margin-top: -40px;
     margin-right: 7%;
 }
 
-/* lets chat */
+/*------------- lets chat-------------------- */
 .lets-chat{
     position: fixed;
     bottom: 1rem;
@@ -1540,6 +1605,164 @@ margin-top: -40px;
     bottom: 1.2rem;
     transition: all 0.3s ease-in-out;
 }
+
+.lets-chat{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: #2DACF0;
+    color: var(--color-white);
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 6px 10px 0 #2DACF0;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+.lets-chat:hover{
+    bottom: 1.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.chat-form{
+    position: fixed;
+    bottom: 4.5rem;
+    right: 1rem;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    height: 32rem;
+    width: 24.25rem;
+    background-color: var(--color-white);
+    transition: all 0.2s ease-out;
+    box-shadow: 0 0 15px -5px;
+    padding: 0 0 1rem 0.3rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.chat-form .helpline img{
+    width: 3rem;
+    height: 1.5rem;
+}
+
+.helpline{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--color-background);
+    padding: 0.5rem;
+}
+
+.helpline-details span{
+    font-size: 0.9rem;
+}
+
+.helpline-details p{
+    font-size: 0.8rem;
+}
+
+.main-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem 0 2rem 0;
+}
+
+.privacy{
+    font-size: 0.7rem;
+    align-self: center;
+    color: var(--color-grey-button);
+
+}
+
+.privacy a{
+    color: var(--color-grey-button);
+    text-decoration: underline;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.message .time{
+    align-self: center;
+    font-size: 0.6rem;
+    width: 25%;
+    text-align: center;
+    border-radius: 1rem;
+    border: 0.5px solid var(--color-grey-button);
+    color: var(--color-grey-button);
+}
+
+.message .welcome-text{
+    width: 85%;
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+    border: 0.2px solid var(--color-grey-button);
+}
+
+.text-box{
+    width: 100%;
+    justify-self: flex-end;
+}
+
+.menu{
+    color: var(--color-black);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.menu:active{
+    color: #2DACF0;
+}
+
+.text-box input{
+    width: 98%;
+    border-radius: 1rem;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    outline: none;
+    border: 2px solid #2DACF0;
+    background-color: #b5daee;
+}
+
+.text-box input:focus{
+    background-color: transparent;
+}
+
+.haptik{
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--color-grey-button);
+}
+
+.haptik span{
+    font-weight: 700;
+}
+
+input[type=checkbox].hide-input:not(:checked) + .chat-form{
+    height: 0;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: all 0.3s ease-in-out;
+} 
+
 
  /*------------------------ Footer---------------------- */
 
@@ -1614,7 +1837,6 @@ margin-top: -40px;
 
 .footer-bottom a {
      text-decoration: none;
-     /* color: white; */
  }
  .footer-info div a{
     color: white;
@@ -1755,7 +1977,7 @@ margin-top: -40px;
          min-width: 50%;
      }
 
-     .menu,
+     .j-menu,
      .call {
          display: contents;
      }
@@ -1955,7 +2177,9 @@ margin-top: -40px;
      .app-card-text {
          padding: 70px 0 0 30px;
      }
-
+     .covid-card>div {
+        width: 100%;
+     }
      @keyframes test-slider {
          0% {
              left: 0;

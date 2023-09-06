@@ -484,7 +484,10 @@
     background-color: #0047Af;
     display: flex;
     justify-content: center;
-    padding:50px;
+    padding-top:30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
     font-family: 'PT sans';
    
 }
@@ -524,8 +527,7 @@
     background-color: #fecc4e;
     color:#0b51b3;
     border-radius: 50%;
-    padding:10px;
-   
+    padding:7px;
 }
 
 @media screen and (max-width:980px) {
@@ -551,4 +553,12 @@
         height:80px;
         position: absolute;
     }
+}
+
+/* Lets Chat */
+.lets_chat{
+    border-radius: 0.3rem;
+    box-shadow: 0 6px 10px 0 #2DACF0;
+    transition: all 0.3s ease-out;
+
 }

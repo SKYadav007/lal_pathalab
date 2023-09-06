@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" href="https://companieslogo.com/img/orig/LALPATHLAB.NS-767b71be.png?t=1613410117">
+    <link rel="icon" href="../assets/fevicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
@@ -62,9 +62,9 @@
             <div class="navbar-bottom-content">
                 <img src="https://uat-cdn.drlallab.com/2023-06/logo-header-2.webp" alt="">
                 <div class="left">
-                    <div class="bottom-navList"><a href="">Financials</a></div>
-                    <div class="bottom-navList"><a href="">Investor Information</a></div>
-                    <div class="bottom-navList"><a href="">Corporate Governance
+                    <div class="bottom-navList"><a href="./financial.html">Financials</a></div>
+                    <div class="bottom-navList"><a href="./investors.html">Investor Information</a></div>
+                    <div class="bottom-navList"><a href="./CorporateGov.html">Corporate Governance
                         </a></div>
                     <!-- <div class="bottom-navList"><a href="">Special <br>Programs</a></div>
                     <div class="bottom-navList"><a href="">Promotions & <br> Discounts</a></div> -->
@@ -94,59 +94,27 @@
     <script src="https://kit.fontawesome.com/7c5861f7d9.js" crossorigin="anonymous"></script>
 
     <!-- banner_navigator -->
-    <div class="w-screen mt-12 ">
+    <div class="w-screen mt-[60px] absolute -z-40">
         <!-- banner container -->
-        <div class="container max-w-full  w-full  bg-[#fecc4e]">
+          <div class="container max-w-full  w-full  bg-[#fecc4e]">
             <!-- list of Navbars -->
             <ul class="flex flex-row py-2  mx-16">
                 <li class=" flex gap-5 text-[#000] pr-3">
-                    <a href="" class=" text-[#000] font-normal text-base">Home </a>
+                    <a href="../../Patients/index.html" class=" text-[#000] font-normal text-base">Home </a>
                     <a href="">></a>
                 </li>
 
-                <li class=""><a class="text" href="">Investors </a>
+                <li class=""><a class="text" href="./investors.html">Investors </a>
                 </li>
             </ul>
         </div>
     </div>
 
-    <!-- Investor image -->
-    <main class="flex items-center bg-[#F1F1F1] relative  flex-col w-screen ">
-        <!-- Side Fixed container -->
-        <div class="side_tr fixed h-72 w-[4.1%] right-0  mt-[10vh] z-50 bg-white drop-shadow-lg shadow-gray-500 ">
-            <ul class="">
-                <li class="flex flex-col flex-wrap justify-center items-center  bg-white  text-xs text-center pb-3 ">
-                    <img class="" src="https://uat-cdn.drlallab.com/2022-12/side-img3.png">
-                    <a>
-                        Nearest
-                        Centre </a>
-                </li>
+    <!-- Investor Main Container -->
+    <main class="flex items-center bg-[#F1F1F1] relative mt-[6.9%] flex-col w-screen ">
 
-                <hr>
-                <li class="flex flex-wrap flex-col justify-center items-center text-xs  text-center pb-3 ">
-                    <img src="https://uat-cdn.drlallab.com/2022-12/side-img2.png ">
-                    <a class="cursor-pointer" href="i">
-                        Book a
-                        Test </a>
-                </li>
-                <hr>
-                <li class="flex flex-col flex-wrap justify-center items-center bg-white text-xs text-center pb-3">
-                    <img src="https://uat-cdn.drlallab.com/2022-12/footer-upload.png">
-                    <a href="/home-collection-form">
-
-                        Upload Prescription </a>
-                </li>
-                <hr>
-                <li class="flex flex-col flex-wrap justify-center items-center bg-white  text-xs text-center ">
-                    <img src="https://uat-cdn.drlallab.com/2022-12/side-img4.png">
-                    <a href="">
-                        Download
-                        Report </a>
-                </li>
-            </ul>
-
-        </div>
-        <div class="flex justify-center items-center relative mt-20 mb-20">
+        <!-- Hero Section -->
+        <div class="flex justify-center items-center relative mt-15 mb-15">
             <img src="https://uat-cdn.drlallab.com/2022-12/investor-desk.png" alt="" class="">
             <!-- this is for mobile mode need to work on later -->
             <!-- <img src="https://uat-cdn.drlallab.com/2022-12/investor-banner-mbl.jpg" alt="" class="hidden"> -->
@@ -157,24 +125,59 @@
             </div>
 
         </div>
+         <!-- Side Fixed container -->
+         <div class="side_tr cursor-pointer text-gray-600  fixed right-[.02%] max-h-80 w-[4.6%] max-lg:hidden  z-50 bg-white drop-shadow-md shadow-gray-700 border-2 border-gray-200">
+            <ul class="p-1">
+                <li class="flex flex-col flex-wrap justify-center items-center  bg-white pb-2">
+                    <img class="hover:scale-125 duration-300 ease-in-out" src="https://uat-cdn.drlallab.com/2022-12/side-img3.png">
+                    <a class=" text-[70%] text-center leading-3 pt-2 font-semibold">
+                        Nearest <br>
+                        Centre </a>
+                </li>
+
+                <hr>
+                <li class="flex flex-wrap flex-col justify-center items-center pb-2 pt-1">
+                    <img class="hover:scale-125 duration-300 ease-in-out" src="https://uat-cdn.drlallab.com/2022-12/side-img2.png ">
+                    <a class=" text-[70%] font-semibold pt-1" href="i">
+                        Book a
+                        Test </a>
+                </li>
+                <hr>
+                <li class="flex flex-col flex-wrap justify-center items-center bg-whitetext-center pb-2 ">
+                    <img class="hover:scale-125 duration-300 ease-in-out" src="https://uat-cdn.drlallab.com/2022-12/footer-upload.png" class="pt-1">
+                    <a href="/home-collection-form" class="text-[70%] leading-3  text-center cursor-pointer pt-2 font-semibold">
+
+                        Upload <br> Prescription </a>
+                </li>
+                <hr>
+                <li class="flex flex-col flex-wrap justify-center items-center bg-white leading-6 text-xs text-center ">
+                    <img class="hover:scale-125 duration-300 ease-in-out" src="https://uat-cdn.drlallab.com/2022-12/side-img4.png" class="pt-2">
+                    <a href="" class="cursor-pointer text-[90%] leading-3 font-semibold pt-2">
+                        Download <br>
+                        Report </a>
+                </li>
+            </ul>
+
+        </div>
+
         <!-- Main Section -->
         <section class="mt-6 h-full w-screen ">
             <div class="h-full w-full flex justify-center ">
-                <div class="h-full w-[90%]  p-3 bg-[#FFF] rounded-xl">
+                <div class="h-full w-[89%]  p-3 bg-[#FFF] rounded-xl">
                     <!-- List of tab on Prasentation Layers -->
-                    <ul class=" flex flex-row my-10  gap-3 flex-wrap">
-                        <li><a href="../dist/financial.html"
-                                class="hover:bg-[#fecc4e] hover:text-black bg-[#bcbcbc] w-min px-11 rounded-2xl py-[6%] font-bold text-white"
+                    <ul class=" flex flex-row my-10 max-md:flex-col gap-6 flex-wrap">
+                        <li class="mb-5"><a href="../dist/financial.html"
+                                class="hover:bg-[#fecc4e] hover:text-black bg-[#bcbcbc] w-min px-11 rounded-2xl py-[12px] max-md:py-[15px] font-bold text-white"
                                 href="">Financials</a></li>
-                        <li><a class="bg-[#fecc4e]  w-min px-11 rounded-2xl  py-[4%] font-bold text-black"
+                        <li class="mb-5"><a class="bg-[#fecc4e]  w-min px-11 rounded-2xl  py-[15px] font-bold text-black"
                                 href="">Investors
                                 Information</a></li>
-                        <li><a href="../dist/CorporateGov.html"
-                                class="hover:bg-[#fecc4e] hover:text-black bg-[#bcbcbc] w-min px-11 rounded-2xl  py-[4%] font-bold text-white"
+                        <li class="mb-5"><a href="../dist/CorporateGov.html"
+                                class="hover:bg-[#fecc4e] hover:text-black bg-[#bcbcbc] w-min px-11 rounded-2xl  py-[15px] font-bold text-white"
                                 href="">Corporate Governance</a></li>
                     </ul>
 
-                    <div class="flex justify-center">
+                    <div class="flex justify-center mb-2">
                         <strong>Disclosures under Regulation 46 of the SEBI (LODR) Regulations, 2015</strong>
                     </div>
                     <!-- Presentation Dropdown  -->
@@ -841,10 +844,9 @@
             </div>
         </section>
 
-
         <!-- Footer Section  -->
         <div class="mb-6  ml-[80%]" >
-            <img src="https://uat-cdn.drlallab.com/images/down-link-top.png" alt="">
+            <a href="./investors.html"><img src="https://uat-cdn.drlallab.com/images/down-link-top.png" alt=""></a>
           </div>
 
         <section class="footer-section">
@@ -918,12 +920,12 @@
                     <div class="footer-info">
                         <h4>2023 © LalPathLabs.com. All rights reserved. ---v1.23.08.1</h4>
                         <div>
-                            <a href="">blogs |</a>
-                            <a href=""> csr |</a>
-                            <a href="">terms of use |</a>
-                            <a href="">privacy policy |</a>
-                            <a href="">cookie policy |</a>
-                            <a href="">site map </a>
+                            <a href="">Blogs |</a>
+                            <a href=""> CSR |</a>
+                            <a href="">Terms of Use |</a>
+                            <a href="">Privacy Policy |</a>
+                            <a href="">Cookie Policy |</a>
+                            <a href="">Sitemap </a>
                         </div>
                         <p>Only Pathology reports available online. For X-Ray, Ultrasound, ECG, TMT, Echo, PFT,
                             Uroflowmetry reports, please visit the concerned center where test has been conducted.</p>
@@ -945,16 +947,14 @@
             </footer>
             <script src="https://kit.fontawesome.com/7c5861f7d9.js" crossorigin="anonymous"></script>
         </section>
+
         <!-- Let's Chat -->
-        <div
-            class=" absolute px-2 py-2 mx-2 my-4 border-2 border-none w-32 h-9 rounded bg-sky-400 right-1 bottom-2 flex-row ">
+        <div class="cursor-pointer fixed bottom-4 right-4 flex items-center justify-center gap-0.5 bg-[#2DACF0] text-white float-right w-28 h-10 rounded-md shadow-[#2DACF0]   transition-all ease-out duration-1000 hover:transition-all hover:duration-1000 hover:ease-in-out hover:bottom-5 lets_chat">
+            <i class="fa-solid fa-message"></i>
+            <p>Let's Chat!</p>
+      </div>
 
-            <span class="material-symbols-outlined  text-white ">
-                mode_comment
-            </span>
 
-            <span class=" text-[#FFF] font-roboto font-semibold"> Let's Chat!</span>
-        </div>
     </main>
 
 
