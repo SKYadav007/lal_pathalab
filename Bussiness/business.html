@@ -7,6 +7,11 @@
     <title>Lal Path Labs</title>
     <link rel="icon" href="https://companieslogo.com/img/orig/LALPATHLAB.NS-767b71be.png?t=1613410117">
     <link rel="stylesheet" href="./business.css">
+    <script>
+        function dropDown() {
+          document.getElementById("drop-down").style.visibility = "visible";
+        }
+        </script>
 </head>
 
 <body>
@@ -28,13 +33,45 @@
                     <div class="FAQ"><a href="">FAQS</a></div>
                 </div>
                 <div class="user">
-                    <div class="user-content">
-                        <a href="">
-                            <i class="fa-regular fa-user profile"></i>
-                            <span class="welcome-user">Welcome Guest User</span>
-                            <i class="fa-solid fa-chevron-down arrow"></i>
-                        </a>
-                    </div>
+                    <div class="user-content" onfocus="dropDown()">
+                        <a href="#drop-down" class="" onfocus="dropDown()" >
+                               <!-- <i class="fa-regular fa-user profile"></i> -->
+                               <img src="https://uat-cdn.drlallab.com/images/login.png" alt="">
+                               <span class="welcome-user">Welcome Guest User</span>
+                               <i class="fa-solid fa-chevron-down arrow"></i>
+                           </a>
+                           <div class="drop-down" id="drop-down">
+                               <div class="Account">
+                                  <a href="">
+                                   <div class="Account-user">
+                                       <div class="acc-head"><span >ACCOUNT</span></div>
+                                       <div class="welcome-guest"><span class="account-image">w</span>
+                                       <span>Welcome Guest ...</span></div>
+
+                                   </div>
+                                  </a>
+                               </div>
+                               <div class="my-order">
+                                  <a href="">
+                                   <img src="https://uat-cdn.drlallab.com/2022-12/ordericon.png" alt="">
+                                   <span>My Order</span>
+                                  </a>
+                               </div>
+                               <div class="my-permission">
+                                  <a href="">
+                                   <img src="https://uat-cdn.drlallab.com/2022-12/subscriptionsicon.png" alt="">
+                                   <span>My Permissions</span>
+                                  </a>
+                               </div>
+                               <div class="wallet-balance">
+                                   <a href="">
+                                      
+                                       <img src=" https://uat-cdn.drlallab.com/2022-12/walleticon.png" alt="">
+                                       <span>Wallet Balance</span></a>
+                               </div>
+                           </div>
+                      
+                   </div>
                 </div>
             </div>
         </nav>
