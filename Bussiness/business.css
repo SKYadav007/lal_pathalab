@@ -788,7 +788,7 @@ a {
 }
 @media screen and (max-width: 1024px) {
     .ab-partnership-banner{
-        height: 20vh;
+        height: 30vh;
         
     }
     .ab-partnership-banner h1 {
@@ -855,21 +855,27 @@ a {
         border-radius: 20px;
         background-repeat: no-repeat;
     }
+    .ab-options{
+        width: 70%;
+    }
     .ab-options ul li {
-        height: 37vh;
+        height: 35vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 23vw;
+        width: 18vw;
+}
+.ab-courses{
+    width: 70%;
 }
    .ab-course-img > h5 {
     font-size: 1.5rem;
-    margin-left: -20rem;
+    margin-left: 3rem;
     font-weight: 550;
     margin-top: 3rem;
 }
 .ab-course-img > button {
-    margin-left: -20rem;
+    margin-left: 3rem;
     margin-top: 1.5rem;
     height: 6vh;
     width: 8vw;
@@ -877,7 +883,28 @@ a {
     font-weight: bold;
     border-radius: 5px;
 }
+.location-list {
+    display: flex;
+    gap: 7px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    line-height: 25px;
+    WIDTH: 100%;
 }
+.lab-test-container {
+    max-width: 1500px;
+    margin: auto;
+    width: 70%;
+    background-color: var(--color-white);
+    border-radius: 15px;
+    margin-left: 8.7rem;
+    margin-top: -8rem;
+}
+.popular-test-container {
+    width: 70%;
+}
+}
+
 @media screen and (max-width: 768px) {
     .ab-partnership-banner{
         height: 20vh;
@@ -920,9 +947,9 @@ a {
         height: 40vh;
         margin: 10vh;
         margin-top: -15vh;
-        width: 70%;
+        width: 80%;
         border-radius: 20px;
-        margin-left: 10rem;
+        margin-left: auto;
     }
     .ab-partner h1 {
         font-size: 1.3rem;
@@ -938,7 +965,7 @@ a {
         height: 40vh;
         margin: 20vh;
         margin-top: -4vh;
-        width: 70%;
+        width: 80%;
     }
     .ab-vendors-img {
         background-image: url(https://uat-cdn.drlallab.com/2022-12/become-a-vendor.png);
@@ -963,12 +990,19 @@ a {
         font-weight: bold;
         border-radius: 5px;
     }
+
+    .ab-options{
+        width: 80%;
+    }
     .ab-options ul li {
         height: 37vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 23vw;
+        width: 20vw;
+}
+.ab-courses{
+    width: 80%;
 }
    .ab-course-img > h5 {
     font-size: 1.2rem;
@@ -983,6 +1017,479 @@ a {
     font-size: 0.6rem;
     font-weight: bold;
     border-radius: 5px;
+}
+.lab-test-container {
+    max-width: 1500px;
+    margin: auto;
+    width: 80%;
+    background-color: var(--color-white);
+    border-radius: 15px;
+    margin-left: 6.5rem;
+    margin-top: -5rem;
+}
+.popular-test-container {
+    width: 80%;
+    margin-left: 6.5rem;
+}
+}
+
+@media screen and (max-width: 425px) {
+    .ab-partnership-banner{
+        height: 30vh;
+        margin-top: 0;
+    }
+    .ab-partnership-banner h1 {
+        font-size: 1rem;
+        margin-left: -15rem;
+    }
+    .ab-overview {
+        height: 65vh;
+        width: 90%;
+        margin-left: 1.5rem;
+    }
+    .ab-overview-content h1 {
+        font-size: 1rem;
+        font-weight: 550;
+    }
+    .ab-overview-content p {
+        margin-top: 9px;
+    line-height: 1.2;
+    font-size: 0.6rem;
+    }
+    .ab-list-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin: 10px;
+        margin-top: 5px;
+    }
+    .ab-overview-lists img {
+        height: 8vh;
+    }
+    .ab-overview-lists p span {
+        font-size: 1.1rem;
+    }
+    .ab-overview-lists p {
+       font-size: 0.6rem;
+    }
+    .ab-partner {
+        height: 40vh;
+        margin: 10vh;
+        margin-top: -15vh;
+        width: 90%;
+        border-radius: 20px;
+        margin-left: 1.5rem;
+        overflow: hidden;
+    }
+    .ab-partner h1 {
+        font-size: 1.3rem;
+    }
+    .ab-partnership-options img {
+        margin: 30px 20px 20px 20px;
+        height: 8vh;
+        
+    }
+    .ab-partnership-options p {
+        font-size: 0.9rem;
+    }
+    .ab-vendor {
+        height: 40vh;
+        margin: 20vh;
+        margin-top: -4vh;
+        margin-left: 1.5rem;
+        width: 90%;
+    }
+    .ab-vendors-img {
+        background-image: url(https://uat-cdn.drlallab.com/2022-12/become-a-vendor.png);
+        width: 100%;
+        height: 24vh;
+        border-radius: 20px;
+        background-repeat: no-repeat;
+    }
+    .ab-vendors-img h4 {
+        font-size: 1rem;
+        margin-left: 6rem;
+        font-weight: 550;
+        margin-top: 2rem;
+    }
+    .ab-vendors-img button {
+        margin-left: 6rem;
+        margin-top: 1rem;
+        height: 6vh;
+        width: 17vw;
+        background-color: transparent;
+        font-size: 0.6rem;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+    .ab-options{
+        width: 90%;
+        margin-left: 1.5rem;
+        
+        height: 170vh;
+    }
+    .ab-options ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .ab-options ul li {
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        width: 100%;
+}
+
+.ab-courses{
+    width: 90%;
+    margin-left: 1.5rem;
+}
+   .ab-course-img > h5 {
+    font-size: 1.2rem;
+    font-weight: 550;
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+.ab-course-img > button {
+
+    margin-top: 1rem;
+    height: 6vh;
+    width: 15vw;
+    font-size: 0.6rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: -2rem;
+}
+.lab-test-container {
+    max-width: 1500px;
+    margin: auto;
+    width: 90%;
+    background-color: var(--color-white);
+    border-radius: 15px;
+    margin-left: 1.5rem;
+    margin-top: -5rem;
+}
+.popular-test-container {
+    width: 90%;
+    margin-left: 1.5rem;
+}
+}
+@media screen and (max-width: 375px) {
+    .ab-navbar {
+        margin-top: 20px;
+        height: 10vh;
+        background-color: var(--color-yellow);
+        display: flex;
+        align-items: center;
+    }
+    .ab-navbar a {
+        font-size: 0.8rem;
+    }
+    .ab-navbar li{
+        margin-left: -1rem;
+        margin-top: 1rem;
+    }
+    .ab-partnership-banner{
+        height: 30vh;
+        margin-top: 20px;
+    }
+    .ab-partnership-banner h1 {
+        font-size: 1rem;
+        margin-left: -13rem;
+    }
+    .ab-overview {
+        height: 65vh;
+        width: 90%;
+        margin-left: 0.3rem;
+        padding: 10px;
+    }
+    .ab-overview-content h1 {
+        font-size: 1rem;
+        font-weight: 550;
+    }
+    .ab-overview-content p {
+        margin-top: 9px;
+    line-height: 1.2;
+    font-size: 0.6rem;
+    }
+    .ab-list-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin: 10px;
+        margin-top: 5px;
+    }
+    .ab-overview-lists img {
+        height: 8vh;
+    }
+    .ab-overview-lists p span {
+        font-size: 1.1rem;
+    }
+    .ab-overview-lists p {
+       font-size: 0.6rem;
+    }
+    .ab-partner {
+        height: 50vh;
+        margin: 10vh;
+        margin-top: -15vh;
+        width: 90%;
+        border-radius: 20px;
+        margin-left: 0.3rem;
+        overflow: hidden;
+    }
+    .ab-partner h1 {
+        font-size: 1.3rem;
+    }
+    .ab-partnership-options img {
+        margin: 30px 20px 20px 20px;
+        height: 25vh;
+        
+    }
+    .ab-partnership-options p {
+        font-size: 0.9rem;
+    }
+    .ab-vendor {
+        height: 40vh;
+        margin: 20vh;
+        margin-top: -4vh;
+        margin-left: 0.3rem;
+        width: 90%;
+    }
+    .ab-vendors-img {
+        background-image: url(https://uat-cdn.drlallab.com/2022-12/become-a-vendor.png);
+        width: 100%;
+        height: 24vh;
+        border-radius: 20px;
+        background-repeat: no-repeat;
+    }
+    .ab-vendors-img h4 {
+        font-size: 1rem;
+        margin-left: 6rem;
+        font-weight: 550;
+        margin-top: 2rem;
+    }
+    .ab-vendors-img button {
+        margin-left: 6rem;
+        margin-top: 1rem;
+        height: 6vh;
+        width: 17vw;
+        background-color: transparent;
+        font-size: 0.6rem;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+    .ab-options{
+        width: 90%;
+        margin-left:  0.3rem;
+        
+        height: 170vh;
+    }
+    .ab-options ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .ab-options ul li {
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        width: 100%;
+}
+
+.ab-courses{
+    width: 90%;
+    margin-left:  0.3rem;
+}
+   .ab-course-img > h5 {
+    font-size: 1.2rem;
+    font-weight: 550;
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+.ab-course-img > button {
+
+    margin-top: 1rem;
+    height: 6vh;
+    width: 15vw;
+    font-size: 0.6rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: -2rem;
+}
+.lab-test-container {
+    max-width: 1500px;
+    margin: auto;
+    width: 90%;
+    background-color: var(--color-white);
+    border-radius: 15px;
+    margin-left:  0.3rem;
+    margin-top: -5rem;
+}
+.popular-test-container {
+    width: 90%;
+    margin-left:  0.3rem;
+}
+}
+@media screen and (max-width: 320px) {
+    .ab-navbar {
+        margin-top: 20px;
+        height: 10vh;
+        background-color: var(--color-yellow);
+        display: flex;
+        align-items: center;
+    }
+    .ab-navbar a {
+        font-size: 0.8rem;
+    }
+    .ab-navbar li{
+        margin-left: -1rem;
+        margin-top: 1rem;
+    }
+    .ab-partnership-banner{
+        height: 30vh;
+        margin-top: 20px;
+    }
+    .ab-partnership-banner h1 {
+        font-size: 0.8rem;
+        margin-left: -11rem;
+    }
+    .ab-overview {
+        height: 70vh;
+        width: 90%;
+        margin-left: 0.1rem;
+    }
+    .ab-overview-content h1 {
+        font-size: 1rem;
+        font-weight: 550;
+    }
+    .ab-overview-content p {
+        margin-top: 9px;
+    line-height: 1.2;
+    font-size: 0.6rem;
+    }
+    .ab-list-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin: 5px;
+        margin-top: 2px;
+        gap: 1rem;
+    }
+    .ab-overview-lists img {
+        height: 8vh;
+    }
+    .ab-overview-lists p span {
+        font-size: 1.1rem;
+    }
+    .ab-overview-lists p {
+       font-size: 0.6rem;
+    }
+    .ab-partner {
+        height: 50vh;
+        margin: 10vh;
+        margin-top: -15vh;
+        width: 90%;
+        border-radius: 20px;
+        margin-left: 0.1rem;
+        overflow: hidden;
+    }
+    .ab-partner h1 {
+        font-size: 1.3rem;
+    }
+    .ab-partnership-options img {
+        margin: 30px 20px 20px 20px;
+        height: 25vh;
+        
+    }
+    .ab-partnership-options p {
+        font-size: 0.9rem;
+    }
+    .ab-vendor {
+        height: 40vh;
+        margin: 20vh;
+        margin-top: -4vh;
+        margin-left: 0.1rem;
+        width: 90%;
+    }
+    .ab-vendors-img {
+        background-image: url(https://uat-cdn.drlallab.com/2022-12/become-a-vendor.png);
+        width: 100%;
+        height: 24vh;
+        border-radius: 20px;
+        background-repeat: no-repeat;
+    }
+    .ab-vendors-img h4 {
+        font-size: 1rem;
+        margin-left: 4rem;
+        font-weight: 550;
+        margin-top: 2rem;
+    }
+    .ab-vendors-img button {
+        margin-left: 6rem;
+        margin-top: 1rem;
+        height: 6vh;
+        width: 17vw;
+        background-color: transparent;
+        font-size: 0.6rem;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+    .ab-options{
+        width: 90%;
+        margin-left:  0.1rem;
+        
+        height: 170vh;
+    }
+    .ab-options ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .ab-options ul li {
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        width: 100%;
+}
+
+.ab-courses{
+    width: 90%;
+    margin-left:  0.1rem;
+}
+   .ab-course-img > h5 {
+    font-size: 1rem;
+    font-weight: 550;
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+.ab-course-img > button {
+
+    margin-top: 1rem;
+    height: 6vh;
+    width: 19vw;
+    font-size: 0.6rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: -1rem;
+}
+.lab-test-container {
+    max-width: 1500px;
+    margin: auto;
+    width: 90%;
+    background-color: var(--color-white);
+    border-radius: 15px;
+    margin-left:  0.1rem;
+    margin-top: -5rem;
+}
+.popular-test-container {
+    width: 90%;
+    margin-left:  0.1rem;
 }
 }
 @media screen and (max-width: 980px) {
