@@ -360,7 +360,7 @@ html{
 }
 
 /* On click DropDown menu  */
-/* .Account-user{
+.Account-user{
     display: flex;
     flex-direction: column;
     padding:8px;
@@ -374,7 +374,7 @@ html{
     border-radius: 50%;
     padding:5px;
 }
-
+/*Added code 
 .drop-down{
     background-color: white;
     color:black;
