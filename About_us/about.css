@@ -56,6 +56,10 @@
     --size-30px: 1.875rem;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
 }

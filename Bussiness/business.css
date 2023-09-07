@@ -58,6 +58,10 @@
   background: var(--color-background-blue);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   background-color: var(--color-background);

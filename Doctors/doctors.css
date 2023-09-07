@@ -40,9 +40,6 @@
 
 html {
     scroll-behavior: smooth;
-    /* background: #000 !important;
-  color: #0f0 !important;
-  outline: solid #f00 3px !important; */
 }
 
 /* <-- View All / View Details / Know More anchor tag for all sections */
@@ -383,21 +380,6 @@ input {
     text-decoration: underline;
 }
 
-/* On click DropDown menu  */
-/* .Account-user{
-  display: flex;
-  flex-direction: column;
-  padding:8px;
-  color:black;
-  font-size: 1rem;
-  border: 1px solid #fcc740;
-}
-.account-image{
-  background-color: #0047Af;
-  color:white;
-  border-radius: 50%;
-  padding:5px;
-} */
 
 /* <--------------- Main Content -----------------> */
 
@@ -616,7 +598,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    margin-left: 1rem;
+    margin: 1rem 0 1rem 1rem;
 }
 
 .lab-item img {
@@ -1206,6 +1188,14 @@ main {
     color: var(--color-background-blue);
     text-decoration: underline;
 }
+
+/* <-- Back to top --> */
+
+.backtotop{
+    text-align: end;
+    padding-right: 5rem;
+}
+
 
 /* <!-------------- Footer Section -----------------> */
 
@@ -2374,16 +2364,7 @@ input[type="checkbox"].hide-input:not(:checked)+.chat-form {
 /*media query to make sidebar responsive:*/
 @media screen and (max-width:768px) {
     .side-element {
-        display: flex;
-        width: 100%;
-        position: sticky;
-        top: 100%;
-        bottom: 0%;
-        justify-content: space-between;
-        align-items: center;
-        /* height: min-content; */
-        height: 5rem;
-
+        display: none;
     }
 
     .side-element a p {
