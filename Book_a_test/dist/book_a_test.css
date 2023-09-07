@@ -243,7 +243,7 @@ header {
 }
 
 .container-mid-abhi{
-    padding: 10px 60px 0px 60px;
+    padding: 0px 100px 0px 100px;
     /* background-color: gray; */
 }
 .mid-header-abhi{
@@ -254,7 +254,7 @@ header {
 }
 
 .mid-left-list{
-    width: 265px;
+    /* width: 265px; */
     margin-top: 0;
     border: 1px solid #c4c4c4;
     padding: 16px;
@@ -268,7 +268,7 @@ header {
     box-sizing: border-box;
 }
 .testSection{
-    max-height: 410px;
+    max-height: 600px;
     overflow-y: scroll;
     box-sizing: border-box;
 }
