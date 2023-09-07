@@ -34,10 +34,10 @@
                         <a href="../../Contact_us/contact.html">CONTACT US</a>
                     </div>
                     <div class="">
-                        <a href="">BLOGS</a>
+                        <a href="../../Patients/index.html#faqs">BLOGS</a>
                     </div>
                     <div class="">
-                        <a href="">FAQS</a>
+                        <a href="../../Patients/index.html#faqs">FAQS</a>
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@
             <div class="flex flex-col flex-wrap w-40 ml-32 mt-4 mb-4">
               <img src="https://uat-cdn.drlallab.com/2023-06/logo-header-2.webp" alt="logo-image" class="w-36 h-11 opacity-95">
             </div>
-            <div class="w-3/4 flex-col flex-wrap px-9">
+            <div class="w-3/4 flex-col px-9 max-xl:hidden">
                 <div class="flex flex-row flex-wrap text-sm gap-6 mt-4 mb-4">
                     <div>
                         <a href="book_a_test.html">Book a Test</a>
@@ -58,40 +58,44 @@
                         <a href="">Download Report</a>
                     </div>
                     <div>
-                        <a href="">Special Programs</a>
+                        <a href="../../Patients/index.html#special-program">Special Programs</a>
                     </div>
                     <div>
-                        <a href="">Promotions & Discounts</a>
+                        <a href="../../Patients/index.html#promotion">Promotions & Discounts</a>
                     </div>
                     <div>
                         <a href="">Not Sure About Test</a>
                     </div>
                 </div>
-                <div class="w-[90%] h-12 flex flex-row flex-wrap gap-7">
+                <div class="w-[100%] h-12 flex flex-row flex-wrap gap-7">
           
-                <div class="flex flex-row items-center justify-center gap-2 w-52 h-10 rounded-lg bg-[#F2F4F6] hover: cursor-pointer">
-                    <i class="fas fa-location-dot text-blue-600 text-lg"></i>
-                    <p class="text-base text-black">Bhilai</p>
-                </div>
-                <div class="flex flex-row items-center w-7/12 h-10 rounded-r-lg bg-[#F2F4F6]">
-                  <select name="" id="" class="w-36 h-full rounded-l-lg bg-[#E5ECF0]">
-                      <option value>All</option>
-                      <option value="0">Tests</option>
-                      <option value="1">Packages</option>
-                  </select>
-                  <form action="" class="flex h-full">
-                      <input type="text" placeholder="Search Here..." class="text-sm pl-2 bg-[#F2F4F6]">
-                      <i class="fas fa-search text-blue-600 text-lg items-end ml-72 mt-2 pl-4 hover: cursor-pointer"></i>
-                  </form>
-                </div>
-                <div class="ml-3 h-8 w-fit flex flex-row items-center gap-2">
-                  <span>|</span>
-                  <img src="../Assets/add-cart.png" alt=""  class="relative h-7 hover: cursor-pointer">
-                  <p class="ml-1 hover: cursor-pointer">Cart</p>
-                  <span>|</span>
-                  <img src="../Assets/profile.png" alt=""  class="relative h-6 hover: cursor-pointer">
-                  <p class="ml-1 hover: cursor-pointer">Sign In</p>
-                </div>
+                  <div class="flex flex-row items-center justify-center gap-2 w-52 h-10 rounded-lg bg-[#F2F4F6] hover: cursor-pointer">
+                      <i class="fas fa-location-dot text-blue-600 text-lg"></i>
+                      <p class="text-base text-black">Bhilai</p>
+                  </div>
+                  <div class="flex flex-row items-center w-7/12 h-10 rounded-r-lg bg-[#F2F4F6] relative max-md:hidden">
+                    <select name="" id="" class="w-36 h-full rounded-l-lg bg-[#E5ECF0]">
+                        <option value>All</option>
+                        <option value="0">Tests</option>
+                        <option value="1">Packages</option>
+                    </select>
+                    <form action="" class="flex flex-grow-1 h-full relative w-full">
+                        <input type="text" placeholder="Search Here..." class="text-sm pl-2 bg-[#F2F4F6] outline-none w-full">
+                        <span class="right-0 mt-2 hover: cursor-pointer absolute mr-0"><i class="fas fa-search text-blue-600 text-lg"></i></span>
+                    </form>
+                  </div>
+                  <div class="ml-3 h-8 w-fit xl:flex flex-row items-center gap-2 hidden">
+                    <div class="max-xl:hidden flex flex-row justify-center items-center gap-2">
+                      <span>|</span>
+                      <img src="../Assets/add-cart.png" alt=""  class="relative h-7 hover: cursor-pointer">
+                    <p class="ml-1 hover: cursor-pointer">Cart</p>
+                    </div>
+                    <div class="max-xl:hidden flex flex-row justify-center items-center gap-2">
+                      <span>|</span>
+                    <img src="../Assets/profile.png" alt=""  class="relative h-6 hover: cursor-pointer">
+                    <p class="ml-1 hover: cursor-pointer">Sign In</p>
+                    </div>
+                  </div>
                 </div>
           </div>
         </div>
@@ -100,19 +104,19 @@
     <!-- Your page content here -->
     <script src="https://kit.fontawesome.com/7c5861f7d9.js" crossorigin="anonymous"></script>
 
-    <div class="w-screen h-auto m-0 container-mid-abhi pt-48">
+    <div class="w-screen h-auto m-0 container-mid-abhi pt-48 xl:pt-24">
          
-      <div class="h-auto mid-header-list flex flex-row justify-between align-bottom mt-6">
-            <div class="text-[#4D4D4D] mid-header-abhi">
+      <div class="h-auto mid-header-list flex flex-row justify-between align-bottom mt-6 max-xl:hidden">
+            <div class="text-[#4D4D4D] mid-header-abhi max-xl:hidden">
               Showing 1- 50 of 795 results
             </div>
-            <div class="flex flex-row gap-4 mr-40 mid-header-image-abhi">
-                <img src="../Assets/slider.png" alt="slider-round" width="40px" class="hover:cursor-pointer">
-                <p class="font-extrabold">Health Packages</p>
+            <div class="flex flex-row gap-4 mr-40 mid-header-image-abhi max-xl:hidden">
+                <img src="../Assets/slider.png" alt="slider-round" width="40px" class="hover:cursor-pointer max-xl:hidden">
+                <p class="font-extrabold max-xl:hidden">Health Packages</p>
             </div>
       </div>
       <div class="flex flex-row flex-wrap mt-2 h-auto w-full">
-            <div class="h-fit mid-left-list">
+            <div class="h-fit mid-left-list max-xl:hidden">
                 <label class="showCategories">Show all categories</label>
                 <div class="testSection custom-paragraph mt-5">
                     <div class="custom-paragraph">ABO Incompatibility</div>
@@ -299,7 +303,7 @@
                     <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
                     <div class="flex items-center">
                       <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">&#8377;</span> 200
+                        <span class="text-xs text-#3E3E45 font-sans">&#8377;</span> 200
                       </p>
                     </div>
                     <div class="flex flex-row flex-wrap gap-4 mt-2">
@@ -369,11 +373,11 @@
                   <!-- End of card code block -->
                   <!-- Repeat this card code block for each card -->
                   <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
+                    <h3 class="text-sm font-semibold mb-2">URINE EXAMINATION, ROUTINE; URINE, R/E</h3>
+                    <p class="text-sm cursor-pointer">16 Parameter(s) Covered</p>
                     <div class="flex items-center">
                       <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
+                        <span class="text-xs text-#3E3E45 font-sans">₹</span> 80
                       </p>
                     </div>
                     <div class="flex flex-row flex-wrap gap-4 mt-2">
@@ -406,11 +410,11 @@
                   <!-- End of card code block -->
                   <!-- Repeat this card code block for each card -->
                   <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
+                    <h3 class="text-sm font-semibold mb-2">GLUCOSE, FASTING (F) AND POST MEAL (PP), 2 HOURS</h3>
+                    <p class="text-sm cursor-pointer">2 Parameter(s) Covered</p>
                     <div class="flex items-center">
                       <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
+                        <span class="text-xs text-#3E3E45 font-sans">₹</span> 150
                       </p>
                     </div>
                     <div class="flex flex-row flex-wrap gap-4 mt-2">
@@ -443,11 +447,11 @@
                   <!-- End of card code block -->
                   <!-- Repeat this card code block for each card -->
                   <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
+                    <h3 class="text-sm font-semibold mb-2">THYROID PROFILE, TOTAL</h3>
+                    <p class="text-sm cursor-pointer">3 Parameter(s) Covered</p>
                     <div class="flex items-center">
                       <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
+                        <span class="text-xs text-#3E3E45 font-sans">₹</span> 550
                       </p>
                     </div>
                     <div class="flex flex-row flex-wrap gap-4 mt-2">
@@ -480,11 +484,11 @@
                   <!-- End of card code block -->
                   <!-- Repeat this card code block for each card -->
                   <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
+                    <h3 class="text-sm font-semibold mb-2">WELLNESS REPORT</h3>
+                    <p class="text-sm cursor-pointer">1 Parameter(s) Covered</p>
                     <div class="flex items-center">
                       <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
+                        <span class="text-xs text-#3E3E45 font-sans">₹</span> 250
                       </p>
                     </div>
                     <div class="flex flex-row flex-wrap gap-4 mt-2">
@@ -517,11 +521,11 @@
                   <!-- End of card code block -->
                   <!-- Repeat this card code block for each card -->
                   <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
+                    <h3 class="text-sm font-semibold mb-2">GLUCOSE, FASTING (F)</h3>
+                    <p class="text-sm cursor-pointer">1 Parameter(s) Covered</p>
                     <div class="flex items-center">
                       <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
+                        <span class="text-xs text-#3E3E45 font-sans">₹</span> 60
                       </p>
                     </div>
                     <div class="flex flex-row flex-wrap gap-4 mt-2">
@@ -554,11 +558,14 @@
                   <!-- End of card code block -->
                   <!-- Repeat this card code block for each card -->
                   <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
+                    <h3 class="text-sm font-semibold mb-2">GLUCOSE, FASTING (F)</h3>
                     <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
                     <div class="flex items-center">
                       <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
+                        <span class="text-xs text-#3E3E45 font-sans mr-2">₹</span>
+                        <p class="font-semibold text-slate-700 line-through mr-4">3370</p>
+                        <span class="text-xs text-#3E3E45 font-sans mr-2 text-green-600">₹</span>
+                        <p class="font-semibold text-green-600">1250</p>
                       </p>
                     </div>
                     <div class="flex flex-row flex-wrap gap-4 mt-2">
@@ -591,11 +598,14 @@
                   <!-- End of card code block -->
                   <!-- Repeat this card code block for each card -->
                   <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
+                    <h3 class="text-sm font-semibold mb-2">SWASTH SUPER -4</h3>
+                    <p class="text-sm cursor-pointer">57 Parameter(s) Covered</p>
                     <div class="flex items-center">
                       <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
+                        <span class="text-xs text-#3E3E45 font-sans mr-2">₹</span>
+                        <p class="font-semibold text-slate-700 line-through mr-4">6120</p>
+                        <span class="text-xs text-#3E3E45 font-sans mr-2 text-green-600">₹</span>
+                        <p class="font-semibold text-green-600">2050</p>
                       </p>
                     </div>
                     <div class="flex flex-row flex-wrap gap-4 mt-2">
@@ -626,1527 +636,12 @@
                     </div>
                   </div>
                   <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->
-                  <!-- Repeat this card code block for each card -->
-                  <div class="bg-white shadow-lg rounded-md p-4 m-2">
-                    <h3 class="text-sm font-semibold mb-2">COMPLETE BLOOD COUNT; CBC</h3>
-                    <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
-                    <div class="flex items-center">
-                      <p class="font-semibold text-slate-700">
-                        <span class="text-xs text-#3E3E45">₹</span> 200
-                      </p>
-                    </div>
-                    <div class="flex flex-row flex-wrap gap-4 mt-2">
-                      <div class="flex items-center flex-wrap ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Home Collection</p>
-                      </div>
-                      <div class="flex items-center ml-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3 fill-current text-green-500">
-                          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                        </svg>
-                        <p class="font-semibold text-green-500 text-xs ml-2">Lab Visit</p>
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between mt-2">
-                      <button class="bg-blue-900 w-32 focus:outline-none focus:ring focus:ring-blue-300 text-white py-2 px-4 rounded-lg flex items-center justify-center">Add to cart</button>
-                      <div class="flex items-center ml-2">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
-                            <path fill="#d8d8d8" d="M384 80c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16h320zM64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                          </svg>
-                        </span>
-                        <p class="text-base font-semibold text-gray-700 ml-2">Compare</p>
-                      </div>
-                      <button class="text-blue-800 py-2 px-4 font-semibold">Know More</button>
-                    </div>
-                  </div>
-                  <!-- End of card code block -->      
+     
                 </div>
               </div>
       </div>            
     </div>
+
     <div class="w-screen mt-2 h-36 container-mid-abhi flex flex-row flex-wrap gap-2 justify-end items-center">
       <div class="w-10 h-10 bg-[#24242414] rounded-[50%] flex flex-col justify-center items-center hover:cursor-pointer">
         <a href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-left " viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path></svg></a>
