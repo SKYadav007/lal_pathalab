@@ -932,7 +932,7 @@ a {
   
 
   .ab-course-img>h5 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 550;
   }
 
@@ -986,7 +986,9 @@ a {
     border-bottom: none;
 
   }
-
+  .lab-test-container{
+    width:90%;
+  }
   .side-element a {
     border-right: 1px solid rgba(0, 0, 0, .1);
   }
@@ -1033,7 +1035,7 @@ a {
   }
 
   .ab-partner {
-    width: 80%;
+    width: 90%;
     border-radius: 20px;
   }
 
@@ -1046,7 +1048,7 @@ a {
   }
 
   .ab-vendor {
-    width: 80%;
+    width: 90%;
   }
 
   .ab-vendors-img {
@@ -1073,9 +1075,8 @@ a {
 
 
   .ab-course-img>h5 {
-    font-size: 1.2rem;
+    font-size: 0.6rem;
     font-weight: 550;
-
   }
 
   .ab-course-img>button {
@@ -1088,7 +1089,7 @@ a {
 
   
   .popular-test-container {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -1185,8 +1186,8 @@ a {
   }
 
   .ab-course-img>h5 {
-    font-size: 1.2rem;
-    font-weight: 550;
+    font-size: 0.5rem;
+    font-weight: 600;
   }
 
   .ab-course-img>button {
@@ -1296,7 +1297,7 @@ a {
   }
 
   .ab-course-img>h5 {
-    font-size: 1.2rem;
+    font-size: 0.5rem;
     font-weight: 550;
   }
 
@@ -1403,7 +1404,7 @@ a {
   }
 
   .ab-course-img>h5 {
-    font-size: 1rem;
+    font-size: 0.3rem;
     font-weight: 550;
   }
 
