@@ -328,8 +328,7 @@
          margin-top: -10px;
      }
 
-     .menu {}
- }
+
 
  @media screen and (max-width:720px) {
      .location {
@@ -403,10 +402,7 @@
     border-radius: 10px;
   }
 
-  /* Side fixed  */
-  .side_tr{
 
-  }
 
   /* footer */
   *{
