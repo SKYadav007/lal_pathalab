@@ -2364,16 +2364,7 @@ input[type="checkbox"].hide-input:not(:checked)+.chat-form {
 /*media query to make sidebar responsive:*/
 @media screen and (max-width:768px) {
     .side-element {
-        display: flex;
-        width: 100%;
-        position: sticky;
-        top: 100%;
-        bottom: 0%;
-        justify-content: space-between;
-        align-items: center;
-        /* height: min-content; */
-        height: 5rem;
-
+        display: none;
     }
 
     .side-element a p {
