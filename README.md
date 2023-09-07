@@ -10,13 +10,14 @@ https://jaitensahu.github.io/Project-Dr.PathLab/Patients
 ## Table of Contents
 
 1. [Introduction](#introduction)
-2. [Project Overview](#Project)
+2. [Project Overview](#project)
 3. [Features](#features)
 4. [Technologies Used](#technologies-used)
 5. [Getting Started](#getting-started)
 6. [Usage](#usage)
 7. [Contributing](#contributing)
-8. [License](#license)
+8. [Challenges Faced and Resolutions](#challenges-faced-and-resolutions)
+9. [License](#license)
 
 ## Introduction
 
@@ -40,15 +41,17 @@ It was an exciting opportunity for us to apply our skills and collaborate with f
 
 - Contact customer support
 - Responsive design for mobile and desktop
-- 
+- Some interactive parts created using javascript libraries.
+  
 **Objectives**
 
 UI Recreation :  Create a responsive and visually accurate replica of the Dr. Lal PathLabs website using HTML, CSS, and the Tailwind CSS framework.
+
 Functionality :  Implement essential functionalities such as test booking, test package displays, lab locator, and contact information retrieval.
+
 Learning      :  Gain hands-on experience in web development, including HTML structure, CSS styling, and responsive design.
 
 ## Technologies Used
-[Uploading html , css.htm…]()
 
 - **HTML:** 
 Used for structuring the web pagesincluding headers, navigation bars, content sections, and footers.
@@ -66,8 +69,22 @@ Getting Started
 - **JavaScript:** 
   <img src="https://img.icons8.com/color/48/000000/javascript.png"/>
 
+  JavaScript Libraries Used :
+   Our Lalpathlabs Clone Website Project relies on several external libraries and dependencies to enhance its functionality and features. Below is a list of these libraries along with their purposes:
+
+   - **Flickity-v2**
+     - **Description:** Flickity is a modern and highly flexible JavaScript library designed for creating responsive, touch-friendly sliders and carousels on websites and web applications.
+     - **Usage:** It is used to implement some touch, responsive, flickable carousels and enhance the functionality of our website.
+     - **Documentation:** [Official documentation for reference.](https://flickity.metafizzy.co/)
+
+  - **AOS - Animation on scroll**
+    - **Description:** "Animation on Scroll" by Michał Sajnóg (michalsnik) is a JavaScript library that enables the creation of animations and effects triggered by scrolling.
+    - **Usage:** It used on some of our webpages to enhance the look and make our website more interactive.
+    - **Documentation:** [Official documentation for further details.
+](https://michalsnik.github.io/aos/)
+
 - **Font Awesome (for icons):** 
-  <img src="https://img.icons8.com/color/48/000000/fontawesome.png"/>
+  <img width="40px" height="40px" src="https://pbs.twimg.com/profile_images/1491038861224517637/s-H1KgWO_400x400.png"/>
 
 ## Getting Started
 
@@ -97,6 +114,28 @@ We welcome contributions from the community. If you would like to contribute to 
 3. Make your changes and commit them: `git commit -m 'Add feature XYZ'`.
 4. Push to your forked repository: `git push origin feature-name`.
 5. Create a pull request on the original repository.
+
+## Challenges Faced and Resolutions
+
+Throughout the development of our Lalpathlabs Clone Website Project, our team encountered various challenges and obstacles. Here, we document some of the major issues we faced and the solutions we implemented:
+
+1. **Challenge 1 - Integration of Third-party Libraries:** One of the initial challenges was integrating third-party libraries and plugins seamlessly into our project. This was crucial for replicating specific functionalities from the original website.
+
+   - **Resolution:** We dedicated time to thoroughly understand the documentation of each library, sought help from online communities, and conducted trial-and-error testing until we successfully integrated them into our project.
+
+2. **Challenge 2 - Cross-browser Compatibility:** Ensuring that our website looked and functioned consistently across different web browsers posed a significant challenge.
+
+   - **Resolution:** We performed rigorous testing and debugging across various browsers, identifying and rectifying CSS and JavaScript compatibility issues. This involved adjusting styles and optimizing code to achieve a cohesive user experience.
+
+3. **Challenge 3 - Responsive Design:** Creating a responsive design that adapted seamlessly to different screen sizes and devices required careful planning and execution.
+
+   - **Resolution:** We adopted a desktop-first design approach and utilized CSS media queries extensively. Regular testing on various devices allowed us to fine-tune the responsiveness of our website.
+
+4. **Challenge 4 - Team Collaboration and Version Control:** Coordinating tasks among team members and ensuring smooth version control throughout the project proved to be a challenge.
+
+   - **Resolution:** We implemented a version control system (e.g., Git and GitHub) and established clear branching and merging processes. Regular team meetings and communication channels, such as Slack and zoom/ google meet, facilitated collaboration and issue tracking.
+  
+   By acknowledging these challenges and sharing our solutions, we hope to provide insights into our development process and demonstrate our team's problem-solving abilities. Overcoming these obstacles has contributed to the successful completion of the Dr. Lalpathlabs Clone Website Project.
 
 ## License
 
