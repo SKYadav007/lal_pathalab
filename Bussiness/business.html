@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lal Path Labs</title>
-    <link rel="icon" href="https://companieslogo.com/img/orig/LALPATHLAB.NS-767b71be.png?t=1613410117">
+    <link rel="icon" href="./fevicon.png">
     <link rel="stylesheet" href="./business.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script>
         function dropDown() {
             document.getElementById("drop-down").style.visibility = "visible";
@@ -167,6 +168,7 @@
     </section>
                       <!-- Partners Section -->
     <section class="partners">
+        <div data-aos="fade-up">
         <div class="ab-partner" id="partner">
             <h1>Partner With Us</h1>
             <div class="ab-partner-cards">
@@ -184,18 +186,22 @@
                 </div>
             </div>
         </div>
+    </div>
     </section>
                       <!-- Vendors section -->
     <section class="vendors">
         <div class="ab-vendor" id="vendor">
+            <div data-aos="zoom-out-left">
             <div class="ab-vendors-img">
                 <h4>Become a vendor</h4>
                 <button>Read More</button>
             </div>
         </div>
+        </div>
     </section>
                  <!-- Coming soon section -->
     <section class="coming-soon-cards">
+        <div data-aos="fade-up">
         <div class="ab-options" id="corporate">
             <ul>
                 <li>
@@ -212,14 +218,17 @@
                 </li>
             </ul>
         </div>
+    </div>
     </section>
                     <!-- Courses Section -->
     <section class="courses">
         <div class="ab-courses" id="courses">
+            <div data-aos="zoom-out-right">
             <div class="ab-course-img">
                 <h5>Want to do a course with us?</h5>
                 <button>Read More</button>
             </div>
+        </div>
         </div>
     </section>
                    <!-- Footer section -->
@@ -591,6 +600,10 @@
     </section>
     </div>
     <script src="https://kit.fontawesome.com/7c5861f7d9.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

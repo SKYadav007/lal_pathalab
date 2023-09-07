@@ -842,7 +842,7 @@ html{
 
  .test-packages {
      width: 100%;
-     margin-top: 25px;
+     margin-top: 45px;
  }
 
  .test-packages-content {
@@ -1430,7 +1430,7 @@ margin-top: -40px;
  .experties-container {
      background-color: var(--color-white);
      border-radius: 15px;
-     margin: 15px 0 30px;
+     margin: 30px 0 30px;
      padding: 15px;
  }
 
