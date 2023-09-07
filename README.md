@@ -41,6 +41,7 @@ The PathLab Website Clone is a web application that mimics the functionality and
 - Contact customer support
 - Responsive design for mobile and desktop
 - Some interactive parts created using javascript libraries.
+- Implemented semantic HTML tags throughout the project to enhance accessibility, readibility and structure.
 ---
 
 ## Objectives:
