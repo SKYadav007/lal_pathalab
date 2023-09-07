@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/x-icon" href="./Assets/fevicon.png" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="doctors.css" />
   <link rel="stylesheet" href="flickity.css" />
   <title>
@@ -15,7 +16,7 @@
 
 <body>
   <!-- Navbar -->
-  <header>
+  <header id="top">
     <nav class="navbar-top">
       <div class="nav-content">
         <div class="navList">
@@ -60,7 +61,7 @@
 
     <nav class="navbar-bottom">
       <div class="navbar-bottom-content">
-        <img src="https://uat-cdn.drlallab.com/2023-06/logo-header-2.webp" alt="" />
+        <a href="../Patients/index.html"><img src="https://uat-cdn.drlallab.com/2023-06/logo-header-2.webp" alt="" /></a>
         <div class="left">
           <div class="bottom-navList"><a href="#test-menu">Test Menu</a></div>
           <div class="bottom-navList"><a href="#our-labs">Our Labs</a></div>
@@ -83,7 +84,133 @@
           </div>
 
           <div class="search-test">
-            <div class="menu"><i class="fa-solid fa-bars"></i></div>
+            <!-- On click Side Menu For Small screen -->
+            <div class="menu">
+              <input type="checkbox" id="checkbox">
+              <label for="checkbox" class="click-me-icon"><i class="fa-solid fa-bars"></i></label>
+              <div class="menu-container">
+
+                <div class="user menu-content">
+                  <div>
+                    <a href=""><img src="https://uat-cdn.drlallab.com/images/Profile-16.png" alt=""><span>Welcome Guest
+                        User</span><i class="fa-solid fa-angle-down"></i></a>
+                  </div>
+                  <div class="close">
+                    <a href=""><i class="fa-solid fa-xmark"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="menu-content patient-arrow">
+                  <div class="patient-container">
+                    <a href="./index.html">
+                      <!-- <img src="https://uat-cdn.drlallab.com/images/mbl-menu1.png" alt=""> -->
+                      <span>PATIENTS</span>
+                      <div class="down-arrow">
+                        <img src="https://uat-cdn.drlallab.com/2022-12/mbl-arrow1.png" alt="">
+                      </div>
+                    </a>
+                    <div class="patient-list">
+                      <ul>
+                        <li>Book a Test</li>
+                        <li>Nearest Center</li>
+                        <li>Download Report</li>
+                        <li>Special Programs</li>
+                        <li>Promotion & Discounts</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="menu-content">
+                  <div>
+                    <a href="../Doctors/doctors.html">
+                      <img src="https://uat-cdn.drlallab.com/images/mbl-menu2.png" alt=""><span>DOCTORS</span>
+                    </a>
+                  </div>
+                  <div class="down-arrow">
+                    <img src="https://uat-cdn.drlallab.com/2022-12/mbl-arrow1.png" alt="">
+                  </div>
+                </div>
+
+                <div class="menu-content">
+                  <div>
+                    <a href="../Bussiness/business.html">
+                      <img src="https://uat-cdn.drlallab.com/images/mbl-menu3.png" alt=""><span>BUSINESS
+                        PARTNERSHIP</span>
+                    </a>
+                  </div>
+                  <div class="down-arrow">
+                    <img src="https://uat-cdn.drlallab.com/2022-12/mbl-arrow1.png" alt="">
+                  </div>
+                </div>
+
+                <div class="menu-content">
+                  <div>
+                    <a href="../About_us/about.html">
+                      <img src="https://uat-cdn.drlallab.com/images/mbl-menu4.png" alt="">
+                      <span>ABOUT</span>
+                    </a>
+                  </div>
+                  <div class="down-arrow">
+                    <img src="https://uat-cdn.drlallab.com/2022-12/mbl-arrow1.png" alt="">
+                  </div>
+                </div>
+
+                <div class="menu-content">
+                  <div>
+                    <a href="../Investors/dist/investors.html">
+                      <img src="https://uat-cdn.drlallab.com/images/mbl-menu5.png" alt=""><span>INVESTORS</span>
+                    </a>
+                  </div>
+                  <div class="down-arrow">
+                    <img src="https://uat-cdn.drlallab.com/2022-12/mbl-arrow1.png" alt="">
+                  </div>
+                </div>
+
+                <div class="menu-content">
+                  <div>
+                    <a href="../Contact_us/contact.html">
+                      <img src="https://uat-cdn.drlallab.com/images/mbl-menu6.png" alt=""><span>CONTACT
+                        US</span>
+                    </a>
+                  </div>
+                  <div class="down-arrow">
+                    <img src="https://uat-cdn.drlallab.com/2022-12/mbl-arrow1.png" alt="">
+                  </div>
+                </div>
+
+                <div class="menu-content download-app">
+                  <div>
+                    <a href="../Contact_us/contact.html">
+                      <span>BLOG | FAQS</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="menu-content download-app">
+                  <div>
+                    <a href="../Contact_us/contact.html">
+                      <span>Download App</span><span><img src="https://uat-cdn.drlallab.com/2022-12/mbl-app1.png"
+                          alt=""> | <img src="https://uat-cdn.drlallab.com/2022-12/mbl-app2.png" alt=""></span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="menu-content download-app">
+                  <div>
+                    <a href="../Contact_us/contact.html">
+                      <span>Download App</span><span>
+                        <img src="https://uat-cdn.drlallab.com/2022-12/mbl-social1.png" alt="">
+                        <img src="https://uat-cdn.drlallab.com/2022-12/mbl-social2.png" alt="">
+                        <img src="https://uat-cdn.drlallab.com/2022-12/mbl-social3.png" alt="">
+                        <img src="https://uat-cdn.drlallab.com/2022-12/mbl-youtube.png" alt="">
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
             <form action="">
               <input type="text" placeholder="Search Test & Packages" />
               <i class="fa-solid fa-magnifying-glass"></i>
@@ -103,7 +230,7 @@
 
     <section class="slider-section">
       <div class="path">
-        <a href="">Home &emsp;></a>
+        <a href="../Patients/index.html">Home &emsp;></a>
         <p>&ensp;Doctors</p>
       </div>
       <div class="main-carousel slider"
@@ -131,11 +258,11 @@
         <ul class="button-container">
           <li><button class="test-button condition">Condition</button></li>
           <li><button class="test-button specialty">Specialty</button></li>
-          <li><button class="test-button all-test">All Test</button></li>
+          <li><a href="../Book_a_test/dist/book_a_test.html"><button class="test-button all-test">All Test</button></a></li>
           <li><button class="test-button alphabet">Alphabet</button></li>
         </ul>
 
-        <div class="search-item flex items-center w-[60%]">
+        <div class="search-item">
           <input type="search" placeholder="Search Test" />
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
@@ -423,6 +550,26 @@
 
       <a class="view-all" href="">View All</a>
     </section>
+
+
+    <!-- FIXED SIDE-ELEMENT -->
+    <div class="side-element">
+      <a href="">
+        <img src="https://uat-cdn.drlallab.com/2022-12/side-img3.png" alt="">
+        <p>Nearest Center</p>
+      </a>
+      <a href="../Book_a_test/book_a_test.html"><img src="https://uat-cdn.drlallab.com/2022-12/side-img2.png" alt="">
+        <p>Book a Test
+
+        </p>
+      </a>
+      <a href=""><img src="https://uat-cdn.drlallab.com/2022-12/footer-upload.png" alt="">
+        <p>Upload Prescription</p>
+      </a>
+      <a href=""> <img src="https://uat-cdn.drlallab.com/2022-12/side-img4.png" alt="">
+        <p>Download Report</p>
+      </a>
+    </div>
 
     <!-- Our Labs -->
 
@@ -1060,6 +1207,14 @@
     </section>
   </main>
 
+  <!-- Back to Top-->
+
+  <div class="backtotop">
+    <a href="#top">
+      <img src="https://uat-cdn.drlallab.com/images/down-link-top.png" alt="">
+    </a>
+  </div>
+
   <!-- Footer -->
 
   <section class="footer-section">
@@ -1153,7 +1308,8 @@
 
   <!--\\\\ Chat Box Section ////-->
 
-  <label class="lets-chat" for="lets-chat">
+  <label class="lets-chat" data-aos="fade-up"
+  data-aos-anchor-placement="top-bottom" for="lets-chat">
     <i class="fa-solid fa-message"></i>
     <p>Let's Chat!</p>
   </label>
@@ -1183,7 +1339,7 @@
       </div>
     </div>
     <div class="text-box">
-      <div class="menu">
+      <div class="chat-menu">
         <span>Menu</span> <i class="fa-solid fa-angle-up"></i>
       </div>
       <input type="text" placeholder="Type here..." />
@@ -1195,6 +1351,10 @@
 
   <script src="https://kit.fontawesome.com/d191351939.js" crossorigin="anonymous"></script>
   <script src="./flickity.pkgd.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

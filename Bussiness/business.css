@@ -874,9 +874,6 @@ a {
     max-width: 70%;
   }
 
-  .ab-partnership-banner {
-  }
-
   .ab-partnership-banner h1 {
     font-size: 1.8rem;
   }
@@ -1001,7 +998,7 @@ a {
 @media screen and (max-width: 768px) {
 
   .ab-partnership-banner h1 {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     
   }
 
@@ -1041,7 +1038,7 @@ a {
   }
 
   .ab-partner h1 {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .ab-partnership-options p {
@@ -1075,10 +1072,6 @@ a {
   }
 
 
-
-
-
-
   .ab-course-img>h5 {
     font-size: 1.2rem;
     font-weight: 550;
@@ -1101,9 +1094,15 @@ a {
 
 @media screen and (max-width: 425px) {
   
+  .ab-navbar a{
+    font-size: 0.9rem;
+  }
+  .ab-navbar ul{
+    margin-left: 3rem;
+  }
 
   .ab-partnership-banner h1 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .ab-overview {
@@ -1212,7 +1211,7 @@ a {
   
 
   .ab-partnership-banner h1 {
-    font-size: 1rem;
+    font-size: o.7rem;
   }
 
   .ab-overview {
@@ -1327,7 +1326,7 @@ a {
   }
 
   .ab-partnership-banner h1 {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
   }
 
   .ab-overview {
