@@ -123,7 +123,7 @@ header {
 .patient a,
 .user-content a {
     font-weight: bold;
-    /* color: var(--color-background-blue); */
+    color: var(--color-background-blue);
 }
 
 .user-content .profile {
@@ -608,7 +608,7 @@ a{
 .welcome-guest{
     font-weight: 400;
 }
-.my-order a, .my-permission a, .wallet-balance a{
+.drop-down .my-order a, .my-permission a, .wallet-balance a{
     display: flex;
     justify-content:flex-start;
     padding:8px;
