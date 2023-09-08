@@ -13,8 +13,8 @@
                 href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
-<body class="">
-        <header>
+<body >
+        <header class="z-30">
                 <!-- Top Navbar -->
                 <nav class="navbar-top ">
                         <div class="nav-content">
@@ -52,31 +52,46 @@
                         </div>
                 </nav>
                 <!-- Bottom Navbar -->
-                <nav class="navbar-bottom">
+                <nav class="navbar-bottom z-50 ">
 
                         <div class="navbar-bottom-content">
-                                <img src="https://uat-cdn.drlallab.com/2023-06/logo-header-2.webp" alt="">
+                                <div class="hidden md:contents   max-lg:inline max-md:-mt-20 max-md:pl-3"><i class="fa-solid fa-bars max-lg:mt-[115px] "></i></div>
+                                <img src="https://uat-cdn.drlallab.com/2023-06/logo-header-2.webp" alt=""class="md:pr-">
                                 <div class="left">
+                                        <div class="bottom-navList">
+                                                <a href="./financial.html">Financials</a>
+                                            </div>
+                                            <div class="bottom-navList">
+                                                <a href="./investors.html">Investor Information</a>
+                                            </div>
+                                            <div class="bottom-navList">
+                                                <a href="./CorporateGov.html">Corporate Governance </a>
+                                            </div>
+                        
                                 </div>
-                                <div class="right">
+                                <div class="right pr-3">
                                         <div class="location">
-                                                <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                                                <div class="icon ">
+                                                        <i class="fa-solid fa-location-dot"></i>
+                                                </div>
                                                 <div class="search-location">
                                                         <p class="city-name">Delhi</p>
                                                         <input type="text" placeholder="Search Location...">
                                                 </div>
                                         </div>
 
-                                        <div class="search-test">
-                                                <div class="menu"><i class="fa-solid fa-bars"></i></div>
+                                        <div class="search-test max-md:hidden">
+                                                
                                                 <form action="">
                                                         <input type="text" placeholder="Search Test & Packages">
                                                         <i class="fa-solid fa-magnifying-glass"></i>
                                                 </form>
                                                 <div class="call"><i class="fa-solid fa-phone-volume"></i></div>
                                         </div>
-                                        <div class="cart"><img src="https://uat-cdn.drlallab.com/2022-12/cart-plus.png"
-                                                        alt=""></div>
+                                        <div class="cart">
+                                                <img src="https://uat-cdn.drlallab.com/2022-12/cart-plus.png"
+                                                        alt="">
+                                                </div>
                                 </div>
                         </div>
                 </nav>
@@ -84,9 +99,9 @@
         <script src="https://kit.fontawesome.com/7c5861f7d9.js" crossorigin="anonymous"></script>
 
         <!-- banner_navigator -->
-        <div class="w-screen mt-[60px] absolute -z-40">
+        <div class="w-screen mt-[60px] absolute z-40">
                 <!-- banner container -->
-                <div class="container max-w-full  w-full  bg-[#fecc4e]">
+                <div class="container max-w-full  w-full  bg-[#fecc4e] max-md:-mt-[60px] max-lg:mt-[21px]">
                         <!-- list of Navbars -->
                         <ul class="flex flex-row py-2  mx-16">
                                 <li class=" flex gap-5 text-[#000] pr-3">
@@ -102,7 +117,7 @@
         </div>
         <!-- Investr image -->
         <main class="flex items-center bg-[#F1F1F1] relative mt-[6.9%] flex-col w-screen ">
-                <div class="flex justify-center items-center relative mt-15 mb-15">
+                <div class="flex justify-center items-center relative mt-15 mb-15 max-lg:hidden ">
                         <img src="https://uat-cdn.drlallab.com/2022-12/investor-desk.png" alt="" class="">
                         <div class="absolute flex items-center justify-start  w-full px-24">
                                 <span>
@@ -112,7 +127,7 @@
 
                 </div>
 
-                <section class="mt-6 h-full w-screen ">
+                <section class="mt-6  max-lg:mt-[100px] h-full w-screen ">
                         <div class="h-full w-full flex justify-center mb-8">
                                 <div class="h-full w-[90%]  p-3 bg-[#FFF] rounded-xl">
 
@@ -138,7 +153,7 @@
                                         </div>
                                         <!-- Annual Report Dropdown -->
                                         <div class="mb-7 flex gap-4 flex-wrap">
-                                                <select
+                                                                                                <select
                                                         class=" border-none px-2 py-[.5%] pr-[8%]  bg-[#0265cb] text-white font-Segoe UI">
                                                         <option class=""> Annual
                                                                 Report</option>
@@ -199,15 +214,16 @@
 
                                         </div>
                                 </div>
+                               
                         </div>
-                        <div class="cursor-pointer w-full flex items-center justify-center flex-wrap">
+                        <div class="cursor-pointer w-full flex items-center justify-center ">
                                 <div
-                                        class=" h-[9vh] w-[90%]  text-center bg-[#FFF] rounded-xl text-right  text-[#0265cb] font-medium text-xl">
+                                        class=" h-[9vh] w-[90%]  bg-[#FFF] flex justify-end items-center rounded-xl max-md:flex max-md:items-center text-right  max-md:pt-0 max-md:justify-center text-[#0265cb] font-medium text-xl">
                                         <a class="underline mr-3">View More</a>
-                                        <!-- <hr class="my-7 w-[7%] max-lg:w-[10%] static ml-[93%] mr-8 max-md:mr- mt-0 " style="border-top:1px solid #0265cb;"> -->
                                 </div>
 
                         </div>
+                      
                 </section>
                 <!-- Footer Lab At Home -->
 

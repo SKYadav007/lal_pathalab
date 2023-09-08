@@ -196,6 +196,7 @@
 
  .location .icon {
      font-size: 26px;
+     margin-top: 0px;
      color: var(--color-background-blue);
  }
 
@@ -293,7 +294,7 @@
          width: 50rem;
          margin: 0 auto;
          align-items: start;
-         gap: 30px;
+         gap: 15px;
      }
 
      .search-test {
@@ -319,7 +320,7 @@
      }
 
      .location {
-         margin-top: 20px;
+         margin-top: 10px;
      }
 
      .city-name {
@@ -327,16 +328,15 @@
          margin-top: -10px;
      }
 
-     .menu {}
- }
 
- @media screen and (max-width:420px) {
+
+ @media screen and (max-width:720px) {
      .location {
          margin-left: -50px;
      }
 
      .navbar-bottom-content img {
-         transform: scale(0.8);
+         transform: scale(0.5);
      }
 
      .navbar-bottom {
@@ -402,10 +402,7 @@
     border-radius: 10px;
   }
 
-  /* Side fixed  */
-  .side_tr{
 
-  }
 
   /* footer */
   *{
@@ -742,3 +739,6 @@ input[type=checkbox].hide-input:not(:checked) + .chat-form{
     padding-bottom: 0;
     transition: all 0.3s ease-in-out;
 } 
+
+
+/* Dropdown */

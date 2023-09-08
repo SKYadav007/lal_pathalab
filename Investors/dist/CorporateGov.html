@@ -11,25 +11,30 @@
         <link rel="stylesheet" href="./styles.css">
         <link rel="stylesheet"
                 href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+                <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body class="">
-        <header>
+        <header class="z-30">
                 <!-- Top Navbar -->
                 <nav class="navbar-top ">
                         <div class="nav-content">
                                 <div class="navList">
-                                        <div class="navList-items"><a href="../../Patients/index.html">PATIENTS</a></div>
-                                        <div class="navList-items doctors"><a href="../../Doctors/doctors.html">DOCTORS</a></div>
+                                        <div class="navList-items"><a href="../../Patients/index.html">PATIENTS</a>
+                                        </div>
+                                        <div class="navList-items doctors"><a
+                                                        href="../../Doctors/doctors.html">DOCTORS</a></div>
                                         <div class="navList-items"><a href="../../Bussiness/business.html">BUSINESS
                                                         PARTNERSHIP</a></div>
-                                        <div class="navList-items"><a href="../../About_us/about.html">ABOUT US</a></div>
-                                        <div class="navList-items"><a href="../../Investors/dist/investors.html">INVESTORS</a>
+                                        <div class="navList-items"><a href="../../About_us/about.html">ABOUT US</a>
                                         </div>
-                                        <div class="navList-items"><a href="../../Contact_us/contact.html">CONTACT US</a>
+                                        <div class="navList-items"><a
+                                                        href="../../Investors/dist/investors.html">INVESTORS</a>
+                                        </div>
+                                        <div class="navList-items"><a href="../../Contact_us/contact.html">CONTACT
+                                                        US</a>
                                         </div>
                                 </div>
-
                                 <div class="blogHyperLink">
                                         <div class="blog"><a href="">BLOGS</a></div>
                                         <hr class="vertical-line">
@@ -47,43 +52,57 @@
                                 </div>
                         </div>
                 </nav>
-               <!-- Bottom Navbar -->
-                <nav class="navbar-bottom">
+                <!-- Bottom Navbar -->
+                <nav class="navbar-bottom z-50 ">
 
                         <div class="navbar-bottom-content">
-                                <img src="https://uat-cdn.drlallab.com/2023-06/logo-header-2.webp" alt="">
+                                <div class="hidden md:contents   max-lg:inline max-md:-mt-20 max-md:pl-3"><i class="fa-solid fa-bars max-lg:mt-[115px] "></i></div>
+                                <img src="https://uat-cdn.drlallab.com/2023-06/logo-header-2.webp" alt=""class="md:pr-">
                                 <div class="left">
-
+                                        <div class="bottom-navList">
+                                                <a href="./financial.html">Financials</a>
+                                            </div>
+                                            <div class="bottom-navList">
+                                                <a href="./investors.html">Investor Information</a>
+                                            </div>
+                                            <div class="bottom-navList">
+                                                <a href="./CorporateGov.html">Corporate Governance </a>
+                                            </div>
+                        
                                 </div>
-                                <div class="right">
+                                <div class="right pr-3">
                                         <div class="location">
-                                                <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
-                                                <div class="search-location ">
+                                                <div class="icon ">
+                                                        <i class="fa-solid fa-location-dot"></i>
+                                                </div>
+                                                <div class="search-location">
                                                         <p class="city-name">Delhi</p>
                                                         <input type="text" placeholder="Search Location...">
                                                 </div>
                                         </div>
 
-                                        <div class="search-test">
-                                                <div class="menu"><i class="fa-solid fa-bars"></i></div>
+                                        <div class="search-test max-md:hidden">
+                                                
                                                 <form action="">
                                                         <input type="text" placeholder="Search Test & Packages">
                                                         <i class="fa-solid fa-magnifying-glass"></i>
                                                 </form>
                                                 <div class="call"><i class="fa-solid fa-phone-volume"></i></div>
                                         </div>
-                                        <div class="cart"><img src="https://uat-cdn.drlallab.com/2022-12/cart-plus.png"
-                                                        alt=""></div>
+                                        <div class="cart">
+                                                <img src="https://uat-cdn.drlallab.com/2022-12/cart-plus.png"
+                                                        alt="">
+                                                </div>
                                 </div>
                         </div>
                 </nav>
         </header>
         <script src="https://kit.fontawesome.com/7c5861f7d9.js" crossorigin="anonymous"></script>
 
-        <!-- Banner_navigator -->
-        <div class="w-screen mt-[60px] absolute -z-40">
+        <!-- banner_navigator -->
+        <div class="w-screen mt-[60px] absolute z-40">
                 <!-- banner container -->
-                <div class="container max-w-full  w-full  bg-[#fecc4e]">
+                <div class="container max-w-full  w-full  bg-[#fecc4e] max-md:-mt-[60px] max-lg:mt-[21px]">
                         <!-- list of Navbars -->
                         <ul class="flex flex-row py-2  mx-16">
                                 <li class=" flex gap-5 text-[#000] pr-3">
@@ -99,7 +118,7 @@
         </div>
         <!-- Investors image section-->
         <main class="flex items-center bg-[#F1F1F1] relative mt-[6.9%] flex-col w-screen ">
-                <div class="flex justify-center items-center relative mt-15 mb-15">
+                <div class="flex justify-center items-center relative mt-15 mb-15 max-lg:hidden ">
                         <img src="https://uat-cdn.drlallab.com/2022-12/investor-desk.png" alt="" class="">
                         <div class="absolute flex items-center justify-start  w-full px-24">
                                 <span>
@@ -108,25 +127,25 @@
                         </div>
 
                 </div>
-                <!-- Image Section -->
-                <section class="mt-6 h-full w-screen ">
+
+                <section class="mt-6  max-lg:mt-[100px] h-full w-screen ">
                         <div class="h-full w-full flex justify-center ">
                                 <div class="h-full w-[90%]  p-3 bg-[#FFF] rounded-xl">
 
-                                          <!-- Prasentation Layers Navigation Buttons -->
+                                        <!-- Prasentation Layers Navigation Buttons -->
 
                                         <ul class=" flex flex-row my-10 max-md:flex-col gap-6 flex-wrap">
                                                 <li class="mb-5"><a href="../dist/financial.html"
-                                                        class="hover:bg-[#fecc4e] hover:text-black bg-[#bcbcbc] w-min px-11 rounded-2xl py-[8px] max-md:py-[15px] font-bold text-white"
-                                                        href="">Financials</a></li>
+                                                                class="hover:bg-[#fecc4e] hover:text-black bg-[#bcbcbc] w-min px-11 rounded-2xl py-[8px] max-md:py-[15px] font-bold text-white"
+                                                                href="">Financials</a></li>
                                                 <li class="mb-5"><a
-                                                        class="hover:bg-[#fecc4e] hover:text-black bg-[#bcbcbc] w-min px-11 rounded-2xl py-[8px] max-md:py-[15px] font-bold text-white"
-                                                        href="./investors.html">Investors
-                                                        Information</a></li>
+                                                                class="hover:bg-[#fecc4e] hover:text-black bg-[#bcbcbc] w-min px-11 rounded-2xl py-[8px] max-md:py-[15px] font-bold text-white"
+                                                                href="./investors.html">Investors
+                                                                Information</a></li>
                                                 <li class="mb-5"><a href="../dist/CorporateGov.html"
-                                                        class="bg-[#fecc4e]  w-min px-11 rounded-2xl  py-[8px] max-md:py-[15px] font-bold text-black"
-                                                        href="">Corporate Governance</a></li>
-                                            </ul>
+                                                                class="bg-[#fecc4e]  w-min px-11 rounded-2xl  py-[8px] max-md:py-[15px] font-bold text-black"
+                                                                href="">Corporate Governance</a></li>
+                                        </ul>
 
                                         <div class="flex justify-center">
                                                 <strong>Disclosures under Regulation 46 of the SEBI (LODR) Regulations,
@@ -149,13 +168,13 @@
                                         </div>
 
                                         <!-- Board of Directors -->
-                                        <div class="flex flex-col lg:flex-row flex-wrap p-1">
-                                                <!-- Director Img -->
+                                        <div  data-aos="zoom-in-down" class="flex flex-col lg:flex-row flex-wrap p-1">
+                                                <!-- Director Image -->
                                                 <div class="w-[30%] max-md:w-[100%] ">
                                                         <img src="https://uat-cdn.drlallab.com/2022-04/Dr-Arvind-Lal.png"
                                                                 class="w-[80%] max-md" height="90%">
                                                 </div>
-                                                <!-- Dir details container -->
+                                                <!-- Director details container -->
                                                 <div class="w-[70%] chairman_name mt-10 ">
                                                         <h1 class="text-blue-900 font-semibold">
                                                                 (Hony) Brig. Dr. Arvind Lal
@@ -200,19 +219,22 @@
                                         <div>
 
                                                 <div class="row flex flex-row max-xs:flex-col flex-wrap  gap-8">
-                                                        <div
+                                                       
+                                                        <div data-aos="flip-right"
                                                                 class="w-[23%] max-md:w-[100%] name_box flex flex-wrap justify-cente items-center flex-col text-center ">
-                                                                <img class="w-80 max-md:w-96 cursor-pointer"
-                                                                        src="https://uat-cdn.drlallab.com/2022-04/Dr-Arvind-Lal.png">
-
-
-                                                                <h3>(Hony) Brig. Dr. Arvind
-                                                                        Lal</h3>
-                                                                <p>Executive Chairman </p>
+                                                                <a style="cursor: pointer "><img
+                                                                                class="w-80 max-md:w-96 cursor-pointer"
+                                                                                src="https://uat-cdn.drlallab.com/2022-04/Dr-Arvind-Lal.png">
+                                                                </a>
+                                                                <div>
+                                                                        <h3 class="text-center">(Hony) Brig. Dr. Arvind
+                                                                                Lal</h3>
+                                                                        <p>Executive Chairman </p>
+                                                                </div>
 
                                                         </div>
 
-                                                        <div
+                                                        <div data-aos="flip-right"
                                                                 class="w-[23%] max-md:w-[100%] name_box flex flex-wrap justify-cente items-center flex-col text-center ">
                                                                 <a style="cursor: pointer;"> <img
                                                                                 class="w-80 max-md:w-96 cursor-pointer"
@@ -225,8 +247,8 @@
                                                                 </div>
                                                         </div>
 
-                                                        <div
-                                                                class="w-[23%] max-md:w-[100%] name_box flex flex-wrap justify-cente items-center flex-col text-center ">
+                                                        <div data-aos="flip-right"
+                                                                class="w-[23%] max-md:w-[100%] name_box flex flex-wrap justify-center items-center flex-col text-center ">
                                                                 <a style="cursor: pointer;"> <img
                                                                                 class="w-80 max-md:w-96 cursor-pointer"
                                                                                 src="https://uat-cdn.drlallab.com/2022-04/Dr-Vandana-Lal.png">
@@ -237,8 +259,8 @@
                                                                 </div>
                                                         </div>
 
-                                                        <div
-                                                                class="w-[23%] max-md:w-[100%] name_box flex flex-wrap justify-cente items-center flex-col text-center ">
+                                                        <div data-aos="flip-right"
+                                                                class="w-[23%] max-md:w-[100%] name_box flex flex-wrap justify-center items-center flex-col text-center ">
                                                                 <a style="cursor: pointer;"> <img
                                                                                 class="w-80 max-md:w-96 cursor-pointer"
                                                                                 src="https://uat-cdn.drlallab.com/2022-04/Rahul-Sharma.png">
@@ -255,8 +277,8 @@
 
 
 
-                                                        <div
-                                                                class="w-[23%] max-md:w-[100%] name_box flex flex-wrap justify-cente items-center flex-col text-center ">
+                                                        <div data-aos="flip-left"
+                                                                class="w-[23%] max-md:w-[100%] name_box flex flex-wrap justify-center items-center flex-col text-center ">
                                                                 <a style="cursor: pointer;"> <img
                                                                                 class="w-80 max-md:w-96 cursor-pointer"
                                                                                 src="https://uat-cdn.drlallab.com/2022-04/Somya_Satsangi.png">
@@ -268,8 +290,8 @@
                                                                 </div>
                                                         </div>
 
-                                                        <div
-                                                                class="w-[23%] max-md:w-[100%] name_box flex flex-wrap justify-cente items-center flex-col text-center ">
+                                                        <div data-aos="flip-left"
+                                                                class="w-[23%] max-md:w-[100%] name_box flex flex-wrap justify-center items-center flex-col text-center ">
                                                                 <a style="cursor: pointer;"> <img
                                                                                 class="w-80 max-md:w-96 cursor-pointer"
                                                                                 src="https://uat-cdn.drlallab.com/2022-04/Dr-Archana-Lal-ErdmannDr-Archana-Lal-Erdmann.png">
@@ -282,8 +304,8 @@
                                                                 </div>
                                                         </div>
 
-                                                        <div
-                                                                class="w-[23%] max-md:w-[100%] name_box flex flex-wrap justify-cente items-center flex-col text-center ">
+                                                        <div data-aos="flip-left"
+                                                                class="w-[23%] max-md:w-[100%] name_box flex flex-wrap justify-center items-center flex-col text-center ">
                                                                 <a style="cursor: pointer;"> <img
                                                                                 class="w-80 max-md:w-96 cursor-pointer"
                                                                                 src="https://uat-cdn.drlallab.com/2022-04/Mr-Rohit-Bhasin.png">
@@ -295,8 +317,8 @@
                                                                 </div>
                                                         </div>
 
-                                                        <div
-                                                                class="w-[23%] max-md:w-[100%] name_box flex flex-wrap justify-cente items-center flex-col text-center ">
+                                                        <div data-aos="flip-left"
+                                                                class="w-[23%] max-md:w-[100%] name_box flex flex-wrap justify-center items-center flex-col text-center ">
                                                                 <a style="cursor: pointer;"> <img
                                                                                 class="w-80 max-md:w-96 cursor-pointer"
                                                                                 src="https://uat-cdn.drlallab.com/2023-02/Mr-Arun-Duggal.jpg">
@@ -310,8 +332,8 @@
                                                         </div>
 
 
-                                                        <div
-                                                                class="w-[23%] max-md:w-[100%] name_box flex flex-wrap justify-cente items-center flex-col text-center ">
+                                                        <div data-aos="flip-right"
+                                                                class="w-[23%] max-md:w-[100%] name_box flex flex-wrap justify-center items-center flex-col text-center ">
                                                                 <a style="cursor: pointer;"> <img
                                                                                 class="w-80 max-md:w-96 cursor-pointer"
                                                                                 src="https://uat-cdn.drlallab.com/2023-07/Mr-Rajit-Mehta.jpg">
@@ -323,8 +345,8 @@
                                                                 </div>
                                                         </div>
 
-                                                        <div
-                                                                class="w-[23%] max-md:w-[100%] name_box flex flex-wrap justify-cente items-center flex-col text-center ">
+                                                        <div data-aos="flip-right"
+                                                                class="w-[23%] max-md:w-[100%] name_box flex flex-wrap justify-center items-center flex-col text-center ">
                                                                 <a style="cursor: pointer;"> <img
                                                                                 class="w-80 max-md:w-96 cursor-pointer"
                                                                                 src="https://uat-cdn.drlallab.com/2023-07/Mr-Gurinder-Singh-Kalra.jpeg">
@@ -652,8 +674,8 @@
                 </section>
                 <!-- Footer Section  -->
                 <div class="mb-6  ml-[80%]">
-                        <a href="./CorporateGov.html"><img src="https://uat-cdn.drlallab.com/images/down-link-top.png"
-                                        alt=""></a>
+                        <a href="./CorporateGov.html">
+                                <img src="https://uat-cdn.drlallab.com/images/down-link-top.png" alt=""></a>
                 </div>
 
                 <section class="footer-section">
@@ -802,7 +824,10 @@
 
         </main>
 
-
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
 </body>
 
 </html>
