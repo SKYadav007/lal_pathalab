@@ -304,38 +304,7 @@ header {
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: var(--color-background-blue); 
-  }
-/* Style the tooltip container */
-.tooltip {
-    position: relative;
-    display: inline-block;
-    cursor: pointer; /* Add pointer cursor on hover */
-  }
-  
-  /* Style the tooltip text */
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.2s;
-  }
-  
-  /* Show the tooltip on hover */
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-  }
-  
+  }  
 
   /* <!-- App Section--> */
 
@@ -403,7 +372,11 @@ header {
 .labtest>li>a{
     font-family: sans-serif;
 }
-
+/* Tooltip Code */
+.tooltip {
+    left: 50%;
+    transform: translateX(-50%);
+  }
  /* -----------------------SPECIAL PROGRAM SECTION--------------------- */
  .special-program {
     position: relative;

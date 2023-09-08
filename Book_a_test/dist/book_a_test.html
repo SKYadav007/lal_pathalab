@@ -102,12 +102,140 @@
       </div>
     </div>
   </header>
-
-
-
   <!-- Your page content here -->
   <script src="https://kit.fontawesome.com/7c5861f7d9.js" crossorigin="anonymous"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const cbcBtn1 = document.querySelector('#cbcBtn1');
+      const cbcTooltip1 = document.querySelector('#cbcTooltip1');
   
+      cbcTooltip1.innerHTML = cbcBtn1.dataset.tooltipText;
+  
+      cbcBtn1.addEventListener('mouseenter', () => {
+        cbcTooltip1.classList.remove('hidden');
+      });
+  
+      cbcBtn1.addEventListener('mouseleave', () => {
+        cbcTooltip1.classList.add('hidden');
+      });
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+    // Button 2
+    const cbcBtn2 = document.querySelector('#cbcBtn2');
+    const cbcTooltip2 = document.querySelector('#cbcTooltip2');
+
+    cbcTooltip2.innerHTML = cbcBtn2.dataset.tooltipText;
+
+    cbcBtn2.addEventListener('mouseenter', () => {
+      cbcTooltip2.classList.remove('hidden');
+    });
+
+    cbcBtn2.addEventListener('mouseleave', () => {
+      cbcTooltip2.classList.add('hidden');
+    });
+
+    // Button 3
+    const cbcBtn3 = document.querySelector('#cbcBtn3');
+    const cbcTooltip3 = document.querySelector('#cbcTooltip3');
+
+    cbcTooltip3.innerHTML = cbcBtn3.dataset.tooltipText;
+
+    cbcBtn3.addEventListener('mouseenter', () => {
+      cbcTooltip3.classList.remove('hidden');
+    });
+
+    cbcBtn3.addEventListener('mouseleave', () => {
+      cbcTooltip3.classList.add('hidden');
+    });
+
+    // Button 4
+    const cbcBtn4 = document.querySelector('#cbcBtn4');
+    const cbcTooltip4 = document.querySelector('#cbcTooltip4');
+
+    cbcTooltip4.innerHTML = cbcBtn4.dataset.tooltipText;
+
+    cbcBtn4.addEventListener('mouseenter', () => {
+      cbcTooltip4.classList.remove('hidden');
+    });
+
+    cbcBtn4.addEventListener('mouseleave', () => {
+      cbcTooltip4.classList.add('hidden');
+    });
+
+    // Button 5
+    const cbcBtn5 = document.querySelector('#cbcBtn5');
+    const cbcTooltip5 = document.querySelector('#cbcTooltip5');
+
+    cbcTooltip5.innerHTML = cbcBtn5.dataset.tooltipText;
+
+    cbcBtn5.addEventListener('mouseenter', () => {
+      cbcTooltip5.classList.remove('hidden');
+    });
+
+    cbcBtn5.addEventListener('mouseleave', () => {
+      cbcTooltip5.classList.add('hidden');
+    });
+  });
+
+  window.addEventListener('DOMContentLoaded', () => {
+    // Button 6
+    const cbcBtn6 = document.querySelector('#cbcBtn6');
+    const cbcTooltip6 = document.querySelector('#cbcTooltip6');
+
+    cbcTooltip6.innerHTML = cbcBtn6.dataset.tooltipText;
+
+    cbcBtn6.addEventListener('mouseenter', () => {
+      cbcTooltip6.classList.remove('hidden');
+    });
+
+    cbcBtn6.addEventListener('mouseleave', () => {
+      cbcTooltip6.classList.add('hidden');
+    });
+
+    // Button 7
+    const cbcBtn7 = document.querySelector('#cbcBtn7');
+    const cbcTooltip7 = document.querySelector('#cbcTooltip7');
+
+    cbcTooltip7.innerHTML = cbcBtn7.dataset.tooltipText;
+
+    cbcBtn7.addEventListener('mouseenter', () => {
+      cbcTooltip7.classList.remove('hidden');
+    });
+
+    cbcBtn7.addEventListener('mouseleave', () => {
+      cbcTooltip7.classList.add('hidden');
+    });
+
+    // Button 8
+    const cbcBtn8 = document.querySelector('#cbcBtn8');
+    const cbcTooltip8 = document.querySelector('#cbcTooltip8');
+
+    cbcTooltip8.innerHTML = cbcBtn8.dataset.tooltipText;
+
+    cbcBtn8.addEventListener('mouseenter', () => {
+      cbcTooltip8.classList.remove('hidden');
+    });
+
+    cbcBtn8.addEventListener('mouseleave', () => {
+      cbcTooltip8.classList.add('hidden');
+    });
+
+    // Button 9
+    const cbcBtn9 = document.querySelector('#cbcBtn9');
+    const cbcTooltip9 = document.querySelector('#cbcTooltip9');
+
+    cbcTooltip9.innerHTML = cbcBtn9.dataset.tooltipText;
+
+    cbcBtn9.addEventListener('mouseenter', () => {
+      cbcTooltip9.classList.remove('hidden');
+    });
+
+    cbcBtn9.addEventListener('mouseleave', () => {
+      cbcTooltip9.classList.add('hidden');
+    });
+  });
+  </script>
   <div class="w-screen h-auto m-0 container-mid-abhi pt-2 max-xl:hidden">
     <div class="h-auto mid-header-list flex flex-row justify-between align-bottom mt-6">
       <div class="text-[#4D4D4D] mid-header-abhi">
@@ -300,13 +428,18 @@
         </div>
       </div>
       <div
-        class="w-[70%] flex flex-col flex-grow items-stretch justify-start ml-8 md:w-[calc(100vw - 410px)] h-fit">
+        class="w-[70%] flex flex-col flex-grow items-stretch justify-start ml-4 md:w-[calc(100vw - 410px)] h-fit">
         <h1 class="text-center font-bold text-2xl mb-2">Lab Test at Home in Bhilai</h1>
        
-        <div class="grid grid-rows-17 gird-cols-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-2 gap-y-2 grid-flow-row">
+        <div class="grid grid-rows-17 gird-cols-3 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-1 gap-y-1 grid-flow-row">
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden">
-              <h3 class="text-sm font-semibold mb-2 tooltip">COMPLETE BLOOD COUNT; CBC</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn1" data-tooltip-text="COMPLETE BLOOD COUNT; CBC">COMPLETE BLOOD COUNT; CBC</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip1" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -342,8 +475,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden">
-              <h3 class="text-sm font-semibold mb-2">HbA1c; GLYCOSYLATED HEMOGLOBIN</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn2" data-tooltip-text="HbA1c; GLYCOSYLATED HEMOGLOBIN">HbA1c; GLYCOSYLATED HEMOGLOBIN</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip2" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">2 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -379,8 +517,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden ">
-              <h3 class="text-sm font-semibold mb-2">URINE EXAMINATION, ROUTINE; URINE, R/E</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn3" data-tooltip-text="URINE EXAMINATION, ROUTINE; URINE, R/E">URINE EXAMINATION, ROUTINE; URINE, R/E</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip3" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">16 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -416,8 +559,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden">
-              <h3 class="text-sm font-semibold mb-2">GLUCOSE, FASTING (F) AND POST MEAL (PP), 2 HOURS</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn4" data-tooltip-text="GLUCOSE, FASTING (F) AND POST MEAL (PP), 2 HOURS">GLUCOSE, FASTING (F) AND POST MEAL (PP), 2 HOURS</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip4" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">2 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -453,8 +601,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden">
-              <h3 class="text-sm font-semibold mb-2">THYROID PROFILE, TOTAL</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn5" data-tooltip-text="THYROID PROFILE, TOTAL">THYROID PROFILE, TOTAL</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip5" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">3 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -490,8 +643,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden">
-              <h3 class="text-sm font-semibold mb-2">WELLNESS REPORT</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn6" data-tooltip-text="WELLNESS REPORT">WELLNESS REPORT</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip6" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">1 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -527,8 +685,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden">
-              <h3 class="text-sm font-semibold mb-2">GLUCOSE, FASTING (F)</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn7" data-tooltip-text="GLUCOSE, FASTING (F)">GLUCOSE, FASTING (F)</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip7" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">1 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -564,9 +727,14 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden">
-              <h3 class="text-sm font-semibold mb-2">GLUCOSE, FASTING (F)</h3>
-              <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn8" data-tooltip-text="SWASTH SUPER -2">SWASTH SUPER -2</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip8" role="tooltip"></div>
+              </div>
+              <p class="text-sm cursor-pointer">55 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
                   <span class="text-xs text-#3E3E45 font-sans mr-2">₹</span>
@@ -604,8 +772,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden">
-              <h3 class="text-sm font-semibold mb-2">SWASTH SUPER -4</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn9" data-tooltip-text="SWASTH SUPER -4">SWASTH SUPER -4</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip9" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">57 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -644,8 +817,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2 tooltip">COMPLETE BLOOD COUNT; CBC</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn1" data-tooltip-text="COMPLETE BLOOD COUNT; CBC">COMPLETE BLOOD COUNT; CBC</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip1" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -681,8 +859,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">HbA1c; GLYCOSYLATED HEMOGLOBIN</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn2" data-tooltip-text="HbA1c; GLYCOSYLATED HEMOGLOBIN">HbA1c; GLYCOSYLATED HEMOGLOBIN</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip2" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">2 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -718,8 +901,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">URINE EXAMINATION, ROUTINE; URINE, R/E</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn3" data-tooltip-text="URINE EXAMINATION, ROUTINE; URINE, R/E">URINE EXAMINATION, ROUTINE; URINE, R/E</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip3" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">16 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -755,8 +943,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">GLUCOSE, FASTING (F) AND POST MEAL (PP), 2 HOURS</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn4" data-tooltip-text="GLUCOSE, FASTING (F) AND POST MEAL (PP), 2 HOURS">GLUCOSE, FASTING (F) AND POST MEAL (PP), 2 HOURS</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip4" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">2 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -792,8 +985,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">THYROID PROFILE, TOTAL</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn5" data-tooltip-text="THYROID PROFILE, TOTAL">THYROID PROFILE, TOTAL</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip5" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">3 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -829,8 +1027,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">WELLNESS REPORT</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn6" data-tooltip-text="WELLNESS REPORT">WELLNESS REPORT</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip6" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">1 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -866,8 +1069,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">GLUCOSE, FASTING (F)</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn7" data-tooltip-text="GLUCOSE, FASTING (F)">GLUCOSE, FASTING (F)</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip7" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">1 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -903,9 +1111,14 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">GLUCOSE, FASTING (F)</h3>
-              <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn8" data-tooltip-text="SWASTH SUPER -2">SWASTH SUPER -2</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip8" role="tooltip"></div>
+              </div>
+              <p class="text-sm cursor-pointer">55 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
                   <span class="text-xs text-#3E3E45 font-sans mr-2">₹</span>
@@ -943,8 +1156,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">SWASTH SUPER -4</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn9" data-tooltip-text="SWASTH SUPER -4">SWASTH SUPER -4</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip9" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">57 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -983,8 +1201,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2 tooltip">COMPLETE BLOOD COUNT; CBC</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn1" data-tooltip-text="COMPLETE BLOOD COUNT; CBC">COMPLETE BLOOD COUNT; CBC</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip1" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -1020,8 +1243,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">HbA1c; GLYCOSYLATED HEMOGLOBIN</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn2" data-tooltip-text="HbA1c; GLYCOSYLATED HEMOGLOBIN">HbA1c; GLYCOSYLATED HEMOGLOBIN</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip2" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">2 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -1057,8 +1285,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">URINE EXAMINATION, ROUTINE; URINE, R/E</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn3" data-tooltip-text="URINE EXAMINATION, ROUTINE; URINE, R/E">URINE EXAMINATION, ROUTINE; URINE, R/E</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip3" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">16 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -1094,8 +1327,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">GLUCOSE, FASTING (F) AND POST MEAL (PP), 2 HOURS</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn4" data-tooltip-text="GLUCOSE, FASTING (F) AND POST MEAL (PP), 2 HOURS">GLUCOSE, FASTING (F) AND POST MEAL (PP), 2 HOURS</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip4" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">2 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -1131,8 +1369,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">THYROID PROFILE, TOTAL</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn5" data-tooltip-text="THYROID PROFILE, TOTAL">THYROID PROFILE, TOTAL</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip5" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">3 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -1168,8 +1411,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">WELLNESS REPORT</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn6" data-tooltip-text="WELLNESS REPORT">WELLNESS REPORT</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip6" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">1 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -1205,8 +1453,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">GLUCOSE, FASTING (F)</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn7" data-tooltip-text="GLUCOSE, FASTING (F)">GLUCOSE, FASTING (F)</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip7" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">1 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -1242,9 +1495,14 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">GLUCOSE, FASTING (F)</h3>
-              <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn8" data-tooltip-text="SWASTH SUPER -2">SWASTH SUPER -2</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip8" role="tooltip"></div>
+              </div>
+              <p class="text-sm cursor-pointer">55 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
                   <span class="text-xs text-#3E3E45 font-sans mr-2">₹</span>
@@ -1282,8 +1540,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">SWASTH SUPER -4</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn9" data-tooltip-text="SWASTH SUPER -4">SWASTH SUPER -4</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip9" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">57 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -1322,8 +1585,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2 tooltip">COMPLETE BLOOD COUNT; CBC</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn1" data-tooltip-text="COMPLETE BLOOD COUNT; CBC">COMPLETE BLOOD COUNT; CBC</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip1" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -1359,8 +1627,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">HbA1c; GLYCOSYLATED HEMOGLOBIN</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn2" data-tooltip-text="HbA1c; GLYCOSYLATED HEMOGLOBIN">HbA1c; GLYCOSYLATED HEMOGLOBIN</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip2" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">2 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -1396,8 +1669,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">URINE EXAMINATION, ROUTINE; URINE, R/E</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn3" data-tooltip-text="URINE EXAMINATION, ROUTINE; URINE, R/E">URINE EXAMINATION, ROUTINE; URINE, R/E</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip3" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">16 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -1433,8 +1711,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">GLUCOSE, FASTING (F) AND POST MEAL (PP), 2 HOURS</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn4" data-tooltip-text="GLUCOSE, FASTING (F) AND POST MEAL (PP), 2 HOURS">GLUCOSE, FASTING (F) AND POST MEAL (PP), 2 HOURS</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip4" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">2 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -1470,8 +1753,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">THYROID PROFILE, TOTAL</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn5" data-tooltip-text="THYROID PROFILE, TOTAL">THYROID PROFILE, TOTAL</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip5" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">3 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -1507,8 +1795,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">WELLNESS REPORT</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn6" data-tooltip-text="WELLNESS REPORT">WELLNESS REPORT</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip6" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">1 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -1544,8 +1837,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">GLUCOSE, FASTING (F)</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn7" data-tooltip-text="GLUCOSE, FASTING (F)">GLUCOSE, FASTING (F)</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip7" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">1 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -1581,9 +1879,14 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">GLUCOSE, FASTING (F)</h3>
-              <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn8" data-tooltip-text="SWASTH SUPER -2">SWASTH SUPER -2</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip8" role="tooltip"></div>
+              </div>
+              <p class="text-sm cursor-pointer">55 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
                   <span class="text-xs text-#3E3E45 font-sans mr-2">₹</span>
@@ -1621,8 +1924,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">SWASTH SUPER -4</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn9" data-tooltip-text="SWASTH SUPER -4">SWASTH SUPER -4</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip9" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">57 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -1661,8 +1969,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2 tooltip">COMPLETE BLOOD COUNT; CBC</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn1" data-tooltip-text="COMPLETE BLOOD COUNT; CBC">COMPLETE BLOOD COUNT; CBC</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip1" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -1698,8 +2011,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">HbA1c; GLYCOSYLATED HEMOGLOBIN</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn2" data-tooltip-text="HbA1c; GLYCOSYLATED HEMOGLOBIN">HbA1c; GLYCOSYLATED HEMOGLOBIN</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip2" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">2 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -1735,8 +2053,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">URINE EXAMINATION, ROUTINE; URINE, R/E</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn3" data-tooltip-text="URINE EXAMINATION, ROUTINE; URINE, R/E">URINE EXAMINATION, ROUTINE; URINE, R/E</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip3" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">16 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -1772,8 +2095,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">GLUCOSE, FASTING (F) AND POST MEAL (PP), 2 HOURS</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn4" data-tooltip-text="GLUCOSE, FASTING (F) AND POST MEAL (PP), 2 HOURS">GLUCOSE, FASTING (F) AND POST MEAL (PP), 2 HOURS</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip4" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">2 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -1809,8 +2137,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">THYROID PROFILE, TOTAL</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn5" data-tooltip-text="THYROID PROFILE, TOTAL">THYROID PROFILE, TOTAL</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip5" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">3 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -1846,8 +2179,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">WELLNESS REPORT</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn6" data-tooltip-text="WELLNESS REPORT">WELLNESS REPORT</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip6" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">1 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -1883,8 +2221,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">GLUCOSE, FASTING (F)</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn7" data-tooltip-text="GLUCOSE, FASTING (F)">GLUCOSE, FASTING (F)</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip7" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">1 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -1920,9 +2263,14 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">GLUCOSE, FASTING (F)</h3>
-              <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn8" data-tooltip-text="SWASTH SUPER -2">SWASTH SUPER -2</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip8" role="tooltip"></div>
+              </div>
+              <p class="text-sm cursor-pointer">55 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
                   <span class="text-xs text-#3E3E45 font-sans mr-2">₹</span>
@@ -1960,8 +2308,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">SWASTH SUPER -4</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn9" data-tooltip-text="SWASTH SUPER -4">SWASTH SUPER -4</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip9" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">57 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -2000,8 +2353,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2 tooltip">COMPLETE BLOOD COUNT; CBC</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn1" data-tooltip-text="COMPLETE BLOOD COUNT; CBC">COMPLETE BLOOD COUNT; CBC</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip1" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">20 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -2037,8 +2395,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">HbA1c; GLYCOSYLATED HEMOGLOBIN</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn2" data-tooltip-text="HbA1c; GLYCOSYLATED HEMOGLOBIN">HbA1c; GLYCOSYLATED HEMOGLOBIN</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip2" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">2 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -2074,8 +2437,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">URINE EXAMINATION, ROUTINE; URINE, R/E</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn3" data-tooltip-text="URINE EXAMINATION, ROUTINE; URINE, R/E">URINE EXAMINATION, ROUTINE; URINE, R/E</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip3" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">16 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -2111,8 +2479,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">GLUCOSE, FASTING (F) AND POST MEAL (PP), 2 HOURS</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn4" data-tooltip-text="GLUCOSE, FASTING (F) AND POST MEAL (PP), 2 HOURS">GLUCOSE, FASTING (F) AND POST MEAL (PP), 2 HOURS</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip4" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">2 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -2148,8 +2521,13 @@
             </div>
             <!-- End of card code block -->
             <!-- Repeat this card code block for each card -->
-            <div class="bg-white shadow-lg rounded-md p-4 m-2">
-              <h3 class="text-sm font-semibold mb-2">THYROID PROFILE, TOTAL</h3>
+            <div class="bg-white shadow-lg rounded-md p-4 m-2 overflow-hidden transition-transform transform hover:scale-105">
+              <div class="relative">
+                <h3 class="text-sm font-semibold mb-2" id="cbcBtn5" data-tooltip-text="THYROID PROFILE, TOTAL">THYROID PROFILE, TOTAL</h3>
+            
+                <!-- Tooltip for this card -->
+                <div class="w-fit h-fit tooltip bg-black text-white text-sm px-2 py-1 absolute rounded shadow hidden text-center" id="cbcTooltip5" role="tooltip"></div>
+              </div>
               <p class="text-sm cursor-pointer">3 Parameter(s) Covered</p>
               <div class="flex items-center">
                 <p class="font-semibold text-slate-700">
@@ -2184,7 +2562,6 @@
               </div>
             </div>
             <!-- End of card code block -->
-
         </div>
       </div>
     </div>
