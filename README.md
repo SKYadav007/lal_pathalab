@@ -50,7 +50,7 @@ The PathLab Website Clone is a web application that mimics the functionality and
 - Learning      :  Gain hands-on experience in web development, including HTML structure, CSS styling, and responsive design.
 ---
 
-## Technologies Used:          <img src="https://img.icons8.com/color/48/000000/html-5.png"/>          <img src="https://img.icons8.com/color/48/000000/css3.png"/>          <img src="https://img.icons8.com/color/48/000000/javascript.png"/>         <img width="40px" height="40px" src="https://pbs.twimg.com/profile_images/1491038861224517637/s-H1KgWO_400x400.png"/>
+## Technologies Used:          <img src="https://img.icons8.com/color/48/000000/html-5.png"/>          <img src="https://img.icons8.com/color/48/000000/css3.png"/>          <img src="https://img.icons8.com/color/48/000000/javascript.png"/>         <img width="40px" height="40px" src="https://pbs.twimg.com/profile_images/1491038861224517637/s-H1KgWO_400x400.png"/> <img width="60px" height="40px" src="https://static-00.iconduck.com/assets.00/tailwind-css-icon-512x307-1v56l8ed.png">
 1.  **HTML:**  
 Used for structuring the web pagesincluding headers, navigation bars, content sections, and footers.
 2.  **CSS (including Tailwind CSS):** 
