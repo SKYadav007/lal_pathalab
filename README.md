@@ -26,13 +26,8 @@ The PathLab Website Clone is a web application that mimics the functionality and
 
 ## Project:
 - This project was assigned by [Geekster](https://www.geekster.in/) as a **Major Project** for a team of 7 members:
-  - Jaiten Sahu (TEAM LEAD)
-  - Sakshi Thakare
-  - Lokesh Kataria
-  - Virendra Kumar Yadav
-  - Abhishek Sharma 
-  - Abhay Chauhan 
-  - Shweta Sharma 
+  - Sachin Kumar
+  - Virendra Yadav
 
 - It was an exciting opportunity for us to apply our skills and collaborate with fellow learners to create a functional and polished clone of the PathLab website.
 ---
