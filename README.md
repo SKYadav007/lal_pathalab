@@ -3,7 +3,7 @@
 ### Welcome to the PathLab Website Clone! This project is a replica of the PathLab website, developed using HTML, CSS (including Tailwind CSS), and JavaScript. In this README, you'll find all the information about this project.
 ---
 
-## Hosted Link: [Click Here](https://jaitensahu.github.io/Project-Dr.PathLab/Patients)
+## Hosted Link: [Click Here](https://skyadav007.github.io/lal_pathlabs/Patients)
 ---
 
 ## Table of Contents:-
